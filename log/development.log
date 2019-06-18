@@ -1515,3 +1515,1532 @@ Migrating to CreateEvents (20190618140205)
   [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "responses" WHERE "responses"."user_id" = ?[0m  [["user_id", 3]]
   [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT ? OFFSET ?[0m  [["LIMIT", 1], ["OFFSET", 2]]
   [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "events" INNER JOIN "responses" ON "events"."id" = "responses"."event_id" WHERE "responses"."user_id" = ?[0m  [["user_id", 3]]
+Started GET "/users" for ::1 at 2019-06-18 10:54:22 -0400
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/duongnguyen/.rvm/gems/ruby-2.3.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  
+SyntaxError (/Users/duongnguyen/Development/Projects/Project_2/Unnamed/app/controllers/users_controller.rb:2: syntax error, unexpected [, expecting keyword_do or '{' or '('
+before_action :find_user, except [:index]
+                                  ^):
+  
+app/controllers/users_controller.rb:2: syntax error, unexpected [, expecting keyword_do or '{' or '('
+Started GET "/users" for ::1 at 2019-06-18 10:54:41 -0400
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:1
+  Rendered users/index.html.erb within layouts/application (13.8ms)
+Completed 200 OK in 795ms (Views: 782.8ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/users" for ::1 at 2019-06-18 10:55:02 -0400
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:1
+  Rendered users/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 55ms (Views: 50.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users" for ::1 at 2019-06-18 10:55:36 -0400
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:1
+  Rendered users/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 43ms (Views: 38.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users" for ::1 at 2019-06-18 10:55:57 -0400
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:1
+  Rendered users/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 37ms (Views: 34.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users" for ::1 at 2019-06-18 10:56:40 -0400
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:1
+  Rendered users/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 23ms (Views: 20.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users" for ::1 at 2019-06-18 10:56:56 -0400
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:1
+  Rendered users/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 27ms (Views: 24.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users" for ::1 at 2019-06-18 10:56:57 -0400
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:1
+  Rendered users/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 24ms (Views: 21.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users" for ::1 at 2019-06-18 10:57:17 -0400
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:1
+  Rendered users/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 25ms (Views: 22.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users" for ::1 at 2019-06-18 10:57:59 -0400
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:1
+  Rendered users/index.html.erb within layouts/application (9.7ms)
+Completed 200 OK in 42ms (Views: 38.0ms | ActiveRecord: 0.2ms)
+
+
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "events"[0m
+  ↳ db/schema.rb:15
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ db/schema.rb:15
+  [1m[35m (1.0ms)[0m  [1m[35mCREATE TABLE "events" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "api_id" integer, "title" varchar, "location" varchar, "snippet" varchar, "url" varchar, "email" varchar, "cost" boolean, "cost_description" varchar, "date" varchar, "start_time" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/schema.rb:15
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "responses"[0m
+  ↳ db/schema.rb:30
+  [1m[35m (1.0ms)[0m  [1m[35mCREATE TABLE "responses" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer, "event_id" integer, "guests" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/schema.rb:30
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "users"[0m
+  ↳ db/schema.rb:38
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "user_name" varchar, "password" varchar, "bio" varchar, "pic_url" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/schema.rb:38
+  [1m[35m (1.0ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ db/schema.rb:13
+  [1m[35m (0.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20190618140205)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (0.9ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20190618140150),
+(20190618135820);
+
+[0m
+  ↳ db/schema.rb:13
+  [1m[35m (1.2ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ db/schema.rb:13
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Create (0.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2019-06-18 14:58:55.601575"], ["updated_at", "2019-06-18 14:58:55.601575"]]
+  ↳ db/schema.rb:13
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "events"[0m
+  ↳ db/schema.rb:15
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ db/schema.rb:15
+  [1m[35m (1.0ms)[0m  [1m[35mCREATE TABLE "events" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "api_id" integer, "title" varchar, "location" varchar, "snippet" varchar, "url" varchar, "email" varchar, "cost" boolean, "cost_description" varchar, "date" varchar, "start_time" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/schema.rb:15
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "responses"[0m
+  ↳ db/schema.rb:30
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE TABLE "responses" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer, "event_id" integer, "guests" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/schema.rb:30
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "users"[0m
+  ↳ db/schema.rb:38
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "user_name" varchar, "password" varchar, "bio" varchar, "pic_url" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/schema.rb:38
+  [1m[35m (1.1ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ db/schema.rb:13
+  [1m[35m (1.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20190618140205)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (0.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20190618140150),
+(20190618135820);
+
+[0m
+  ↳ db/schema.rb:13
+  [1m[35m (1.0ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ db/schema.rb:13
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Create (0.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2019-06-18 14:58:55.623984"], ["updated_at", "2019-06-18 14:58:55.623984"]]
+  ↳ db/schema.rb:13
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Update (0.3ms)[0m  [1m[33mUPDATE "ar_internal_metadata" SET "value" = ?, "updated_at" = ? WHERE "ar_internal_metadata"."key" = ?[0m  [["value", "test"], ["updated_at", "2019-06-18 14:58:55.628664"], ["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:3
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ db/seeds.rb:4
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT "responses".* FROM "responses"[0m
+  ↳ db/seeds.rb:5
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "user_name", "password", "bio", "pic_url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Great Aunt Muriel"], ["user_name", "cruz"], ["password", "7bFrR6Qh9"], ["bio", "I fear a political career could shine a negative light on my drug dealing."], ["pic_url", "https://robohash.org/sedveniamreprehenderit.png?size=300x300&set=set1"], ["created_at", "2019-06-18 14:58:55.873287"], ["updated_at", "2019-06-18 14:58:55.873287"]]
+  ↳ db/seeds.rb:9
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "user_name", "password", "bio", "pic_url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Augusta Longbottom"], ["user_name", "johnie_carroll"], ["password", "Gn0aZv405b7mZ09"], ["bio", "Some flies are too awesome for the wall."], ["pic_url", "https://robohash.org/aperiamquisquampraesentium.png?size=300x300&set=set1"], ["created_at", "2019-06-18 14:58:55.876040"], ["updated_at", "2019-06-18 14:58:55.876040"]]
+  ↳ db/seeds.rb:9
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "user_name", "password", "bio", "pic_url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Amos Diggory"], ["user_name", "darron_tillman"], ["password", "RnBoZxR5YyQf"], ["bio", "I had sex with Eartha Kitt in an airplane bathroom"], ["pic_url", "https://robohash.org/experferendisfacere.png?size=300x300&set=set1"], ["created_at", "2019-06-18 14:58:55.878429"], ["updated_at", "2019-06-18 14:58:55.878429"]]
+  ↳ db/seeds.rb:9
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "user_name", "password", "bio", "pic_url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Norbert"], ["user_name", "korey"], ["password", "F7D9M6F6"], ["bio", "You have just been proven racist by the racist prover!"], ["pic_url", "https://robohash.org/quodveroaliquid.png?size=300x300&set=set1"], ["created_at", "2019-06-18 14:58:55.883024"], ["updated_at", "2019-06-18 14:58:55.883024"]]
+  ↳ db/seeds.rb:9
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "user_name", "password", "bio", "pic_url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Garrick Ollivander"], ["user_name", "kylie.buckridge"], ["password", "8zMkVhKjPlE84u9"], ["bio", "Either I'm god, or thruth is relative. Either way: Booyah."], ["pic_url", "https://robohash.org/esseprovidentfugit.png?size=300x300&set=set1"], ["created_at", "2019-06-18 14:58:55.886537"], ["updated_at", "2019-06-18 14:58:55.886537"]]
+  ↳ db/seeds.rb:9
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "user_name", "password", "bio", "pic_url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Beedle the Bard"], ["user_name", "major"], ["password", "WyFqR3Wc"], ["bio", "I'm going to eat spaceman paninis with black Hitler and there's nothing you can do about it!"], ["pic_url", "https://robohash.org/odioeta.png?size=300x300&set=set1"], ["created_at", "2019-06-18 14:58:55.890069"], ["updated_at", "2019-06-18 14:58:55.890069"]]
+  ↳ db/seeds.rb:9
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "user_name", "password", "bio", "pic_url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Godric Gryffindor"], ["user_name", "devona_schuster"], ["password", "Cu95T2F0W"], ["bio", "I know what a metaphor is! It's like a thought with another thought's hat on."], ["pic_url", "https://robohash.org/corruptinihilaliquam.png?size=300x300&set=set1"], ["created_at", "2019-06-18 14:58:55.892996"], ["updated_at", "2019-06-18 14:58:55.892996"]]
+  ↳ db/seeds.rb:9
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("name", "user_name", "password", "bio", "pic_url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Buckbeak"], ["user_name", "milo"], ["password", "6rVySlPzXfLy"], ["bio", "Well I may be a genius, but I'm not a lesbian."], ["pic_url", "https://robohash.org/placeatnatusconsequatur.png?size=300x300&set=set1"], ["created_at", "2019-06-18 14:58:55.895314"], ["updated_at", "2019-06-18 14:58:55.895314"]]
+  ↳ db/seeds.rb:9
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "user_name", "password", "bio", "pic_url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Reginald Cattermole"], ["user_name", "junie.conroy"], ["password", "Yp6wB5EiKc5eD"], ["bio", "We'll definitely be back next year. If not, it'll be because an asteroid has destroyed all human civilization. And that's canon."], ["pic_url", "https://robohash.org/reiciendisreprehenderitdolores.png?size=300x300&set=set1"], ["created_at", "2019-06-18 14:58:55.901137"], ["updated_at", "2019-06-18 14:58:55.901137"]]
+  ↳ db/seeds.rb:9
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "user_name", "password", "bio", "pic_url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Nicholas Flamel"], ["user_name", "angelika"], ["password", "1b9g5iLu"], ["bio", "Do they find thoughts in our butts?"], ["pic_url", "https://robohash.org/molestiaequasiquis.png?size=300x300&set=set1"], ["created_at", "2019-06-18 14:58:55.903765"], ["updated_at", "2019-06-18 14:58:55.903765"]]
+  ↳ db/seeds.rb:9
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "user_name", "password", "bio", "pic_url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Kingsley Shacklebolt"], ["user_name", "ricardo.daugherty"], ["password", "Ga1f2j3u7lHx"], ["bio", "I don't have an ego. My Facebook photo is a landscape."], ["pic_url", "https://robohash.org/abautdolore.png?size=300x300&set=set1"], ["created_at", "2019-06-18 14:58:55.906972"], ["updated_at", "2019-06-18 14:58:55.906972"]]
+  ↳ db/seeds.rb:9
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "user_name", "password", "bio", "pic_url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Zacharias Smith"], ["user_name", "marti"], ["password", "N2VtFh0aKg"], ["bio", "We're all kind of crazytown bananapants."], ["pic_url", "https://robohash.org/doloresfugiatfugit.png?size=300x300&set=set1"], ["created_at", "2019-06-18 14:58:55.909829"], ["updated_at", "2019-06-18 14:58:55.909829"]]
+  ↳ db/seeds.rb:9
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Create (0.8ms)[0m  [1m[32mINSERT INTO "users" ("name", "user_name", "password", "bio", "pic_url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Cormac McLaggen"], ["user_name", "chet"], ["password", "6oSfEbNuXuHyAy6"], ["bio", "I don't have an ego. My Facebook photo is a landscape."], ["pic_url", "https://robohash.org/autquamtempore.png?size=300x300&set=set1"], ["created_at", "2019-06-18 14:58:55.912450"], ["updated_at", "2019-06-18 14:58:55.912450"]]
+  ↳ db/seeds.rb:9
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Create (0.7ms)[0m  [1m[32mINSERT INTO "users" ("name", "user_name", "password", "bio", "pic_url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Dirk Cresswell"], ["user_name", "mckinley_hyatt"], ["password", "GtVuQnWaJ81l1r"], ["bio", "I know what a metaphor is! It's like a thought with another thought's hat on."], ["pic_url", "https://robohash.org/etcumut.png?size=300x300&set=set1"], ["created_at", "2019-06-18 14:58:55.917068"], ["updated_at", "2019-06-18 14:58:55.917068"]]
+  ↳ db/seeds.rb:9
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "user_name", "password", "bio", "pic_url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Ginny Weasley"], ["user_name", "xuan_medhurst"], ["password", "654xTgTyAkGxI"], ["bio", "I know what a metaphor is! It's like a thought with another thought's hat on."], ["pic_url", "https://robohash.org/eautomnis.png?size=300x300&set=set1"], ["created_at", "2019-06-18 14:58:55.920300"], ["updated_at", "2019-06-18 14:58:55.920300"]]
+  ↳ db/seeds.rb:9
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[36mEvent Create (3.5ms)[0m  [1m[32mINSERT INTO "events" ("api_id", "title", "location", "snippet", "url", "email", "cost", "cost_description", "date", "start_time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["api_id", 14], ["title", "Human Heater"], ["location", "Pawnee"], ["snippet", "Ululate hideous squamous immemorial."], ["url", "http://aviato.com"], ["email", "marcelocorwin@daugherty.info"], ["cost", 1], ["cost_description", "Fresh Norwegian salmon, lightly brushed with our herbed Dijon mustard sauce, with choice of two sides."], ["date", "2019-08-18"], ["start_time", "04"], ["created_at", "2019-06-18 14:58:55.938899"], ["updated_at", "2019-06-18 14:58:55.938899"]]
+  ↳ db/seeds.rb:19
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[36mEvent Create (0.4ms)[0m  [1m[32mINSERT INTO "events" ("api_id", "title", "location", "snippet", "url", "email", "cost", "cost_description", "date", "start_time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["api_id", 18], ["title", "Limp Biscuit"], ["location", "Pawnee"], ["snippet", "Blasphemous unmentionable amorphous squamous."], ["url", "http://bachmanity.com"], ["email", "genevieve@kirlin.com"], ["cost", 1], ["cost_description", "Smoked salmon, poached eggs, diced red onions and Hollandaise sauce on an English muffin. With a side of roasted potatoes."], ["date", "2019-12-24"], ["start_time", "02"], ["created_at", "2019-06-18 14:58:55.947697"], ["updated_at", "2019-06-18 14:58:55.947697"]]
+  ↳ db/seeds.rb:19
+  [1m[35m (7.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[36mEvent Create (0.4ms)[0m  [1m[32mINSERT INTO "events" ("api_id", "title", "location", "snippet", "url", "email", "cost", "cost_description", "date", "start_time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["api_id", 19], ["title", "Skycrane"], ["location", "Boraqua"], ["snippet", "Spectral swarthy unutterable."], ["url", "http://bachmanity.com"], ["email", "seymourborer@kozey.name"], ["cost", 1], ["cost_description", "Granny Smith apples mixed with brown sugar and butter filling, in a flaky all-butter crust, with ice cream."], ["date", "2019-07-12"], ["start_time", "08"], ["created_at", "2019-06-18 14:58:55.958211"], ["updated_at", "2019-06-18 14:58:55.958211"]]
+  ↳ db/seeds.rb:19
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[36mEvent Create (0.4ms)[0m  [1m[32mINSERT INTO "events" ("api_id", "title", "location", "snippet", "url", "email", "cost", "cost_description", "date", "start_time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["api_id", 17], ["title", "Pipey"], ["location", "Pawnee"], ["snippet", "Furtive dank stench fainted."], ["url", "http://raviga.com"], ["email", "erikstoltenberg@steuber.org"], ["cost", 1], ["cost_description", "Fresh parsley, Italian sausage, shallots, garlic, sun-dried tomatoes and mozzarella cheese in an all-butter crust. With a side of mixed fruits."], ["date", "2020-04-24"], ["start_time", "02"], ["created_at", "2019-06-18 14:58:55.968518"], ["updated_at", "2019-06-18 14:58:55.968518"]]
+  ↳ db/seeds.rb:19
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[36mEvent Create (0.5ms)[0m  [1m[32mINSERT INTO "events" ("api_id", "title", "location", "snippet", "url", "email", "cost", "cost_description", "date", "start_time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["api_id", 12], ["title", "Tres Comas Tequila"], ["location", "Pawnee"], ["snippet", "Fainted swarthy manuscript fungus."], ["url", "http://aviato.com"], ["email", "javier@schaden.name"], ["cost", 0], ["cost_description", "Granny Smith apples mixed with brown sugar and butter filling, in a flaky all-butter crust, with ice cream."], ["date", "2020-03-27"], ["start_time", "01"], ["created_at", "2019-06-18 14:58:55.973391"], ["updated_at", "2019-06-18 14:58:55.973391"]]
+  ↳ db/seeds.rb:19
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[36mEvent Create (0.6ms)[0m  [1m[32mINSERT INTO "events" ("api_id", "title", "location", "snippet", "url", "email", "cost", "cost_description", "date", "start_time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["api_id", 11], ["title", "Table"], ["location", "Boraqua"], ["snippet", "Eldritch furtive comprehension swarthy mortal dank."], ["url", "http://hooli.com"], ["email", "beie@beier.io"], ["cost", 1], ["cost_description", "Granny Smith apples mixed with brown sugar and butter filling, in a flaky all-butter crust, with ice cream."], ["date", "2019-12-18"], ["start_time", "08"], ["created_at", "2019-06-18 14:58:55.976966"], ["updated_at", "2019-06-18 14:58:55.976966"]]
+  ↳ db/seeds.rb:19
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[36mEvent Create (0.4ms)[0m  [1m[32mINSERT INTO "events" ("api_id", "title", "location", "snippet", "url", "email", "cost", "cost_description", "date", "start_time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["api_id", 16], ["title", "Always Blue"], ["location", "Eagleton"], ["snippet", "Stygian swarthy foetid unmentionable abnormal daemoniac cyclopean."], ["url", "http://bachmanity.com"], ["email", "damienfritsch@brekkestoltenberg.net"], ["cost", 1], ["cost_description", "Creamy mascarpone cheese and custard layered between espresso and rum soaked house-made ladyfingers, topped with Valrhona cocoa powder."], ["date", "2020-02-25"], ["start_time", "07"], ["created_at", "2019-06-18 14:58:55.980258"], ["updated_at", "2019-06-18 14:58:55.980258"]]
+  ↳ db/seeds.rb:19
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[36mEvent Create (3.2ms)[0m  [1m[32mINSERT INTO "events" ("api_id", "title", "location", "snippet", "url", "email", "cost", "cost_description", "date", "start_time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["api_id", 12], ["title", "Bit Soup"], ["location", "Eagleton"], ["snippet", "Stench loathsome squamous indescribable antediluvian daemoniac dank."], ["url", "http://raviga.com"], ["email", "orville@gerlach.biz"], ["cost", 1], ["cost_description", "Two butter croissants of your choice (plain, almond or cheese). With a side of herb butter or house-made hazelnut spread."], ["date", "2020-05-19"], ["start_time", "09"], ["created_at", "2019-06-18 14:58:55.983043"], ["updated_at", "2019-06-18 14:58:55.983043"]]
+  ↳ db/seeds.rb:19
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[36mEvent Create (0.3ms)[0m  [1m[32mINSERT INTO "events" ("api_id", "title", "location", "snippet", "url", "email", "cost", "cost_description", "date", "start_time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["api_id", 20], ["title", "BamBot"], ["location", "Eagleton"], ["snippet", "Lurk indescribable furtive immemorial."], ["url", "http://piedpiper.com"], ["email", "phoebekeler@mcdermott.co"], ["cost", 1], ["cost_description", "Granny Smith apples mixed with brown sugar and butter filling, in a flaky all-butter crust, with ice cream."], ["date", "2020-06-11"], ["start_time", "04"], ["created_at", "2019-06-18 14:58:55.991883"], ["updated_at", "2019-06-18 14:58:55.991883"]]
+  ↳ db/seeds.rb:19
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[36mEvent Create (0.3ms)[0m  [1m[32mINSERT INTO "events" ("api_id", "title", "location", "snippet", "url", "email", "cost", "cost_description", "date", "start_time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["api_id", 20], ["title", "Skycrane"], ["location", "Eagleton"], ["snippet", "Stench abnormal daemoniac shunned gambrel cat."], ["url", "http://breamhall.com"], ["email", "jeieturner@reichel.org"], ["cost", 1], ["cost_description", "Creamy mascarpone cheese and custard layered between espresso and rum soaked house-made ladyfingers, topped with Valrhona cocoa powder."], ["date", "2019-09-24"], ["start_time", "05"], ["created_at", "2019-06-18 14:58:55.994870"], ["updated_at", "2019-06-18 14:58:55.994870"]]
+  ↳ db/seeds.rb:19
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[36mEvent Create (0.3ms)[0m  [1m[32mINSERT INTO "events" ("api_id", "title", "location", "snippet", "url", "email", "cost", "cost_description", "date", "start_time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["api_id", 19], ["title", "Cold Duck"], ["location", "Eagleton"], ["snippet", "Singular tenebrous unutterable madness."], ["url", "http://breamhall.com"], ["email", "juanleannon@smitham.info"], ["cost", 1], ["cost_description", "Granny Smith apples mixed with brown sugar and butter filling, in a flaky all-butter crust, with ice cream."], ["date", "2019-10-30"], ["start_time", "08"], ["created_at", "2019-06-18 14:58:55.997632"], ["updated_at", "2019-06-18 14:58:55.997632"]]
+  ↳ db/seeds.rb:19
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.6ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[36mEvent Create (0.8ms)[0m  [1m[32mINSERT INTO "events" ("api_id", "title", "location", "snippet", "url", "email", "cost", "cost_description", "date", "start_time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["api_id", 19], ["title", "Anton"], ["location", "Boraqua"], ["snippet", "Accursed stench mortal fungus unutterable."], ["url", "http://aviato.com"], ["email", "refugiogerhold@haag.com"], ["cost", 1], ["cost_description", "28-day aged 300g USDA Certified Prime Ribeye, rosemary-thyme garlic butter, with choice of two sides."], ["date", "2019-12-09"], ["start_time", "07"], ["created_at", "2019-06-18 14:58:56.002726"], ["updated_at", "2019-06-18 14:58:56.002726"]]
+  ↳ db/seeds.rb:19
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[36mEvent Create (0.3ms)[0m  [1m[32mINSERT INTO "events" ("api_id", "title", "location", "snippet", "url", "email", "cost", "cost_description", "date", "start_time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["api_id", 19], ["title", "Limp Biscuit"], ["location", "Eagleton"], ["snippet", "Hideous mortal decadent comprehension."], ["url", "http://coderag.com"], ["email", "marceline@hackett.org"], ["cost", 1], ["cost_description", "28-day aged 300g USDA Certified Prime Ribeye, rosemary-thyme garlic butter, with choice of two sides."], ["date", "2019-08-22"], ["start_time", "04"], ["created_at", "2019-06-18 14:58:56.006191"], ["updated_at", "2019-06-18 14:58:56.006191"]]
+  ↳ db/seeds.rb:19
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[36mEvent Create (0.3ms)[0m  [1m[32mINSERT INTO "events" ("api_id", "title", "location", "snippet", "url", "email", "cost", "cost_description", "date", "start_time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["api_id", 15], ["title", "Always Blue"], ["location", "Boraqua"], ["snippet", "Cat gibbous stygian."], ["url", "http://bachmanity.com"], ["email", "tyronezboncak@upton.net"], ["cost", 1], ["cost_description", "Fresh parsley, Italian sausage, shallots, garlic, sun-dried tomatoes and mozzarella cheese in an all-butter crust. With a side of mixed fruits."], ["date", "2019-11-19"], ["start_time", "05"], ["created_at", "2019-06-18 14:58:56.009417"], ["updated_at", "2019-06-18 14:58:56.009417"]]
+  ↳ db/seeds.rb:19
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[36mEvent Create (0.5ms)[0m  [1m[32mINSERT INTO "events" ("api_id", "title", "location", "snippet", "url", "email", "cost", "cost_description", "date", "start_time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["api_id", 15], ["title", "Table"], ["location", "Eagleton"], ["snippet", "Immemorial dank non-euclidean fungus."], ["url", "http://bachmanity.com"], ["email", "lamartorp@ortizhaag.info"], ["cost", 1], ["cost_description", "Fresh Norwegian salmon, lightly brushed with our herbed Dijon mustard sauce, with choice of two sides."], ["date", "2019-08-16"], ["start_time", "01"], ["created_at", "2019-06-18 14:58:56.013287"], ["updated_at", "2019-06-18 14:58:56.013287"]]
+  ↳ db/seeds.rb:19
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:35
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ db/seeds.rb:36
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:34
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ db/seeds.rb:34
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ db/seeds.rb:34
+  [1m[36mResponse Create (0.4ms)[0m  [1m[32mINSERT INTO "responses" ("user_id", "event_id", "guests", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 5], ["event_id", 13], ["guests", 5], ["created_at", "2019-06-18 14:58:56.036433"], ["updated_at", "2019-06-18 14:58:56.036433"]]
+  ↳ db/seeds.rb:34
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:34
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:35
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ db/seeds.rb:36
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:34
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ db/seeds.rb:34
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ db/seeds.rb:34
+  [1m[36mResponse Create (0.4ms)[0m  [1m[32mINSERT INTO "responses" ("user_id", "event_id", "guests", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 6], ["event_id", 13], ["guests", 5], ["created_at", "2019-06-18 14:58:56.045548"], ["updated_at", "2019-06-18 14:58:56.045548"]]
+  ↳ db/seeds.rb:34
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:34
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:35
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ db/seeds.rb:36
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:34
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ db/seeds.rb:34
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ db/seeds.rb:34
+  [1m[36mResponse Create (0.4ms)[0m  [1m[32mINSERT INTO "responses" ("user_id", "event_id", "guests", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 6], ["event_id", 12], ["guests", 4], ["created_at", "2019-06-18 14:58:56.059047"], ["updated_at", "2019-06-18 14:58:56.059047"]]
+  ↳ db/seeds.rb:34
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:34
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:35
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ db/seeds.rb:36
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:34
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ db/seeds.rb:34
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ db/seeds.rb:34
+  [1m[36mResponse Create (0.3ms)[0m  [1m[32mINSERT INTO "responses" ("user_id", "event_id", "guests", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 10], ["event_id", 6], ["guests", 5], ["created_at", "2019-06-18 14:58:56.064991"], ["updated_at", "2019-06-18 14:58:56.064991"]]
+  ↳ db/seeds.rb:34
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:34
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:35
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ db/seeds.rb:36
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:34
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ db/seeds.rb:34
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ db/seeds.rb:34
+  [1m[36mResponse Create (0.3ms)[0m  [1m[32mINSERT INTO "responses" ("user_id", "event_id", "guests", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 14], ["event_id", 13], ["guests", 2], ["created_at", "2019-06-18 14:58:56.071752"], ["updated_at", "2019-06-18 14:58:56.071752"]]
+  ↳ db/seeds.rb:34
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:34
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:35
+  [1m[36mEvent Load (0.3ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ db/seeds.rb:36
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:34
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ db/seeds.rb:34
+  [1m[36mEvent Load (0.0ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ db/seeds.rb:34
+  [1m[36mResponse Create (0.3ms)[0m  [1m[32mINSERT INTO "responses" ("user_id", "event_id", "guests", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 2], ["event_id", 14], ["guests", 5], ["created_at", "2019-06-18 14:58:56.077237"], ["updated_at", "2019-06-18 14:58:56.077237"]]
+  ↳ db/seeds.rb:34
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:34
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:35
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ db/seeds.rb:36
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:34
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:34
+  [1m[36mEvent Load (0.0ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ db/seeds.rb:34
+  [1m[36mResponse Create (0.3ms)[0m  [1m[32mINSERT INTO "responses" ("user_id", "event_id", "guests", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 1], ["event_id", 7], ["guests", 3], ["created_at", "2019-06-18 14:58:56.082193"], ["updated_at", "2019-06-18 14:58:56.082193"]]
+  ↳ db/seeds.rb:34
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:34
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:35
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ db/seeds.rb:36
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:34
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ db/seeds.rb:34
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ db/seeds.rb:34
+  [1m[36mResponse Create (0.2ms)[0m  [1m[32mINSERT INTO "responses" ("user_id", "event_id", "guests", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 5], ["event_id", 4], ["guests", 4], ["created_at", "2019-06-18 14:58:56.090181"], ["updated_at", "2019-06-18 14:58:56.090181"]]
+  ↳ db/seeds.rb:34
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:34
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:35
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ db/seeds.rb:36
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:34
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ db/seeds.rb:34
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ db/seeds.rb:34
+  [1m[36mResponse Create (0.2ms)[0m  [1m[32mINSERT INTO "responses" ("user_id", "event_id", "guests", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 13], ["event_id", 6], ["guests", 1], ["created_at", "2019-06-18 14:58:56.095656"], ["updated_at", "2019-06-18 14:58:56.095656"]]
+  ↳ db/seeds.rb:34
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:34
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:35
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ db/seeds.rb:36
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:34
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ db/seeds.rb:34
+  [1m[36mEvent Load (0.0ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ db/seeds.rb:34
+  [1m[36mResponse Create (0.3ms)[0m  [1m[32mINSERT INTO "responses" ("user_id", "event_id", "guests", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 8], ["event_id", 7], ["guests", 1], ["created_at", "2019-06-18 14:58:56.100390"], ["updated_at", "2019-06-18 14:58:56.100390"]]
+  ↳ db/seeds.rb:34
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:34
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:35
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ db/seeds.rb:36
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:34
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ db/seeds.rb:34
+  [1m[36mEvent Load (0.0ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ db/seeds.rb:34
+  [1m[36mResponse Create (0.3ms)[0m  [1m[32mINSERT INTO "responses" ("user_id", "event_id", "guests", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 10], ["event_id", 2], ["guests", 2], ["created_at", "2019-06-18 14:58:56.105309"], ["updated_at", "2019-06-18 14:58:56.105309"]]
+  ↳ db/seeds.rb:34
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:34
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:35
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ db/seeds.rb:36
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:34
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ db/seeds.rb:34
+  [1m[36mEvent Load (0.0ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ db/seeds.rb:34
+  [1m[36mResponse Create (0.3ms)[0m  [1m[32mINSERT INTO "responses" ("user_id", "event_id", "guests", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 12], ["event_id", 15], ["guests", 3], ["created_at", "2019-06-18 14:58:56.111023"], ["updated_at", "2019-06-18 14:58:56.111023"]]
+  ↳ db/seeds.rb:34
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:34
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:35
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ db/seeds.rb:36
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:34
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ db/seeds.rb:34
+  [1m[36mEvent Load (0.0ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ db/seeds.rb:34
+  [1m[36mResponse Create (0.3ms)[0m  [1m[32mINSERT INTO "responses" ("user_id", "event_id", "guests", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 3], ["event_id", 4], ["guests", 2], ["created_at", "2019-06-18 14:58:56.117159"], ["updated_at", "2019-06-18 14:58:56.117159"]]
+  ↳ db/seeds.rb:34
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:34
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:35
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ db/seeds.rb:36
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:34
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ db/seeds.rb:34
+  [1m[36mEvent Load (0.0ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ db/seeds.rb:34
+  [1m[36mResponse Create (0.3ms)[0m  [1m[32mINSERT INTO "responses" ("user_id", "event_id", "guests", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 14], ["event_id", 14], ["guests", 2], ["created_at", "2019-06-18 14:58:56.121584"], ["updated_at", "2019-06-18 14:58:56.121584"]]
+  ↳ db/seeds.rb:34
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:34
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:35
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ db/seeds.rb:36
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:34
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ db/seeds.rb:34
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ db/seeds.rb:34
+  [1m[36mResponse Create (0.3ms)[0m  [1m[32mINSERT INTO "responses" ("user_id", "event_id", "guests", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 3], ["event_id", 9], ["guests", 1], ["created_at", "2019-06-18 14:58:56.126110"], ["updated_at", "2019-06-18 14:58:56.126110"]]
+  ↳ db/seeds.rb:34
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:34
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:35
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ db/seeds.rb:36
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:34
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ db/seeds.rb:34
+  [1m[36mEvent Load (0.0ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ db/seeds.rb:34
+  [1m[36mResponse Create (0.3ms)[0m  [1m[32mINSERT INTO "responses" ("user_id", "event_id", "guests", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 8], ["event_id", 11], ["guests", 2], ["created_at", "2019-06-18 14:58:56.130436"], ["updated_at", "2019-06-18 14:58:56.130436"]]
+  ↳ db/seeds.rb:34
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:34
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:35
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ db/seeds.rb:36
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:34
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ db/seeds.rb:34
+  [1m[36mEvent Load (0.0ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ db/seeds.rb:34
+  [1m[36mResponse Create (0.3ms)[0m  [1m[32mINSERT INTO "responses" ("user_id", "event_id", "guests", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 4], ["event_id", 11], ["guests", 1], ["created_at", "2019-06-18 14:58:56.135356"], ["updated_at", "2019-06-18 14:58:56.135356"]]
+  ↳ db/seeds.rb:34
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:34
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:35
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ db/seeds.rb:36
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:34
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ db/seeds.rb:34
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ db/seeds.rb:34
+  [1m[36mResponse Create (7.1ms)[0m  [1m[32mINSERT INTO "responses" ("user_id", "event_id", "guests", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 3], ["event_id", 7], ["guests", 5], ["created_at", "2019-06-18 14:58:56.145765"], ["updated_at", "2019-06-18 14:58:56.145765"]]
+  ↳ db/seeds.rb:34
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:34
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:35
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ db/seeds.rb:36
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:34
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ db/seeds.rb:34
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ db/seeds.rb:34
+  [1m[36mResponse Create (0.4ms)[0m  [1m[32mINSERT INTO "responses" ("user_id", "event_id", "guests", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 11], ["event_id", 15], ["guests", 5], ["created_at", "2019-06-18 14:58:56.162258"], ["updated_at", "2019-06-18 14:58:56.162258"]]
+  ↳ db/seeds.rb:34
+  [1m[35m (2.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:34
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:35
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ db/seeds.rb:36
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:34
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ db/seeds.rb:34
+  [1m[36mEvent Load (0.0ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ db/seeds.rb:34
+  [1m[36mResponse Create (0.3ms)[0m  [1m[32mINSERT INTO "responses" ("user_id", "event_id", "guests", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 13], ["event_id", 12], ["guests", 1], ["created_at", "2019-06-18 14:58:56.169668"], ["updated_at", "2019-06-18 14:58:56.169668"]]
+  ↳ db/seeds.rb:34
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:34
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:35
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ db/seeds.rb:36
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:34
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ db/seeds.rb:34
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ db/seeds.rb:34
+  [1m[36mResponse Create (0.3ms)[0m  [1m[32mINSERT INTO "responses" ("user_id", "event_id", "guests", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 3], ["event_id", 4], ["guests", 4], ["created_at", "2019-06-18 14:58:56.175976"], ["updated_at", "2019-06-18 14:58:56.175976"]]
+  ↳ db/seeds.rb:34
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:34
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:35
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ db/seeds.rb:36
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:34
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ db/seeds.rb:34
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ db/seeds.rb:34
+  [1m[36mResponse Create (3.0ms)[0m  [1m[32mINSERT INTO "responses" ("user_id", "event_id", "guests", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 7], ["event_id", 10], ["guests", 4], ["created_at", "2019-06-18 14:58:56.184354"], ["updated_at", "2019-06-18 14:58:56.184354"]]
+  ↳ db/seeds.rb:34
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:34
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:35
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ db/seeds.rb:36
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:34
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ db/seeds.rb:34
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ db/seeds.rb:34
+  [1m[36mResponse Create (0.4ms)[0m  [1m[32mINSERT INTO "responses" ("user_id", "event_id", "guests", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 2], ["event_id", 7], ["guests", 5], ["created_at", "2019-06-18 14:58:56.192550"], ["updated_at", "2019-06-18 14:58:56.192550"]]
+  ↳ db/seeds.rb:34
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:34
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:35
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ db/seeds.rb:36
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:34
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ db/seeds.rb:34
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ db/seeds.rb:34
+  [1m[36mResponse Create (0.4ms)[0m  [1m[32mINSERT INTO "responses" ("user_id", "event_id", "guests", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 3], ["event_id", 9], ["guests", 5], ["created_at", "2019-06-18 14:58:56.201102"], ["updated_at", "2019-06-18 14:58:56.201102"]]
+  ↳ db/seeds.rb:34
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:34
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:35
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ db/seeds.rb:36
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:34
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ db/seeds.rb:34
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ db/seeds.rb:34
+  [1m[36mResponse Create (0.3ms)[0m  [1m[32mINSERT INTO "responses" ("user_id", "event_id", "guests", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 9], ["event_id", 13], ["guests", 2], ["created_at", "2019-06-18 14:58:56.207614"], ["updated_at", "2019-06-18 14:58:56.207614"]]
+  ↳ db/seeds.rb:34
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:34
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:35
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ db/seeds.rb:36
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:34
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ db/seeds.rb:34
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ db/seeds.rb:34
+  [1m[36mResponse Create (0.3ms)[0m  [1m[32mINSERT INTO "responses" ("user_id", "event_id", "guests", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 5], ["event_id", 11], ["guests", 5], ["created_at", "2019-06-18 14:58:56.215230"], ["updated_at", "2019-06-18 14:58:56.215230"]]
+  ↳ db/seeds.rb:34
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:34
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:35
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ db/seeds.rb:36
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:34
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ db/seeds.rb:34
+  [1m[36mEvent Load (0.0ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ db/seeds.rb:34
+  [1m[36mResponse Create (0.3ms)[0m  [1m[32mINSERT INTO "responses" ("user_id", "event_id", "guests", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 7], ["event_id", 4], ["guests", 3], ["created_at", "2019-06-18 14:58:56.221736"], ["updated_at", "2019-06-18 14:58:56.221736"]]
+  ↳ db/seeds.rb:34
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:34
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:35
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ db/seeds.rb:36
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:34
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ db/seeds.rb:34
+  [1m[36mEvent Load (0.0ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ db/seeds.rb:34
+  [1m[36mResponse Create (0.5ms)[0m  [1m[32mINSERT INTO "responses" ("user_id", "event_id", "guests", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 12], ["event_id", 15], ["guests", 5], ["created_at", "2019-06-18 14:58:56.226121"], ["updated_at", "2019-06-18 14:58:56.226121"]]
+  ↳ db/seeds.rb:34
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:34
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:35
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ db/seeds.rb:36
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:34
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:34
+  [1m[36mEvent Load (0.0ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ db/seeds.rb:34
+  [1m[36mResponse Create (0.3ms)[0m  [1m[32mINSERT INTO "responses" ("user_id", "event_id", "guests", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 1], ["event_id", 2], ["guests", 1], ["created_at", "2019-06-18 14:58:56.231156"], ["updated_at", "2019-06-18 14:58:56.231156"]]
+  ↳ db/seeds.rb:34
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:34
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:35
+  [1m[36mEvent Load (0.3ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ db/seeds.rb:36
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:34
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ db/seeds.rb:34
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ db/seeds.rb:34
+  [1m[36mResponse Create (0.3ms)[0m  [1m[32mINSERT INTO "responses" ("user_id", "event_id", "guests", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 12], ["event_id", 12], ["guests", 4], ["created_at", "2019-06-18 14:58:56.239954"], ["updated_at", "2019-06-18 14:58:56.239954"]]
+  ↳ db/seeds.rb:34
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:34
+Started GET "/users" for ::1 at 2019-06-18 10:59:10 -0400
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:1
+  Rendered users/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 35ms (Views: 31.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users" for ::1 at 2019-06-18 10:59:26 -0400
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:1
+  Rendered users/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 37ms (Views: 34.5ms | ActiveRecord: 0.2ms)
+
+
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "events"[0m
+  ↳ db/schema.rb:15
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ db/schema.rb:15
+  [1m[35m (1.1ms)[0m  [1m[35mCREATE TABLE "events" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "api_id" integer, "title" varchar, "location" varchar, "snippet" varchar, "url" varchar, "email" varchar, "cost" boolean, "cost_description" varchar, "date" varchar, "start_time" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/schema.rb:15
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "responses"[0m
+  ↳ db/schema.rb:30
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE TABLE "responses" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer, "event_id" integer, "guests" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/schema.rb:30
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "users"[0m
+  ↳ db/schema.rb:38
+  [1m[35m (1.1ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "user_name" varchar, "password" varchar, "bio" varchar, "pic_url" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/schema.rb:38
+  [1m[35m (1.0ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ db/schema.rb:13
+  [1m[35m (0.9ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20190618140205)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (0.9ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20190618140150),
+(20190618135820);
+
+[0m
+  ↳ db/schema.rb:13
+  [1m[35m (1.0ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ db/schema.rb:13
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Create (0.5ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2019-06-18 15:00:06.536083"], ["updated_at", "2019-06-18 15:00:06.536083"]]
+  ↳ db/schema.rb:13
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "events"[0m
+  ↳ db/schema.rb:15
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ db/schema.rb:15
+  [1m[35m (1.1ms)[0m  [1m[35mCREATE TABLE "events" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "api_id" integer, "title" varchar, "location" varchar, "snippet" varchar, "url" varchar, "email" varchar, "cost" boolean, "cost_description" varchar, "date" varchar, "start_time" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/schema.rb:15
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "responses"[0m
+  ↳ db/schema.rb:30
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE TABLE "responses" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer, "event_id" integer, "guests" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/schema.rb:30
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "users"[0m
+  ↳ db/schema.rb:38
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "user_name" varchar, "password" varchar, "bio" varchar, "pic_url" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/schema.rb:38
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ db/schema.rb:13
+  [1m[35m (0.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20190618140205)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (0.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20190618140150),
+(20190618135820);
+
+[0m
+  ↳ db/schema.rb:13
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ db/schema.rb:13
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Create (0.2ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2019-06-18 15:00:06.553693"], ["updated_at", "2019-06-18 15:00:06.553693"]]
+  ↳ db/schema.rb:13
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Update (0.3ms)[0m  [1m[33mUPDATE "ar_internal_metadata" SET "value" = ?, "updated_at" = ? WHERE "ar_internal_metadata"."key" = ?[0m  [["value", "test"], ["updated_at", "2019-06-18 15:00:06.556442"], ["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:3
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ db/seeds.rb:4
+  [1m[36mResponse Load (0.2ms)[0m  [1m[34mSELECT "responses".* FROM "responses"[0m
+  ↳ db/seeds.rb:5
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "user_name", "password", "bio", "pic_url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Cormac McLaggen"], ["user_name", "jonna"], ["password", "CsVmUg7v"], ["bio", "Look at me. It's clear to you that I am awesome, but I can never admit that, because that would make me an ass."], ["pic_url", "https://robohash.org/placeatetvel.png?size=300x300&set=set1"], ["created_at", "2019-06-18 15:00:06.771916"], ["updated_at", "2019-06-18 15:00:06.771916"]]
+  ↳ db/seeds.rb:9
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "user_name", "password", "bio", "pic_url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Albus Dumbledore"], ["user_name", "letisha.rau"], ["password", "VrUjKfZ62o78"], ["bio", "We'll definitely be back next year. If not, it'll be because an asteroid has destroyed all human civilization. And that's canon."], ["pic_url", "https://robohash.org/voluptatesullamfugiat.png?size=300x300&set=set1"], ["created_at", "2019-06-18 15:00:06.774604"], ["updated_at", "2019-06-18 15:00:06.774604"]]
+  ↳ db/seeds.rb:9
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "user_name", "password", "bio", "pic_url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Gregory Goyle"], ["user_name", "zoe"], ["password", "0gV7Z7Vf"], ["bio", "Fire can't go through doors, stupid. It's not a ghost."], ["pic_url", "https://robohash.org/quidolornatus.png?size=300x300&set=set1"], ["created_at", "2019-06-18 15:00:06.777237"], ["updated_at", "2019-06-18 15:00:06.777237"]]
+  ↳ db/seeds.rb:9
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "user_name", "password", "bio", "pic_url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Fluffy"], ["user_name", "adina_mante"], ["password", "TwMxHwOhF0AfYe"], ["bio", "I fear a political career could shine a negative light on my drug dealing."], ["pic_url", "https://robohash.org/maximererumdistinctio.png?size=300x300&set=set1"], ["created_at", "2019-06-18 15:00:06.779636"], ["updated_at", "2019-06-18 15:00:06.779636"]]
+  ↳ db/seeds.rb:9
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "user_name", "password", "bio", "pic_url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Alicia Spinnet"], ["user_name", "rusty"], ["password", "Mf2tSqMpJhA7Gc6"], ["bio", "I quit doing blow, not being rad."], ["pic_url", "https://robohash.org/eumomnisquo.png?size=300x300&set=set1"], ["created_at", "2019-06-18 15:00:06.782382"], ["updated_at", "2019-06-18 15:00:06.782382"]]
+  ↳ db/seeds.rb:9
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "user_name", "password", "bio", "pic_url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Theodore Nott"], ["user_name", "concepcion"], ["password", "Xx75Rb3qQwX"], ["bio", "A little trick for achieving the proper competitive mindset: I always envision my opponent having aggresive sex with my mother"], ["pic_url", "https://robohash.org/mollitiavoluptatemdolor.png?size=300x300&set=set1"], ["created_at", "2019-06-18 15:00:06.786971"], ["updated_at", "2019-06-18 15:00:06.786971"]]
+  ↳ db/seeds.rb:9
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "user_name", "password", "bio", "pic_url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Fenrir Greyback"], ["user_name", "an_collins"], ["password", "95S17bT8YjJsMaFs"], ["bio", "A little trick for achieving the proper competitive mindset: I always envision my opponent having aggresive sex with my mother"], ["pic_url", "https://robohash.org/quisquamquiaomnis.png?size=300x300&set=set1"], ["created_at", "2019-06-18 15:00:06.789338"], ["updated_at", "2019-06-18 15:00:06.789338"]]
+  ↳ db/seeds.rb:9
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "user_name", "password", "bio", "pic_url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Rubeus Hagrid"], ["user_name", "charleen_harris"], ["password", "LeYc36W9DwU6Vg"], ["bio", "I was so unpopular in high school, the crossing guards used to lure me into traffic."], ["pic_url", "https://robohash.org/voluptatemoccaecaticonsequatur.png?size=300x300&set=set1"], ["created_at", "2019-06-18 15:00:06.791771"], ["updated_at", "2019-06-18 15:00:06.791771"]]
+  ↳ db/seeds.rb:9
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "user_name", "password", "bio", "pic_url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Katie Bell"], ["user_name", "jolynn.gaylord"], ["password", "Cz7a7yY4"], ["bio", "I don't step up to being a leader. I reluctantly accept it when it's thrust upon me."], ["pic_url", "https://robohash.org/autquamipsam.png?size=300x300&set=set1"], ["created_at", "2019-06-18 15:00:06.794030"], ["updated_at", "2019-06-18 15:00:06.794030"]]
+  ↳ db/seeds.rb:9
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "user_name", "password", "bio", "pic_url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Olympe Maxime"], ["user_name", "usha_schaden"], ["password", "9fCjV8ZzMrD5H"], ["bio", "I'm going to eat spaceman paninis with black Hitler and there's nothing you can do about it!"], ["pic_url", "https://robohash.org/voluptatemeumlaborum.png?size=300x300&set=set1"], ["created_at", "2019-06-18 15:00:06.797930"], ["updated_at", "2019-06-18 15:00:06.797930"]]
+  ↳ db/seeds.rb:9
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "user_name", "password", "bio", "pic_url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Yaxley"], ["user_name", "werner"], ["password", "CmRjF25tHcDzI18t"], ["bio", "So.. what is anthropology? Seriously, does anyone know?"], ["pic_url", "https://robohash.org/idperferendisaperiam.png?size=300x300&set=set1"], ["created_at", "2019-06-18 15:00:06.800872"], ["updated_at", "2019-06-18 15:00:06.800872"]]
+  ↳ db/seeds.rb:9
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "user_name", "password", "bio", "pic_url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Viktor Krum"], ["user_name", "sherron.crist"], ["password", "C0AxOmJxBtFz1"], ["bio", "A little trick for achieving the proper competitive mindset: I always envision my opponent having aggresive sex with my mother"], ["pic_url", "https://robohash.org/iureestrepellat.png?size=300x300&set=set1"], ["created_at", "2019-06-18 15:00:06.803339"], ["updated_at", "2019-06-18 15:00:06.803339"]]
+  ↳ db/seeds.rb:9
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "user_name", "password", "bio", "pic_url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Godric Gryffindor"], ["user_name", "nikki"], ["password", "EoRd56T7Yp2"], ["bio", "Doing more than the minimum amount of work is my definition of failing."], ["pic_url", "https://robohash.org/itaqueerrorquia.png?size=300x300&set=set1"], ["created_at", "2019-06-18 15:00:06.806058"], ["updated_at", "2019-06-18 15:00:06.806058"]]
+  ↳ db/seeds.rb:9
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "user_name", "password", "bio", "pic_url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Dobby"], ["user_name", "allie"], ["password", "JdZ1J49e161x"], ["bio", "I had sex with Eartha Kitt in an airplane bathroom"], ["pic_url", "https://robohash.org/officiisquiaquam.png?size=300x300&set=set1"], ["created_at", "2019-06-18 15:00:06.809511"], ["updated_at", "2019-06-18 15:00:06.809511"]]
+  ↳ db/seeds.rb:9
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "user_name", "password", "bio", "pic_url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Vincent Crabbe"], ["user_name", "lincoln"], ["password", "MmFpH5XmGc7t9j"], ["bio", "We're all kind of crazytown bananapants."], ["pic_url", "https://robohash.org/etharumaut.png?size=300x300&set=set1"], ["created_at", "2019-06-18 15:00:06.811726"], ["updated_at", "2019-06-18 15:00:06.811726"]]
+  ↳ db/seeds.rb:9
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[36mEvent Create (0.5ms)[0m  [1m[32mINSERT INTO "events" ("api_id", "title", "location", "snippet", "url", "email", "cost", "cost_description", "date", "start_time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["api_id", 15], ["title", "BamBot"], ["location", "Pawnee"], ["snippet", "Unutterable comprehension fainted furtive dank indescribable."], ["url", "http://piedpiper.com"], ["email", "jeromy@creminvolkman.biz"], ["cost", 1], ["cost_description", "Two butter croissants of your choice (plain, almond or cheese). With a side of herb butter or house-made hazelnut spread."], ["date", "2020-06-12"], ["start_time", "07"], ["created_at", "2019-06-18 15:00:06.842336"], ["updated_at", "2019-06-18 15:00:06.842336"]]
+  ↳ db/seeds.rb:19
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[36mEvent Create (0.4ms)[0m  [1m[32mINSERT INTO "events" ("api_id", "title", "location", "snippet", "url", "email", "cost", "cost_description", "date", "start_time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["api_id", 18], ["title", "Human Heater"], ["location", "Pawnee"], ["snippet", "Cyclopean effulgence unnamable unutterable."], ["url", "http://bachmanity.com"], ["email", "rory@ornkoepp.com"], ["cost", 1], ["cost_description", "Fresh Norwegian salmon, lightly brushed with our herbed Dijon mustard sauce, with choice of two sides."], ["date", "2020-02-22"], ["start_time", "08"], ["created_at", "2019-06-18 15:00:06.846289"], ["updated_at", "2019-06-18 15:00:06.846289"]]
+  ↳ db/seeds.rb:19
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[36mEvent Create (0.3ms)[0m  [1m[32mINSERT INTO "events" ("api_id", "title", "location", "snippet", "url", "email", "cost", "cost_description", "date", "start_time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["api_id", 18], ["title", "Skycrane"], ["location", "Pawnee"], ["snippet", "Indescribable fungus gibbous noisome unutterable blasphemous."], ["url", "http://breamhall.com"], ["email", "romeomonahan@ankunding.org"], ["cost", 1], ["cost_description", "Fresh Norwegian salmon, lightly brushed with our herbed Dijon mustard sauce, with choice of two sides."], ["date", "2019-08-10"], ["start_time", "06"], ["created_at", "2019-06-18 15:00:06.850126"], ["updated_at", "2019-06-18 15:00:06.850126"]]
+  ↳ db/seeds.rb:19
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.4ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[36mEvent Create (0.4ms)[0m  [1m[32mINSERT INTO "events" ("api_id", "title", "location", "snippet", "url", "email", "cost", "cost_description", "date", "start_time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["api_id", 17], ["title", "Hooli Box"], ["location", "Pawnee"], ["snippet", "Dank unutterable nameless."], ["url", "http://aviato.com"], ["email", "normanfeil@kirlin.name"], ["cost", 0], ["cost_description", "Thick slices of French toast bread, brown sugar, half-and-half and vanilla, topped with powdered sugar. With two eggs served any style, and your choice of smoked bacon or smoked ham."], ["date", "2020-02-16"], ["start_time", "07"], ["created_at", "2019-06-18 15:00:06.855589"], ["updated_at", "2019-06-18 15:00:06.855589"]]
+  ↳ db/seeds.rb:19
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[36mEvent Create (0.3ms)[0m  [1m[32mINSERT INTO "events" ("api_id", "title", "location", "snippet", "url", "email", "cost", "cost_description", "date", "start_time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["api_id", 12], ["title", "Cold Duck"], ["location", "Eagleton"], ["snippet", "Charnel indescribable swarthy."], ["url", "http://coderag.com"], ["email", "leonelgoyette@croninroberts.com"], ["cost", 1], ["cost_description", "Three egg omelet with Roquefort cheese, chives, and ham. With a side of roasted potatoes, and your choice of toast or croissant."], ["date", "2020-04-29"], ["start_time", "01"], ["created_at", "2019-06-18 15:00:06.859059"], ["updated_at", "2019-06-18 15:00:06.859059"]]
+  ↳ db/seeds.rb:19
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[36mEvent Create (0.4ms)[0m  [1m[32mINSERT INTO "events" ("api_id", "title", "location", "snippet", "url", "email", "cost", "cost_description", "date", "start_time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["api_id", 13], ["title", "Human Heater"], ["location", "Pawnee"], ["snippet", "Tenebrous amorphous tentacles unutterable."], ["url", "http://aviato.com"], ["email", "williamreichert@zboncaklittle.co"], ["cost", 0], ["cost_description", "Breaded fried chicken with waffles, and a side of maple syrup."], ["date", "2020-02-07"], ["start_time", "05"], ["created_at", "2019-06-18 15:00:06.862825"], ["updated_at", "2019-06-18 15:00:06.862825"]]
+  ↳ db/seeds.rb:19
+  [1m[35m (5.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[36mEvent Create (0.9ms)[0m  [1m[32mINSERT INTO "events" ("api_id", "title", "location", "snippet", "url", "email", "cost", "cost_description", "date", "start_time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["api_id", 21], ["title", "BamBot"], ["location", "Boraqua"], ["snippet", "Mortal stench charnel indescribable."], ["url", "http://drinkhomicide.com"], ["email", "tandykeebler@bayer.com"], ["cost", 1], ["cost_description", "Three egg whites with spinach, mushrooms, caramelized onions, tomatoes and low-fat feta cheese. With herbed quinoa, and your choice of rye or whole-grain toast."], ["date", "2020-05-02"], ["start_time", "05"], ["created_at", "2019-06-18 15:00:06.871251"], ["updated_at", "2019-06-18 15:00:06.871251"]]
+  ↳ db/seeds.rb:19
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[36mEvent Create (0.3ms)[0m  [1m[32mINSERT INTO "events" ("api_id", "title", "location", "snippet", "url", "email", "cost", "cost_description", "date", "start_time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["api_id", 15], ["title", "Skycrane"], ["location", "Eagleton"], ["snippet", "Gibbering nameless antediluvian noisome effulgence stench dank."], ["url", "http://drinkhomicide.com"], ["email", "brent@kundekiehn.co"], ["cost", 1], ["cost_description", "Granny Smith apples mixed with brown sugar and butter filling, in a flaky all-butter crust, with ice cream."], ["date", "2020-03-29"], ["start_time", "01"], ["created_at", "2019-06-18 15:00:06.876204"], ["updated_at", "2019-06-18 15:00:06.876204"]]
+  ↳ db/seeds.rb:19
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[36mEvent Create (0.3ms)[0m  [1m[32mINSERT INTO "events" ("api_id", "title", "location", "snippet", "url", "email", "cost", "cost_description", "date", "start_time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["api_id", 18], ["title", "Pipey"], ["location", "Boraqua"], ["snippet", "Tentacles madness fungus blasphemous swarthy."], ["url", "http://aviato.com"], ["email", "scotbradtke@legros.info"], ["cost", 1], ["cost_description", "Creamy mascarpone cheese and custard layered between espresso and rum soaked house-made ladyfingers, topped with Valrhona cocoa powder."], ["date", "2019-10-19"], ["start_time", "06"], ["created_at", "2019-06-18 15:00:06.879614"], ["updated_at", "2019-06-18 15:00:06.879614"]]
+  ↳ db/seeds.rb:19
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[36mEvent Create (0.5ms)[0m  [1m[32mINSERT INTO "events" ("api_id", "title", "location", "snippet", "url", "email", "cost", "cost_description", "date", "start_time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["api_id", 12], ["title", "Octopus Recipes"], ["location", "Eagleton"], ["snippet", "Antediluvian dank abnormal loathsome."], ["url", "http://piedpiper.com"], ["email", "sagelueilwitz@jacobs.info"], ["cost", 1], ["cost_description", "28-day aged 300g USDA Certified Prime Ribeye, rosemary-thyme garlic butter, with choice of two sides."], ["date", "2020-01-13"], ["start_time", "04"], ["created_at", "2019-06-18 15:00:06.882662"], ["updated_at", "2019-06-18 15:00:06.882662"]]
+  ↳ db/seeds.rb:19
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[36mEvent Create (0.3ms)[0m  [1m[32mINSERT INTO "events" ("api_id", "title", "location", "snippet", "url", "email", "cost", "cost_description", "date", "start_time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["api_id", 18], ["title", "Human Heater"], ["location", "Eagleton"], ["snippet", "Gambrel noisome tentacles lurk unutterable antiquarian."], ["url", "http://piedpiper.com"], ["email", "gaynell@halvorson.co"], ["cost", 1], ["cost_description", "Two butter croissants of your choice (plain, almond or cheese). With a side of herb butter or house-made hazelnut spread."], ["date", "2019-12-16"], ["start_time", "01"], ["created_at", "2019-06-18 15:00:06.888459"], ["updated_at", "2019-06-18 15:00:06.888459"]]
+  ↳ db/seeds.rb:19
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[36mEvent Create (0.8ms)[0m  [1m[32mINSERT INTO "events" ("api_id", "title", "location", "snippet", "url", "email", "cost", "cost_description", "date", "start_time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["api_id", 18], ["title", "Octopus Recipes"], ["location", "Boraqua"], ["snippet", "Nameless tenebrous blasphemous squamous."], ["url", "http://piedpiper.com"], ["email", "archiegerhold@spencer.net"], ["cost", 1], ["cost_description", "Thick slices of French toast bread, brown sugar, half-and-half and vanilla, topped with powdered sugar. With two eggs served any style, and your choice of smoked bacon or smoked ham."], ["date", "2019-12-14"], ["start_time", "06"], ["created_at", "2019-06-18 15:00:06.891289"], ["updated_at", "2019-06-18 15:00:06.891289"]]
+  ↳ db/seeds.rb:19
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[36mEvent Create (0.4ms)[0m  [1m[32mINSERT INTO "events" ("api_id", "title", "location", "snippet", "url", "email", "cost", "cost_description", "date", "start_time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["api_id", 15], ["title", "Always Blue"], ["location", "Pawnee"], ["snippet", "Singular decadent gambrel."], ["url", "http://piedpiper.com"], ["email", "eli@hayes.name"], ["cost", 1], ["cost_description", "Fresh parsley, Italian sausage, shallots, garlic, sun-dried tomatoes and mozzarella cheese in an all-butter crust. With a side of mixed fruits."], ["date", "2019-08-10"], ["start_time", "08"], ["created_at", "2019-06-18 15:00:06.894968"], ["updated_at", "2019-06-18 15:00:06.894968"]]
+  ↳ db/seeds.rb:19
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[36mEvent Create (0.3ms)[0m  [1m[32mINSERT INTO "events" ("api_id", "title", "location", "snippet", "url", "email", "cost", "cost_description", "date", "start_time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["api_id", 11], ["title", "Limp Biscuit"], ["location", "Boraqua"], ["snippet", "Fainted abnormal amorphous indescribable cat."], ["url", "http://coderag.com"], ["email", "eugene@lindgren.net"], ["cost", 1], ["cost_description", "Granny Smith apples mixed with brown sugar and butter filling, in a flaky all-butter crust, with ice cream."], ["date", "2020-03-02"], ["start_time", "05"], ["created_at", "2019-06-18 15:00:06.898252"], ["updated_at", "2019-06-18 15:00:06.898252"]]
+  ↳ db/seeds.rb:19
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[36mEvent Create (0.3ms)[0m  [1m[32mINSERT INTO "events" ("api_id", "title", "location", "snippet", "url", "email", "cost", "cost_description", "date", "start_time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["api_id", 16], ["title", "Audacious"], ["location", "Boraqua"], ["snippet", "Antediluvian charnel antiquarian unmentionable."], ["url", "http://breamhall.com"], ["email", "guadalupebartell@ankunding.net"], ["cost", 1], ["cost_description", "Fresh parsley, Italian sausage, shallots, garlic, sun-dried tomatoes and mozzarella cheese in an all-butter crust. With a side of mixed fruits."], ["date", "2019-11-03"], ["start_time", "02"], ["created_at", "2019-06-18 15:00:06.900764"], ["updated_at", "2019-06-18 15:00:06.900764"]]
+  ↳ db/seeds.rb:19
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:35
+  [1m[36mEvent Load (0.3ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ db/seeds.rb:36
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:34
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ db/seeds.rb:34
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ db/seeds.rb:34
+  [1m[36mResponse Create (0.3ms)[0m  [1m[32mINSERT INTO "responses" ("user_id", "event_id", "guests", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 11], ["event_id", 3], ["guests", 2], ["created_at", "2019-06-18 15:00:06.919897"], ["updated_at", "2019-06-18 15:00:06.919897"]]
+  ↳ db/seeds.rb:34
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:34
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:35
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ db/seeds.rb:36
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:34
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ db/seeds.rb:34
+  [1m[36mEvent Load (0.0ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ db/seeds.rb:34
+  [1m[36mResponse Create (0.3ms)[0m  [1m[32mINSERT INTO "responses" ("user_id", "event_id", "guests", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 8], ["event_id", 14], ["guests", 4], ["created_at", "2019-06-18 15:00:06.932371"], ["updated_at", "2019-06-18 15:00:06.932371"]]
+  ↳ db/seeds.rb:34
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:34
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:35
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ db/seeds.rb:36
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:34
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ db/seeds.rb:34
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ db/seeds.rb:34
+  [1m[36mResponse Create (0.3ms)[0m  [1m[32mINSERT INTO "responses" ("user_id", "event_id", "guests", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 3], ["event_id", 6], ["guests", 1], ["created_at", "2019-06-18 15:00:06.938676"], ["updated_at", "2019-06-18 15:00:06.938676"]]
+  ↳ db/seeds.rb:34
+  [1m[35m (5.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:34
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:35
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ db/seeds.rb:36
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:34
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ db/seeds.rb:34
+  [1m[36mEvent Load (0.0ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:34
+  [1m[36mResponse Create (0.3ms)[0m  [1m[32mINSERT INTO "responses" ("user_id", "event_id", "guests", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 7], ["event_id", 1], ["guests", 2], ["created_at", "2019-06-18 15:00:06.953430"], ["updated_at", "2019-06-18 15:00:06.953430"]]
+  ↳ db/seeds.rb:34
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:34
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:35
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ db/seeds.rb:36
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:34
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ db/seeds.rb:34
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ db/seeds.rb:34
+  [1m[36mResponse Create (0.2ms)[0m  [1m[32mINSERT INTO "responses" ("user_id", "event_id", "guests", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 4], ["event_id", 7], ["guests", 3], ["created_at", "2019-06-18 15:00:06.959101"], ["updated_at", "2019-06-18 15:00:06.959101"]]
+  ↳ db/seeds.rb:34
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:34
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:35
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ db/seeds.rb:36
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:34
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ db/seeds.rb:34
+  [1m[36mEvent Load (0.0ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ db/seeds.rb:34
+  [1m[36mResponse Create (0.2ms)[0m  [1m[32mINSERT INTO "responses" ("user_id", "event_id", "guests", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 2], ["event_id", 9], ["guests", 2], ["created_at", "2019-06-18 15:00:06.963248"], ["updated_at", "2019-06-18 15:00:06.963248"]]
+  ↳ db/seeds.rb:34
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:34
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:35
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ db/seeds.rb:36
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:34
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ db/seeds.rb:34
+  [1m[36mEvent Load (0.0ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ db/seeds.rb:34
+  [1m[36mResponse Create (0.2ms)[0m  [1m[32mINSERT INTO "responses" ("user_id", "event_id", "guests", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 10], ["event_id", 13], ["guests", 1], ["created_at", "2019-06-18 15:00:06.968079"], ["updated_at", "2019-06-18 15:00:06.968079"]]
+  ↳ db/seeds.rb:34
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:34
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:35
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ db/seeds.rb:36
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:34
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ db/seeds.rb:34
+  [1m[36mEvent Load (0.0ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ db/seeds.rb:34
+  [1m[36mResponse Create (0.3ms)[0m  [1m[32mINSERT INTO "responses" ("user_id", "event_id", "guests", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 15], ["event_id", 14], ["guests", 1], ["created_at", "2019-06-18 15:00:06.972113"], ["updated_at", "2019-06-18 15:00:06.972113"]]
+  ↳ db/seeds.rb:34
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:34
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:35
+  [1m[36mEvent Load (0.3ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ db/seeds.rb:36
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:34
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ db/seeds.rb:34
+  [1m[36mEvent Load (0.0ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ db/seeds.rb:34
+  [1m[36mResponse Create (0.3ms)[0m  [1m[32mINSERT INTO "responses" ("user_id", "event_id", "guests", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 11], ["event_id", 11], ["guests", 2], ["created_at", "2019-06-18 15:00:06.979953"], ["updated_at", "2019-06-18 15:00:06.979953"]]
+  ↳ db/seeds.rb:34
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:34
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:35
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ db/seeds.rb:36
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:34
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ db/seeds.rb:34
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ db/seeds.rb:34
+  [1m[36mResponse Create (0.3ms)[0m  [1m[32mINSERT INTO "responses" ("user_id", "event_id", "guests", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 4], ["event_id", 9], ["guests", 2], ["created_at", "2019-06-18 15:00:06.987025"], ["updated_at", "2019-06-18 15:00:06.987025"]]
+  ↳ db/seeds.rb:34
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:34
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:35
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ db/seeds.rb:36
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:34
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ db/seeds.rb:34
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ db/seeds.rb:34
+  [1m[36mResponse Create (0.2ms)[0m  [1m[32mINSERT INTO "responses" ("user_id", "event_id", "guests", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 2], ["event_id", 6], ["guests", 5], ["created_at", "2019-06-18 15:00:06.992897"], ["updated_at", "2019-06-18 15:00:06.992897"]]
+  ↳ db/seeds.rb:34
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:34
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:35
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ db/seeds.rb:36
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:34
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ db/seeds.rb:34
+  [1m[36mEvent Load (0.0ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ db/seeds.rb:34
+  [1m[36mResponse Create (0.3ms)[0m  [1m[32mINSERT INTO "responses" ("user_id", "event_id", "guests", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 7], ["event_id", 10], ["guests", 5], ["created_at", "2019-06-18 15:00:06.996941"], ["updated_at", "2019-06-18 15:00:06.996941"]]
+  ↳ db/seeds.rb:34
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:34
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:35
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ db/seeds.rb:36
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:34
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ db/seeds.rb:34
+  [1m[36mEvent Load (0.0ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ db/seeds.rb:34
+  [1m[36mResponse Create (0.3ms)[0m  [1m[32mINSERT INTO "responses" ("user_id", "event_id", "guests", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 5], ["event_id", 4], ["guests", 2], ["created_at", "2019-06-18 15:00:07.000932"], ["updated_at", "2019-06-18 15:00:07.000932"]]
+  ↳ db/seeds.rb:34
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:34
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:35
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ db/seeds.rb:36
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:34
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ db/seeds.rb:34
+  [1m[36mEvent Load (0.0ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ db/seeds.rb:34
+  [1m[36mResponse Create (0.2ms)[0m  [1m[32mINSERT INTO "responses" ("user_id", "event_id", "guests", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 7], ["event_id", 7], ["guests", 5], ["created_at", "2019-06-18 15:00:07.005013"], ["updated_at", "2019-06-18 15:00:07.005013"]]
+  ↳ db/seeds.rb:34
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:34
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:35
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ db/seeds.rb:36
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:34
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ db/seeds.rb:34
+  [1m[36mEvent Load (0.0ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ db/seeds.rb:34
+  [1m[36mResponse Create (0.2ms)[0m  [1m[32mINSERT INTO "responses" ("user_id", "event_id", "guests", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 10], ["event_id", 14], ["guests", 1], ["created_at", "2019-06-18 15:00:07.009409"], ["updated_at", "2019-06-18 15:00:07.009409"]]
+  ↳ db/seeds.rb:34
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:34
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:35
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ db/seeds.rb:36
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:34
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ db/seeds.rb:34
+  [1m[36mEvent Load (0.0ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ db/seeds.rb:34
+  [1m[36mResponse Create (0.3ms)[0m  [1m[32mINSERT INTO "responses" ("user_id", "event_id", "guests", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 15], ["event_id", 10], ["guests", 2], ["created_at", "2019-06-18 15:00:07.013874"], ["updated_at", "2019-06-18 15:00:07.013874"]]
+  ↳ db/seeds.rb:34
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:34
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:35
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ db/seeds.rb:36
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:34
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ db/seeds.rb:34
+  [1m[36mEvent Load (0.0ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ db/seeds.rb:34
+  [1m[36mResponse Create (0.2ms)[0m  [1m[32mINSERT INTO "responses" ("user_id", "event_id", "guests", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 8], ["event_id", 4], ["guests", 3], ["created_at", "2019-06-18 15:00:07.019088"], ["updated_at", "2019-06-18 15:00:07.019088"]]
+  ↳ db/seeds.rb:34
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:34
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:35
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ db/seeds.rb:36
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:34
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ db/seeds.rb:34
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ db/seeds.rb:34
+  [1m[36mResponse Create (4.4ms)[0m  [1m[32mINSERT INTO "responses" ("user_id", "event_id", "guests", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 2], ["event_id", 10], ["guests", 1], ["created_at", "2019-06-18 15:00:07.035933"], ["updated_at", "2019-06-18 15:00:07.035933"]]
+  ↳ db/seeds.rb:34
+  [1m[35m (7.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:34
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:35
+  [1m[36mEvent Load (0.3ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ db/seeds.rb:36
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:34
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ db/seeds.rb:34
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ db/seeds.rb:34
+  [1m[36mResponse Create (0.4ms)[0m  [1m[32mINSERT INTO "responses" ("user_id", "event_id", "guests", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 13], ["event_id", 14], ["guests", 3], ["created_at", "2019-06-18 15:00:07.060232"], ["updated_at", "2019-06-18 15:00:07.060232"]]
+  ↳ db/seeds.rb:34
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:34
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:35
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ db/seeds.rb:36
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:34
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ db/seeds.rb:34
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:34
+  [1m[36mResponse Create (0.3ms)[0m  [1m[32mINSERT INTO "responses" ("user_id", "event_id", "guests", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 3], ["event_id", 1], ["guests", 4], ["created_at", "2019-06-18 15:00:07.066979"], ["updated_at", "2019-06-18 15:00:07.066979"]]
+  ↳ db/seeds.rb:34
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:34
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:35
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ db/seeds.rb:36
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:34
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ db/seeds.rb:34
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ db/seeds.rb:34
+  [1m[36mResponse Create (0.5ms)[0m  [1m[32mINSERT INTO "responses" ("user_id", "event_id", "guests", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 8], ["event_id", 3], ["guests", 2], ["created_at", "2019-06-18 15:00:07.071727"], ["updated_at", "2019-06-18 15:00:07.071727"]]
+  ↳ db/seeds.rb:34
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:34
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:35
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ db/seeds.rb:36
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:34
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ db/seeds.rb:34
+  [1m[36mEvent Load (0.0ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ db/seeds.rb:34
+  [1m[36mResponse Create (0.3ms)[0m  [1m[32mINSERT INTO "responses" ("user_id", "event_id", "guests", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 3], ["event_id", 7], ["guests", 3], ["created_at", "2019-06-18 15:00:07.077506"], ["updated_at", "2019-06-18 15:00:07.077506"]]
+  ↳ db/seeds.rb:34
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:34
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:35
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ db/seeds.rb:36
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:34
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ db/seeds.rb:34
+  [1m[36mEvent Load (0.0ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ db/seeds.rb:34
+  [1m[36mResponse Create (0.2ms)[0m  [1m[32mINSERT INTO "responses" ("user_id", "event_id", "guests", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 14], ["event_id", 10], ["guests", 4], ["created_at", "2019-06-18 15:00:07.082325"], ["updated_at", "2019-06-18 15:00:07.082325"]]
+  ↳ db/seeds.rb:34
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:34
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:35
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ db/seeds.rb:36
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:34
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ db/seeds.rb:34
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ db/seeds.rb:34
+  [1m[36mResponse Create (0.2ms)[0m  [1m[32mINSERT INTO "responses" ("user_id", "event_id", "guests", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 6], ["event_id", 14], ["guests", 2], ["created_at", "2019-06-18 15:00:07.089642"], ["updated_at", "2019-06-18 15:00:07.089642"]]
+  ↳ db/seeds.rb:34
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:34
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:35
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ db/seeds.rb:36
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:34
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:34
+  [1m[36mEvent Load (0.0ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ db/seeds.rb:34
+  [1m[36mResponse Create (0.4ms)[0m  [1m[32mINSERT INTO "responses" ("user_id", "event_id", "guests", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 1], ["event_id", 11], ["guests", 3], ["created_at", "2019-06-18 15:00:07.094974"], ["updated_at", "2019-06-18 15:00:07.094974"]]
+  ↳ db/seeds.rb:34
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:34
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:35
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ db/seeds.rb:36
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:34
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ db/seeds.rb:34
+  [1m[36mEvent Load (0.0ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ db/seeds.rb:34
+  [1m[36mResponse Create (0.3ms)[0m  [1m[32mINSERT INTO "responses" ("user_id", "event_id", "guests", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 12], ["event_id", 6], ["guests", 4], ["created_at", "2019-06-18 15:00:07.100068"], ["updated_at", "2019-06-18 15:00:07.100068"]]
+  ↳ db/seeds.rb:34
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:34
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:35
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ db/seeds.rb:36
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:34
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ db/seeds.rb:34
+  [1m[36mEvent Load (0.0ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ db/seeds.rb:34
+  [1m[36mResponse Create (0.3ms)[0m  [1m[32mINSERT INTO "responses" ("user_id", "event_id", "guests", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 14], ["event_id", 8], ["guests", 2], ["created_at", "2019-06-18 15:00:07.104289"], ["updated_at", "2019-06-18 15:00:07.104289"]]
+  ↳ db/seeds.rb:34
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:34
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:35
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ db/seeds.rb:36
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:34
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ db/seeds.rb:34
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ db/seeds.rb:34
+  [1m[36mResponse Create (0.3ms)[0m  [1m[32mINSERT INTO "responses" ("user_id", "event_id", "guests", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 14], ["event_id", 10], ["guests", 3], ["created_at", "2019-06-18 15:00:07.109844"], ["updated_at", "2019-06-18 15:00:07.109844"]]
+  ↳ db/seeds.rb:34
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:34
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:35
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ db/seeds.rb:36
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:34
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ db/seeds.rb:34
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ db/seeds.rb:34
+  [1m[36mResponse Create (0.2ms)[0m  [1m[32mINSERT INTO "responses" ("user_id", "event_id", "guests", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 3], ["event_id", 14], ["guests", 5], ["created_at", "2019-06-18 15:00:07.115554"], ["updated_at", "2019-06-18 15:00:07.115554"]]
+  ↳ db/seeds.rb:34
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:34
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:35
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ db/seeds.rb:36
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:34
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ db/seeds.rb:34
+  [1m[36mEvent Load (0.0ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ db/seeds.rb:34
+  [1m[36mResponse Create (0.3ms)[0m  [1m[32mINSERT INTO "responses" ("user_id", "event_id", "guests", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 10], ["event_id", 10], ["guests", 5], ["created_at", "2019-06-18 15:00:07.119921"], ["updated_at", "2019-06-18 15:00:07.119921"]]
+  ↳ db/seeds.rb:34
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:34
+Started GET "/users" for ::1 at 2019-06-18 11:00:09 -0400
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:1
+  Rendered users/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 41ms (Views: 37.7ms | ActiveRecord: 0.2ms)
+
+

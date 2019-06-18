@@ -9,7 +9,7 @@ Response.destroy_all
 User.create(
   name: Faker::Movies::HarryPotter.unique.character,
   password: Faker::Internet.unique.password,
-  pic_url: Faker::LoremFlickr.image("50x60"),
+  pic_url: Faker::Avatar.unique.image,
   bio: Faker::TvShows::Community.quotes,
   user_name: Faker::Internet.unique.username)
 end
