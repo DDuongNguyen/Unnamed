@@ -1,0 +1,19 @@
+
+<%= button_to "Profile" %>
+<%= button_to "Login" %>
+<%= button_to "Sign Up" %>
+
+<ul>
+  <% @events.each do |event|  %>
+
+    <li>
+      <%= link_to event.title, event%>
+      <br>
+      <%= event.location %> on <%= event.date %>
+      <br>
+      <%=  event.snippet %>
+      <br><br>
+    </li>
+
+  <% end %>
+</ul>

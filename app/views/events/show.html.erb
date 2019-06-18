@@ -1,0 +1,13 @@
+<h1><%= @event.title %></h1>
+
+<%= button_to "Home" %>
+<%= button_to "Profile" %>
+
+<p><%= @event.location %></p>
+<p><%= @event.date %></p>
+<p><%= @event.snippet %></p>
+<p><%= @event.cost %></p>
+<p><%= @event.cost_description %></p>
+<p><%=link_to @event.url, "#{@event.url}" %></p>
+
+<%= button_to "RSVP" %>
