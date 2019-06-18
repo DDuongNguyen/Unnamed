@@ -5,7 +5,7 @@ Event.destroy_all
 Response.destroy_all
 
 
-10.times do
+15.times do
 User.create(
   name: Faker::Movies::HarryPotter.unique.character,
   password: Faker::Internet.unique.password,
@@ -15,7 +15,7 @@ User.create(
 end
 
 
-10.times do
+15.times do
   Event.create(
     api_id: rand(11..21),
     title: Faker::TvShows::SiliconValley.invention,
@@ -30,7 +30,7 @@ end
 end
 
 
-10.times do
+30.times do
   Response.create(
     user_id: User.all.sample.id,
     event_id: Event.all.sample.id,
