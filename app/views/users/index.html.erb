@@ -1,0 +1,16 @@
+<% @users.each do |user|%>
+<ul>
+  <img src="<%= user.pic_url  %>" alt="cant find it boss">
+  <br>
+Name: <%= user.name  %>
+<br>
+UserName: <%= user.user_name  %>
+<br>
+Password: <%= user.password  %>
+<br>
+Bio: <%= user.bio  %>
+<br>
+
+</ul>
+<br>
+<% end %>
