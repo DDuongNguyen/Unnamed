@@ -50,3 +50,747 @@ Migrating to CreateEvents (20190618140205)
   ↳ bin/rails:9
   [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
   ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:3
+  [1m[36mEvent Load (0.6ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ db/seeds.rb:4
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:3
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ db/seeds.rb:4
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:3
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ db/seeds.rb:4
+  [1m[36mResponse Load (0.5ms)[0m  [1m[34mSELECT "responses".* FROM "responses"[0m
+  ↳ db/seeds.rb:5
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Create (1.9ms)[0m  [1m[32mINSERT INTO "users" ("name", "user_name", "password", "bio", "pic_url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Peter Pettigrew"], ["user_name", "colin.rau"], ["password", "8jJ3Lu31YlX6GvPp"], ["bio", "I ate my twin in utero."], ["pic_url", "http://loremflickr.com/50/60"], ["created_at", "2019-06-18 14:36:15.211857"], ["updated_at", "2019-06-18 14:36:15.211857"]]
+  ↳ db/seeds.rb:9
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "user_name", "password", "bio", "pic_url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Kennilworthy Whisp"], ["user_name", "clinton.lynch"], ["password", "Jo3cIfVj7qB4"], ["bio", "Well I may be a genius, but I'm not a lesbian."], ["pic_url", "http://loremflickr.com/50/60"], ["created_at", "2019-06-18 14:36:15.216890"], ["updated_at", "2019-06-18 14:36:15.216890"]]
+  ↳ db/seeds.rb:9
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "user_name", "password", "bio", "pic_url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Marcus Belby"], ["user_name", "arnulfo_kuhn"], ["password", "Dl96XlXwM2CrYc"], ["bio", "I had sex with Eartha Kitt in an airplane bathroom"], ["pic_url", "http://loremflickr.com/50/60"], ["created_at", "2019-06-18 14:36:15.220174"], ["updated_at", "2019-06-18 14:36:15.220174"]]
+  ↳ db/seeds.rb:9
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "user_name", "password", "bio", "pic_url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Hedwig"], ["user_name", "tama"], ["password", "Rf5mLh0tLkLwLvZ"], ["bio", "A little trick for achieving the proper competitive mindset: I always envision my opponent having aggresive sex with my mother"], ["pic_url", "http://loremflickr.com/50/60"], ["created_at", "2019-06-18 14:36:15.223361"], ["updated_at", "2019-06-18 14:36:15.223361"]]
+  ↳ db/seeds.rb:9
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Create (0.9ms)[0m  [1m[32mINSERT INTO "users" ("name", "user_name", "password", "bio", "pic_url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Dennis Creevey"], ["user_name", "madonna_schulist"], ["password", "VzIx9lYvUxXm"], ["bio", "I know what a metaphor is! It's like a thought with another thought's hat on."], ["pic_url", "http://loremflickr.com/50/60"], ["created_at", "2019-06-18 14:36:15.228738"], ["updated_at", "2019-06-18 14:36:15.228738"]]
+  ↳ db/seeds.rb:9
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "user_name", "password", "bio", "pic_url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Katie Bell"], ["user_name", "iva"], ["password", "St7a0gKlGd948aT6"], ["bio", "We'll definitely be back next year. If not, it'll be because an asteroid has destroyed all human civilization. And that's canon."], ["pic_url", "http://loremflickr.com/50/60"], ["created_at", "2019-06-18 14:36:15.232423"], ["updated_at", "2019-06-18 14:36:15.232423"]]
+  ↳ db/seeds.rb:9
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "user_name", "password", "bio", "pic_url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Filius Flitwick"], ["user_name", "jarvis.davis"], ["password", "D0ZsEpA511RoPw"], ["bio", "I'm going to eat spaceman paninis with black Hitler and there's nothing you can do about it!"], ["pic_url", "http://loremflickr.com/50/60"], ["created_at", "2019-06-18 14:36:15.235180"], ["updated_at", "2019-06-18 14:36:15.235180"]]
+  ↳ db/seeds.rb:9
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "user_name", "password", "bio", "pic_url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Salazar Slytherin"], ["user_name", "colby"], ["password", "7xGvLwSdHj35"], ["bio", "We're all kind of crazytown bananapants."], ["pic_url", "http://loremflickr.com/50/60"], ["created_at", "2019-06-18 14:36:15.238058"], ["updated_at", "2019-06-18 14:36:15.238058"]]
+  ↳ db/seeds.rb:9
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "user_name", "password", "bio", "pic_url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Bane"], ["user_name", "ro_wolf"], ["password", "4k6tGk5hVeEp2v7p"], ["bio", "I was so unpopular in high school, the crossing guards used to lure me into traffic."], ["pic_url", "http://loremflickr.com/50/60"], ["created_at", "2019-06-18 14:36:15.240996"], ["updated_at", "2019-06-18 14:36:15.240996"]]
+  ↳ db/seeds.rb:9
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "user_name", "password", "bio", "pic_url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Beedle the Bard"], ["user_name", "magnolia_wehner"], ["password", "Ds4kA185DbNlQ"], ["bio", "The next person that offers me charity or pity will be mentioned, by name, in my suicide note."], ["pic_url", "http://loremflickr.com/50/60"], ["created_at", "2019-06-18 14:36:15.243835"], ["updated_at", "2019-06-18 14:36:15.243835"]]
+  ↳ db/seeds.rb:9
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[36mEvent Create (0.4ms)[0m  [1m[32mINSERT INTO "events" ("api_id", "title", "location", "snippet", "url", "email", "cost", "cost_description", "date", "start_time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["api_id", 11], ["title", "Anton"], ["location", "Pawnee"], ["snippet", "Antediluvian effulgence tenebrous mortal unmentionable lurk immemorial."], ["url", "http://raviga.com"], ["email", "floridatowne@schumm.co"], ["cost", 1], ["cost_description", "Three eggs with cilantro, tomatoes, onions, avocados and melted Emmental cheese. With a side of roasted potatoes, and your choice of toast or croissant."], ["date", "2020-06-14"], ["start_time", "07"], ["created_at", "2019-06-18 14:36:15.260872"], ["updated_at", "2019-06-18 14:36:15.260872"]]
+  ↳ db/seeds.rb:19
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[36mEvent Create (0.3ms)[0m  [1m[32mINSERT INTO "events" ("api_id", "title", "location", "snippet", "url", "email", "cost", "cost_description", "date", "start_time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["api_id", 12], ["title", "Cold Duck"], ["location", "Boraqua"], ["snippet", "Eldritch unmentionable decadent indescribable."], ["url", "http://drinkhomicide.com"], ["email", "maxwell@oreilly.io"], ["cost", 1], ["cost_description", "Three egg whites with spinach, mushrooms, caramelized onions, tomatoes and low-fat feta cheese. With herbed quinoa, and your choice of rye or whole-grain toast."], ["date", "2020-02-19"], ["start_time", "06"], ["created_at", "2019-06-18 14:36:15.264706"], ["updated_at", "2019-06-18 14:36:15.264706"]]
+  ↳ db/seeds.rb:19
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[36mEvent Create (0.3ms)[0m  [1m[32mINSERT INTO "events" ("api_id", "title", "location", "snippet", "url", "email", "cost", "cost_description", "date", "start_time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["api_id", 15], ["title", "Cold Duck"], ["location", "Pawnee"], ["snippet", "Cyclopean gibbering."], ["url", "http://raviga.com"], ["email", "salvatoredoyle@auer.info"], ["cost", 1], ["cost_description", "Two butter croissants of your choice (plain, almond or cheese). With a side of herb butter or house-made hazelnut spread."], ["date", "2019-07-10"], ["start_time", "07"], ["created_at", "2019-06-18 14:36:15.267566"], ["updated_at", "2019-06-18 14:36:15.267566"]]
+  ↳ db/seeds.rb:19
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[36mEvent Create (0.4ms)[0m  [1m[32mINSERT INTO "events" ("api_id", "title", "location", "snippet", "url", "email", "cost", "cost_description", "date", "start_time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["api_id", 21], ["title", "Audacious"], ["location", "Boraqua"], ["snippet", "Daemoniac gibbering tenebrous spectral."], ["url", "http://breamhall.com"], ["email", "amada@effertzframi.info"], ["cost", 1], ["cost_description", "Fresh Norwegian salmon, lightly brushed with our herbed Dijon mustard sauce, with choice of two sides."], ["date", "2019-10-10"], ["start_time", "04"], ["created_at", "2019-06-18 14:36:15.270739"], ["updated_at", "2019-06-18 14:36:15.270739"]]
+  ↳ db/seeds.rb:19
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[36mEvent Create (0.3ms)[0m  [1m[32mINSERT INTO "events" ("api_id", "title", "location", "snippet", "url", "email", "cost", "cost_description", "date", "start_time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["api_id", 17], ["title", "Skycrane"], ["location", "Pawnee"], ["snippet", "Tenebrous accursed."], ["url", "http://raviga.com"], ["email", "hsiu@moriette.name"], ["cost", 0], ["cost_description", "Thick slices of French toast bread, brown sugar, half-and-half and vanilla, topped with powdered sugar. With two eggs served any style, and your choice of smoked bacon or smoked ham."], ["date", "2019-08-09"], ["start_time", "04"], ["created_at", "2019-06-18 14:36:15.274013"], ["updated_at", "2019-06-18 14:36:15.274013"]]
+  ↳ db/seeds.rb:19
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[36mEvent Create (0.3ms)[0m  [1m[32mINSERT INTO "events" ("api_id", "title", "location", "snippet", "url", "email", "cost", "cost_description", "date", "start_time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["api_id", 11], ["title", "Table"], ["location", "Boraqua"], ["snippet", "Cyclopean mortal."], ["url", "http://raviga.com"], ["email", "jacquelynauer@wiegand.net"], ["cost", 1], ["cost_description", "28-day aged 300g USDA Certified Prime Ribeye, rosemary-thyme garlic butter, with choice of two sides."], ["date", "2019-09-17"], ["start_time", "08"], ["created_at", "2019-06-18 14:36:15.276282"], ["updated_at", "2019-06-18 14:36:15.276282"]]
+  ↳ db/seeds.rb:19
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[36mEvent Create (0.4ms)[0m  [1m[32mINSERT INTO "events" ("api_id", "title", "location", "snippet", "url", "email", "cost", "cost_description", "date", "start_time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["api_id", 14], ["title", "Hooli Box"], ["location", "Boraqua"], ["snippet", "Gibbous fungus non-euclidean lurk squamous furtive."], ["url", "http://breamhall.com"], ["email", "alex@bins.org"], ["cost", 1], ["cost_description", "Three egg whites with spinach, mushrooms, caramelized onions, tomatoes and low-fat feta cheese. With herbed quinoa, and your choice of rye or whole-grain toast."], ["date", "2019-08-29"], ["start_time", "03"], ["created_at", "2019-06-18 14:36:15.279525"], ["updated_at", "2019-06-18 14:36:15.279525"]]
+  ↳ db/seeds.rb:19
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[36mEvent Create (0.5ms)[0m  [1m[32mINSERT INTO "events" ("api_id", "title", "location", "snippet", "url", "email", "cost", "cost_description", "date", "start_time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["api_id", 16], ["title", "Bit Soup"], ["location", "Eagleton"], ["snippet", "Loathsome amorphous cyclopean shunned indescribable swarthy accursed."], ["url", "http://hooli.com"], ["email", "clorindalueilwitz@trantow.io"], ["cost", 1], ["cost_description", "Thick slices of French toast bread, brown sugar, half-and-half and vanilla, topped with powdered sugar. With two eggs served any style, and your choice of smoked bacon or smoked ham."], ["date", "2020-02-05"], ["start_time", "04"], ["created_at", "2019-06-18 14:36:15.282771"], ["updated_at", "2019-06-18 14:36:15.282771"]]
+  ↳ db/seeds.rb:19
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[36mEvent Create (0.3ms)[0m  [1m[32mINSERT INTO "events" ("api_id", "title", "location", "snippet", "url", "email", "cost", "cost_description", "date", "start_time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["api_id", 14], ["title", "Human Heater"], ["location", "Eagleton"], ["snippet", "Daemoniac eldritch loathsome dank tenebrous blasphemous immemorial."], ["url", "http://raviga.com"], ["email", "amadospinka@bashirian.name"], ["cost", 1], ["cost_description", "Breaded fried chicken with waffles, and a side of maple syrup."], ["date", "2020-04-22"], ["start_time", "06"], ["created_at", "2019-06-18 14:36:15.287252"], ["updated_at", "2019-06-18 14:36:15.287252"]]
+  ↳ db/seeds.rb:19
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[36mEvent Create (0.3ms)[0m  [1m[32mINSERT INTO "events" ("api_id", "title", "location", "snippet", "url", "email", "cost", "cost_description", "date", "start_time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["api_id", 14], ["title", "Table"], ["location", "Pawnee"], ["snippet", "Shunned immemorial effulgence cyclopean fainted."], ["url", "http://coderag.com"], ["email", "johannakautzer@larson.info"], ["cost", 1], ["cost_description", "28-day aged 300g USDA Certified Prime Ribeye, rosemary-thyme garlic butter, with choice of two sides."], ["date", "2019-11-19"], ["start_time", "02"], ["created_at", "2019-06-18 14:36:15.289791"], ["updated_at", "2019-06-18 14:36:15.289791"]]
+  ↳ db/seeds.rb:19
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:3
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:3
+  [1m[36mUser Destroy (0.7ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 1]]
+  ↳ db/seeds.rb:3
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:3
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:3
+  [1m[36mUser Destroy (0.3ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 2]]
+  ↳ db/seeds.rb:3
+  [1m[35m (4.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:3
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:3
+  [1m[36mUser Destroy (0.3ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 3]]
+  ↳ db/seeds.rb:3
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:3
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:3
+  [1m[36mUser Destroy (0.4ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 4]]
+  ↳ db/seeds.rb:3
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:3
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:3
+  [1m[36mUser Destroy (0.4ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 5]]
+  ↳ db/seeds.rb:3
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:3
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:3
+  [1m[36mUser Destroy (0.3ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 6]]
+  ↳ db/seeds.rb:3
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:3
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:3
+  [1m[36mUser Destroy (1.0ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 7]]
+  ↳ db/seeds.rb:3
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:3
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:3
+  [1m[36mUser Destroy (0.3ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 8]]
+  ↳ db/seeds.rb:3
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:3
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:3
+  [1m[36mUser Destroy (0.3ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 9]]
+  ↳ db/seeds.rb:3
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:3
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:3
+  [1m[36mUser Destroy (0.3ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 10]]
+  ↳ db/seeds.rb:3
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:3
+  [1m[36mEvent Load (0.3ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ db/seeds.rb:4
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:4
+  [1m[36mEvent Destroy (0.3ms)[0m  [1m[31mDELETE FROM "events" WHERE "events"."id" = ?[0m  [["id", 1]]
+  ↳ db/seeds.rb:4
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:4
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:4
+  [1m[36mEvent Destroy (0.3ms)[0m  [1m[31mDELETE FROM "events" WHERE "events"."id" = ?[0m  [["id", 2]]
+  ↳ db/seeds.rb:4
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:4
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:4
+  [1m[36mEvent Destroy (0.4ms)[0m  [1m[31mDELETE FROM "events" WHERE "events"."id" = ?[0m  [["id", 3]]
+  ↳ db/seeds.rb:4
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:4
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:4
+  [1m[36mEvent Destroy (0.3ms)[0m  [1m[31mDELETE FROM "events" WHERE "events"."id" = ?[0m  [["id", 4]]
+  ↳ db/seeds.rb:4
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:4
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:4
+  [1m[36mEvent Destroy (0.2ms)[0m  [1m[31mDELETE FROM "events" WHERE "events"."id" = ?[0m  [["id", 5]]
+  ↳ db/seeds.rb:4
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:4
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:4
+  [1m[36mEvent Destroy (0.3ms)[0m  [1m[31mDELETE FROM "events" WHERE "events"."id" = ?[0m  [["id", 6]]
+  ↳ db/seeds.rb:4
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:4
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:4
+  [1m[36mEvent Destroy (0.3ms)[0m  [1m[31mDELETE FROM "events" WHERE "events"."id" = ?[0m  [["id", 7]]
+  ↳ db/seeds.rb:4
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:4
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:4
+  [1m[36mEvent Destroy (0.2ms)[0m  [1m[31mDELETE FROM "events" WHERE "events"."id" = ?[0m  [["id", 8]]
+  ↳ db/seeds.rb:4
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:4
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:4
+  [1m[36mEvent Destroy (0.2ms)[0m  [1m[31mDELETE FROM "events" WHERE "events"."id" = ?[0m  [["id", 9]]
+  ↳ db/seeds.rb:4
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:4
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:4
+  [1m[36mEvent Destroy (0.2ms)[0m  [1m[31mDELETE FROM "events" WHERE "events"."id" = ?[0m  [["id", 10]]
+  ↳ db/seeds.rb:4
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:4
+  [1m[36mResponse Load (0.2ms)[0m  [1m[34mSELECT "responses".* FROM "responses"[0m
+  ↳ db/seeds.rb:5
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "user_name", "password", "bio", "pic_url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Ludo Bagman"], ["user_name", "josh_dickens"], ["password", "Jd55Y8NtTzJv"], ["bio", "I don't step up to being a leader. I reluctantly accept it when it's thrust upon me."], ["pic_url", "http://loremflickr.com/50/60"], ["created_at", "2019-06-18 14:36:42.749468"], ["updated_at", "2019-06-18 14:36:42.749468"]]
+  ↳ db/seeds.rb:9
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "user_name", "password", "bio", "pic_url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Frank Bryce"], ["user_name", "genoveva"], ["password", "Rm8g8s54Gn"], ["bio", "I fear a political career could shine a negative light on my drug dealing."], ["pic_url", "http://loremflickr.com/50/60"], ["created_at", "2019-06-18 14:36:42.752579"], ["updated_at", "2019-06-18 14:36:42.752579"]]
+  ↳ db/seeds.rb:9
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "user_name", "password", "bio", "pic_url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Viktor Krum"], ["user_name", "buddy"], ["password", "W8IsM24w7"], ["bio", "Frankly, my dear, I don't give a dean!"], ["pic_url", "http://loremflickr.com/50/60"], ["created_at", "2019-06-18 14:36:42.754973"], ["updated_at", "2019-06-18 14:36:42.754973"]]
+  ↳ db/seeds.rb:9
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "user_name", "password", "bio", "pic_url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Ernie Macmillan"], ["user_name", "amparo_kuvalis"], ["password", "8oXdXaXbW"], ["bio", "The next person that offers me charity or pity will be mentioned, by name, in my suicide note."], ["pic_url", "http://loremflickr.com/50/60"], ["created_at", "2019-06-18 14:36:42.758499"], ["updated_at", "2019-06-18 14:36:42.758499"]]
+  ↳ db/seeds.rb:9
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("name", "user_name", "password", "bio", "pic_url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Argus Filch"], ["user_name", "loree"], ["password", "3aI6Pu48B7Cv"], ["bio", "A passing grade? Like a C? Why don't I just get pregnant at a bus station?"], ["pic_url", "http://loremflickr.com/50/60"], ["created_at", "2019-06-18 14:36:42.763759"], ["updated_at", "2019-06-18 14:36:42.763759"]]
+  ↳ db/seeds.rb:9
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "user_name", "password", "bio", "pic_url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Graham Montague"], ["user_name", "malcom.mueller"], ["password", "VqEaO7C2Fd2l"], ["bio", "I quit doing blow, not being rad."], ["pic_url", "http://loremflickr.com/50/60"], ["created_at", "2019-06-18 14:36:42.766395"], ["updated_at", "2019-06-18 14:36:42.766395"]]
+  ↳ db/seeds.rb:9
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "user_name", "password", "bio", "pic_url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Albus Dumbledore"], ["user_name", "miguel_lockman"], ["password", "K43z6dD18gL"], ["bio", "Some flies are too awesome for the wall."], ["pic_url", "http://loremflickr.com/50/60"], ["created_at", "2019-06-18 14:36:42.768993"], ["updated_at", "2019-06-18 14:36:42.768993"]]
+  ↳ db/seeds.rb:9
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "user_name", "password", "bio", "pic_url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Cho Chang"], ["user_name", "micheal_heel"], ["password", "NpCu6h7nC62"], ["bio", "A little trick for achieving the proper competitive mindset: I always envision my opponent having aggresive sex with my mother"], ["pic_url", "http://loremflickr.com/50/60"], ["created_at", "2019-06-18 14:36:42.771541"], ["updated_at", "2019-06-18 14:36:42.771541"]]
+  ↳ db/seeds.rb:9
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "user_name", "password", "bio", "pic_url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Cornelius Fudge"], ["user_name", "tamala"], ["password", "513hVqYeRa1kPlI"], ["bio", "Harrison Ford is irradiating our testicles with microwave satellite transmissions!"], ["pic_url", "http://loremflickr.com/50/60"], ["created_at", "2019-06-18 14:36:42.773798"], ["updated_at", "2019-06-18 14:36:42.773798"]]
+  ↳ db/seeds.rb:9
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "user_name", "password", "bio", "pic_url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Armando Dippet"], ["user_name", "huey"], ["password", "T7G9Vc356tYl"], ["bio", "Make your money, whore."], ["pic_url", "http://loremflickr.com/50/60"], ["created_at", "2019-06-18 14:36:42.776439"], ["updated_at", "2019-06-18 14:36:42.776439"]]
+  ↳ db/seeds.rb:9
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[36mEvent Create (0.4ms)[0m  [1m[32mINSERT INTO "events" ("api_id", "title", "location", "snippet", "url", "email", "cost", "cost_description", "date", "start_time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["api_id", 12], ["title", "Pipey"], ["location", "Pawnee"], ["snippet", "Manuscript unnamable."], ["url", "http://endframesystems.com"], ["email", "ulyes@leuschkeberge.net"], ["cost", 1], ["cost_description", "Two butter croissants of your choice (plain, almond or cheese). With a side of herb butter or house-made hazelnut spread."], ["date", "2020-03-13"], ["start_time", "03"], ["created_at", "2019-06-18 14:36:42.779294"], ["updated_at", "2019-06-18 14:36:42.779294"]]
+  ↳ db/seeds.rb:19
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[36mEvent Create (0.2ms)[0m  [1m[32mINSERT INTO "events" ("api_id", "title", "location", "snippet", "url", "email", "cost", "cost_description", "date", "start_time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["api_id", 18], ["title", "Telehuman"], ["location", "Boraqua"], ["snippet", "Stench swarthy gambrel hideous accursed."], ["url", "http://endframesystems.com"], ["email", "suzettemckenzie@lueilwitz.io"], ["cost", 1], ["cost_description", "Breaded fried chicken with waffles. Served with maple syrup."], ["date", "2020-02-11"], ["start_time", "05"], ["created_at", "2019-06-18 14:36:42.782131"], ["updated_at", "2019-06-18 14:36:42.782131"]]
+  ↳ db/seeds.rb:19
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[36mEvent Create (0.5ms)[0m  [1m[32mINSERT INTO "events" ("api_id", "title", "location", "snippet", "url", "email", "cost", "cost_description", "date", "start_time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["api_id", 20], ["title", "Pipey"], ["location", "Boraqua"], ["snippet", "Antiquarian accursed singular."], ["url", "http://endframesystems.com"], ["email", "janwunsch@bradtkekeeling.biz"], ["cost", 1], ["cost_description", "28-day aged 300g USDA Certified Prime Ribeye, rosemary-thyme garlic butter, with choice of two sides."], ["date", "2020-04-22"], ["start_time", "02"], ["created_at", "2019-06-18 14:36:42.784793"], ["updated_at", "2019-06-18 14:36:42.784793"]]
+  ↳ db/seeds.rb:19
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[36mEvent Create (0.3ms)[0m  [1m[32mINSERT INTO "events" ("api_id", "title", "location", "snippet", "url", "email", "cost", "cost_description", "date", "start_time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["api_id", 13], ["title", "Liquid Shrimp"], ["location", "Eagleton"], ["snippet", "Nameless non-euclidean decadent stygian."], ["url", "http://aviato.com"], ["email", "eddy@reinger.info"], ["cost", 1], ["cost_description", "Fresh parsley, Italian sausage, shallots, garlic, sun-dried tomatoes and mozzarella cheese in an all-butter crust. With a side of mixed fruits."], ["date", "2020-01-31"], ["start_time", "05"], ["created_at", "2019-06-18 14:36:42.787568"], ["updated_at", "2019-06-18 14:36:42.787568"]]
+  ↳ db/seeds.rb:19
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[36mEvent Create (0.3ms)[0m  [1m[32mINSERT INTO "events" ("api_id", "title", "location", "snippet", "url", "email", "cost", "cost_description", "date", "start_time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["api_id", 17], ["title", "Table"], ["location", "Pawnee"], ["snippet", "Mortal manuscript fainted squamous madness."], ["url", "http://drinkhomicide.com"], ["email", "ellisschumm@okeefe.io"], ["cost", 1], ["cost_description", "Three egg omelet with Roquefort cheese, chives, and ham. With a side of roasted potatoes, and your choice of toast or croissant."], ["date", "2020-02-12"], ["start_time", "02"], ["created_at", "2019-06-18 14:36:42.790516"], ["updated_at", "2019-06-18 14:36:42.790516"]]
+  ↳ db/seeds.rb:19
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[36mEvent Create (0.4ms)[0m  [1m[32mINSERT INTO "events" ("api_id", "title", "location", "snippet", "url", "email", "cost", "cost_description", "date", "start_time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["api_id", 18], ["title", "Audacious"], ["location", "Eagleton"], ["snippet", "Stench fungus madness daemoniac stygian eldritch."], ["url", "http://raviga.com"], ["email", "kelleystroman@mayer.com"], ["cost", 1], ["cost_description", "Two buttermilk waffles, topped with whipped cream and maple syrup, a side of two eggs served any style, and your choice of smoked bacon or smoked ham."], ["date", "2019-10-22"], ["start_time", "06"], ["created_at", "2019-06-18 14:36:42.793300"], ["updated_at", "2019-06-18 14:36:42.793300"]]
+  ↳ db/seeds.rb:19
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[36mEvent Create (0.7ms)[0m  [1m[32mINSERT INTO "events" ("api_id", "title", "location", "snippet", "url", "email", "cost", "cost_description", "date", "start_time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["api_id", 15], ["title", "Skycrane"], ["location", "Eagleton"], ["snippet", "Gibbering madness accursed singular."], ["url", "http://aviato.com"], ["email", "martinheel@kutchbreitenberg.io"], ["cost", 1], ["cost_description", "Fresh parsley, Italian sausage, shallots, garlic, sun-dried tomatoes and mozzarella cheese in an all-butter crust. With a side of mixed fruits."], ["date", "2019-09-14"], ["start_time", "02"], ["created_at", "2019-06-18 14:36:42.797217"], ["updated_at", "2019-06-18 14:36:42.797217"]]
+  ↳ db/seeds.rb:19
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[36mEvent Create (0.3ms)[0m  [1m[32mINSERT INTO "events" ("api_id", "title", "location", "snippet", "url", "email", "cost", "cost_description", "date", "start_time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["api_id", 19], ["title", "Octopus Recipes"], ["location", "Pawnee"], ["snippet", "Shunned abnormal madness fainted."], ["url", "http://bachmanity.com"], ["email", "luigilittel@turner.io"], ["cost", 1], ["cost_description", "Two buttermilk waffles, topped with whipped cream and maple syrup, a side of two eggs served any style, and your choice of smoked bacon or smoked ham."], ["date", "2020-03-26"], ["start_time", "02"], ["created_at", "2019-06-18 14:36:42.800361"], ["updated_at", "2019-06-18 14:36:42.800361"]]
+  ↳ db/seeds.rb:19
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[36mEvent Create (0.3ms)[0m  [1m[32mINSERT INTO "events" ("api_id", "title", "location", "snippet", "url", "email", "cost", "cost_description", "date", "start_time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["api_id", 18], ["title", "Bit Soup"], ["location", "Eagleton"], ["snippet", "Ululate stygian noisome dank."], ["url", "http://hooli.com"], ["email", "jannet@corkery.info"], ["cost", 1], ["cost_description", "Three egg omelet with Roquefort cheese, chives, and ham. With a side of roasted potatoes, and your choice of toast or croissant."], ["date", "2019-12-18"], ["start_time", "04"], ["created_at", "2019-06-18 14:36:42.802920"], ["updated_at", "2019-06-18 14:36:42.802920"]]
+  ↳ db/seeds.rb:19
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[36mEvent Create (0.4ms)[0m  [1m[32mINSERT INTO "events" ("api_id", "title", "location", "snippet", "url", "email", "cost", "cost_description", "date", "start_time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["api_id", 14], ["title", "Always Blue"], ["location", "Eagleton"], ["snippet", "Amorphous comprehension tenebrous unnamable decadent immemorial."], ["url", "http://raviga.com"], ["email", "nick@greenjaskolski.com"], ["cost", 1], ["cost_description", "Creamy mascarpone cheese and custard layered between espresso and rum soaked house-made ladyfingers, topped with Valrhona cocoa powder."], ["date", "2019-07-07"], ["start_time", "03"], ["created_at", "2019-06-18 14:36:42.805612"], ["updated_at", "2019-06-18 14:36:42.805612"]]
+  ↳ db/seeds.rb:19
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:3
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:3
+  [1m[36mUser Destroy (0.3ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 11]]
+  ↳ db/seeds.rb:3
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:3
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:3
+  [1m[36mUser Destroy (0.2ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 12]]
+  ↳ db/seeds.rb:3
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:3
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:3
+  [1m[36mUser Destroy (0.2ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 13]]
+  ↳ db/seeds.rb:3
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:3
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:3
+  [1m[36mUser Destroy (0.2ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 14]]
+  ↳ db/seeds.rb:3
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:3
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:3
+  [1m[36mUser Destroy (0.2ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 15]]
+  ↳ db/seeds.rb:3
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:3
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:3
+  [1m[36mUser Destroy (0.3ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 16]]
+  ↳ db/seeds.rb:3
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:3
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:3
+  [1m[36mUser Destroy (0.3ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 17]]
+  ↳ db/seeds.rb:3
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:3
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:3
+  [1m[36mUser Destroy (0.3ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 18]]
+  ↳ db/seeds.rb:3
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:3
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:3
+  [1m[36mUser Destroy (0.3ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 19]]
+  ↳ db/seeds.rb:3
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:3
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:3
+  [1m[36mUser Destroy (0.3ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 20]]
+  ↳ db/seeds.rb:3
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:3
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ db/seeds.rb:4
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:4
+  [1m[36mEvent Destroy (0.3ms)[0m  [1m[31mDELETE FROM "events" WHERE "events"."id" = ?[0m  [["id", 11]]
+  ↳ db/seeds.rb:4
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:4
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:4
+  [1m[36mEvent Destroy (0.2ms)[0m  [1m[31mDELETE FROM "events" WHERE "events"."id" = ?[0m  [["id", 12]]
+  ↳ db/seeds.rb:4
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:4
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:4
+  [1m[36mEvent Destroy (0.2ms)[0m  [1m[31mDELETE FROM "events" WHERE "events"."id" = ?[0m  [["id", 13]]
+  ↳ db/seeds.rb:4
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:4
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:4
+  [1m[36mEvent Destroy (0.2ms)[0m  [1m[31mDELETE FROM "events" WHERE "events"."id" = ?[0m  [["id", 14]]
+  ↳ db/seeds.rb:4
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:4
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:4
+  [1m[36mEvent Destroy (0.2ms)[0m  [1m[31mDELETE FROM "events" WHERE "events"."id" = ?[0m  [["id", 15]]
+  ↳ db/seeds.rb:4
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:4
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:4
+  [1m[36mEvent Destroy (0.3ms)[0m  [1m[31mDELETE FROM "events" WHERE "events"."id" = ?[0m  [["id", 16]]
+  ↳ db/seeds.rb:4
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:4
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:4
+  [1m[36mEvent Destroy (0.3ms)[0m  [1m[31mDELETE FROM "events" WHERE "events"."id" = ?[0m  [["id", 17]]
+  ↳ db/seeds.rb:4
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:4
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:4
+  [1m[36mEvent Destroy (0.3ms)[0m  [1m[31mDELETE FROM "events" WHERE "events"."id" = ?[0m  [["id", 18]]
+  ↳ db/seeds.rb:4
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:4
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:4
+  [1m[36mEvent Destroy (0.4ms)[0m  [1m[31mDELETE FROM "events" WHERE "events"."id" = ?[0m  [["id", 19]]
+  ↳ db/seeds.rb:4
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:4
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:4
+  [1m[36mEvent Destroy (0.4ms)[0m  [1m[31mDELETE FROM "events" WHERE "events"."id" = ?[0m  [["id", 20]]
+  ↳ db/seeds.rb:4
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:4
+  [1m[36mResponse Load (0.2ms)[0m  [1m[34mSELECT "responses".* FROM "responses"[0m
+  ↳ db/seeds.rb:5
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "user_name", "password", "bio", "pic_url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Roger Davies"], ["user_name", "lupita_kemmer"], ["password", "XeN86vMzWj0mDfXo"], ["bio", "The next person that offers me charity or pity will be mentioned, by name, in my suicide note."], ["pic_url", "http://loremflickr.com/50/60"], ["created_at", "2019-06-18 14:36:57.443678"], ["updated_at", "2019-06-18 14:36:57.443678"]]
+  ↳ db/seeds.rb:9
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "user_name", "password", "bio", "pic_url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Griphook"], ["user_name", "rene_schneider"], ["password", "IvOh307vMaCh2"], ["bio", "Fire can't go through doors, stupid. It's not a ghost."], ["pic_url", "http://loremflickr.com/50/60"], ["created_at", "2019-06-18 14:36:57.448391"], ["updated_at", "2019-06-18 14:36:57.448391"]]
+  ↳ db/seeds.rb:9
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "user_name", "password", "bio", "pic_url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Sturgis Podmore"], ["user_name", "erik_thompson"], ["password", "Jk1i04EzB"], ["bio", "I was so unpopular in high school, the crossing guards used to lure me into traffic."], ["pic_url", "http://loremflickr.com/50/60"], ["created_at", "2019-06-18 14:36:57.452103"], ["updated_at", "2019-06-18 14:36:57.452103"]]
+  ↳ db/seeds.rb:9
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "user_name", "password", "bio", "pic_url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Susan Bones"], ["user_name", "lanita"], ["password", "6xFuLxFqN3Nh0bUy"], ["bio", "I don't step up to being a leader. I reluctantly accept it when it's thrust upon me."], ["pic_url", "http://loremflickr.com/50/60"], ["created_at", "2019-06-18 14:36:57.454949"], ["updated_at", "2019-06-18 14:36:57.454949"]]
+  ↳ db/seeds.rb:9
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "user_name", "password", "bio", "pic_url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Marietta Edgecombe"], ["user_name", "darryl"], ["password", "O7Li7aC5QbE1"], ["bio", "I'm going to eat spaceman paninis with black Hitler and there's nothing you can do about it!"], ["pic_url", "http://loremflickr.com/50/60"], ["created_at", "2019-06-18 14:36:57.461816"], ["updated_at", "2019-06-18 14:36:57.461816"]]
+  ↳ db/seeds.rb:9
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "user_name", "password", "bio", "pic_url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Rolanda Hooch"], ["user_name", "bettye_schneider"], ["password", "62UrOh4aVn7lK"], ["bio", "Do they find thoughts in our butts?"], ["pic_url", "http://loremflickr.com/50/60"], ["created_at", "2019-06-18 14:36:57.464468"], ["updated_at", "2019-06-18 14:36:57.464468"]]
+  ↳ db/seeds.rb:9
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "user_name", "password", "bio", "pic_url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Moaning Myrtle"], ["user_name", "carrie_denesik"], ["password", "173eGsZ007U"], ["bio", "I quit doing blow, not being rad."], ["pic_url", "http://loremflickr.com/50/60"], ["created_at", "2019-06-18 14:36:57.466963"], ["updated_at", "2019-06-18 14:36:57.466963"]]
+  ↳ db/seeds.rb:9
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "user_name", "password", "bio", "pic_url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Ludo Bagman"], ["user_name", "wilber_miller"], ["password", "FfCmUm7v6sRoA"], ["bio", "I fear a political career could shine a negative light on my drug dealing."], ["pic_url", "http://loremflickr.com/50/60"], ["created_at", "2019-06-18 14:36:57.469336"], ["updated_at", "2019-06-18 14:36:57.469336"]]
+  ↳ db/seeds.rb:9
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "user_name", "password", "bio", "pic_url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Dudley Dursley"], ["user_name", "christian.kilback"], ["password", "5lC1AiFlN6"], ["bio", "Some flies are too awesome for the wall."], ["pic_url", "http://loremflickr.com/50/60"], ["created_at", "2019-06-18 14:36:57.471880"], ["updated_at", "2019-06-18 14:36:57.471880"]]
+  ↳ db/seeds.rb:9
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "user_name", "password", "bio", "pic_url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Padma Patil"], ["user_name", "bradley.cronin"], ["password", "U6Qv8tX1BwQf4d"], ["bio", "Make your money, whore."], ["pic_url", "http://loremflickr.com/50/60"], ["created_at", "2019-06-18 14:36:57.475541"], ["updated_at", "2019-06-18 14:36:57.475541"]]
+  ↳ db/seeds.rb:9
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[36mEvent Create (0.8ms)[0m  [1m[32mINSERT INTO "events" ("api_id", "title", "location", "snippet", "url", "email", "cost", "cost_description", "date", "start_time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["api_id", 17], ["title", "Audacious"], ["location", "Eagleton"], ["snippet", "Abnormal unutterable mortal shunned indescribable noisome."], ["url", "http://coderag.com"], ["email", "nganjast@will.org"], ["cost", 1], ["cost_description", "Creamy mascarpone cheese and custard layered between espresso and rum soaked house-made ladyfingers, topped with Valrhona cocoa powder."], ["date", "2020-05-13"], ["start_time", "02"], ["created_at", "2019-06-18 14:36:57.479818"], ["updated_at", "2019-06-18 14:36:57.479818"]]
+  ↳ db/seeds.rb:19
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[36mEvent Create (0.4ms)[0m  [1m[32mINSERT INTO "events" ("api_id", "title", "location", "snippet", "url", "email", "cost", "cost_description", "date", "start_time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["api_id", 15], ["title", "Octopus Recipes"], ["location", "Eagleton"], ["snippet", "Lurk noisome charnel blasphemous swarthy."], ["url", "http://breamhall.com"], ["email", "laurinebauch@ernser.io"], ["cost", 1], ["cost_description", "Three egg omelet with Roquefort cheese, chives, and ham. With a side of roasted potatoes, and your choice of toast or croissant."], ["date", "2019-08-28"], ["start_time", "09"], ["created_at", "2019-06-18 14:36:57.483852"], ["updated_at", "2019-06-18 14:36:57.483852"]]
+  ↳ db/seeds.rb:19
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[36mEvent Create (0.2ms)[0m  [1m[32mINSERT INTO "events" ("api_id", "title", "location", "snippet", "url", "email", "cost", "cost_description", "date", "start_time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["api_id", 18], ["title", "Bit Soup"], ["location", "Pawnee"], ["snippet", "Eldritch immemorial."], ["url", "http://hooli.com"], ["email", "sherell@denesikupton.com"], ["cost", 1], ["cost_description", "Three egg whites with spinach, mushrooms, caramelized onions, tomatoes and low-fat feta cheese. With herbed quinoa, and your choice of rye or whole-grain toast."], ["date", "2019-10-10"], ["start_time", "06"], ["created_at", "2019-06-18 14:36:57.486499"], ["updated_at", "2019-06-18 14:36:57.486499"]]
+  ↳ db/seeds.rb:19
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[36mEvent Create (0.2ms)[0m  [1m[32mINSERT INTO "events" ("api_id", "title", "location", "snippet", "url", "email", "cost", "cost_description", "date", "start_time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["api_id", 11], ["title", "Skycrane"], ["location", "Eagleton"], ["snippet", "Noisome foetid."], ["url", "http://endframesystems.com"], ["email", "renaldoframi@fisher.io"], ["cost", 1], ["cost_description", "Creamy mascarpone cheese and custard layered between espresso and rum soaked house-made ladyfingers, topped with Valrhona cocoa powder."], ["date", "2019-06-22"], ["start_time", "04"], ["created_at", "2019-06-18 14:36:57.488691"], ["updated_at", "2019-06-18 14:36:57.488691"]]
+  ↳ db/seeds.rb:19
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[36mEvent Create (0.3ms)[0m  [1m[32mINSERT INTO "events" ("api_id", "title", "location", "snippet", "url", "email", "cost", "cost_description", "date", "start_time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["api_id", 16], ["title", "Table"], ["location", "Boraqua"], ["snippet", "Antiquarian swarthy blasphemous foetid unnamable mortal."], ["url", "http://hooli.com"], ["email", "faustohickle@schuppe.co"], ["cost", 1], ["cost_description", "Two buttermilk waffles, topped with whipped cream and maple syrup, a side of two eggs served any style, and your choice of smoked bacon or smoked ham."], ["date", "2019-10-21"], ["start_time", "07"], ["created_at", "2019-06-18 14:36:57.490961"], ["updated_at", "2019-06-18 14:36:57.490961"]]
+  ↳ db/seeds.rb:19
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[36mEvent Create (0.2ms)[0m  [1m[32mINSERT INTO "events" ("api_id", "title", "location", "snippet", "url", "email", "cost", "cost_description", "date", "start_time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["api_id", 14], ["title", "Liquid Shrimp"], ["location", "Boraqua"], ["snippet", "Tenebrous noisome immemorial gibbering blasphemous."], ["url", "http://breamhall.com"], ["email", "audiegrimes@gleason.net"], ["cost", 1], ["cost_description", "28-day aged 300g USDA Certified Prime Ribeye, rosemary-thyme garlic butter, with choice of two sides."], ["date", "2020-01-26"], ["start_time", "02"], ["created_at", "2019-06-18 14:36:57.494444"], ["updated_at", "2019-06-18 14:36:57.494444"]]
+  ↳ db/seeds.rb:19
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[36mEvent Create (0.2ms)[0m  [1m[32mINSERT INTO "events" ("api_id", "title", "location", "snippet", "url", "email", "cost", "cost_description", "date", "start_time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["api_id", 21], ["title", "Tres Comas Tequila"], ["location", "Pawnee"], ["snippet", "Furtive stygian hideous spectral swarthy gibbous."], ["url", "http://raviga.com"], ["email", "devinlynch@hahn.net"], ["cost", 1], ["cost_description", "Granny Smith apples mixed with brown sugar and butter filling, in a flaky all-butter crust, with ice cream."], ["date", "2020-03-07"], ["start_time", "04"], ["created_at", "2019-06-18 14:36:57.496732"], ["updated_at", "2019-06-18 14:36:57.496732"]]
+  ↳ db/seeds.rb:19
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[36mEvent Create (0.3ms)[0m  [1m[32mINSERT INTO "events" ("api_id", "title", "location", "snippet", "url", "email", "cost", "cost_description", "date", "start_time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["api_id", 14], ["title", "Table"], ["location", "Boraqua"], ["snippet", "Gambrel dank shunned comprehension."], ["url", "http://endframesystems.com"], ["email", "darin@hauckzemlak.io"], ["cost", 1], ["cost_description", "Breaded fried chicken with waffles, and a side of maple syrup."], ["date", "2019-10-23"], ["start_time", "03"], ["created_at", "2019-06-18 14:36:57.499536"], ["updated_at", "2019-06-18 14:36:57.499536"]]
+  ↳ db/seeds.rb:19
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[36mEvent Create (0.4ms)[0m  [1m[32mINSERT INTO "events" ("api_id", "title", "location", "snippet", "url", "email", "cost", "cost_description", "date", "start_time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["api_id", 18], ["title", "Anton"], ["location", "Boraqua"], ["snippet", "Spectral swarthy abnormal."], ["url", "http://aviato.com"], ["email", "elvacorwin@lakin.org"], ["cost", 1], ["cost_description", "Two butter croissants of your choice (plain, almond or cheese). With a side of herb butter or house-made hazelnut spread."], ["date", "2020-02-03"], ["start_time", "01"], ["created_at", "2019-06-18 14:36:57.503070"], ["updated_at", "2019-06-18 14:36:57.503070"]]
+  ↳ db/seeds.rb:19
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[36mEvent Create (1.8ms)[0m  [1m[32mINSERT INTO "events" ("api_id", "title", "location", "snippet", "url", "email", "cost", "cost_description", "date", "start_time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["api_id", 13], ["title", "Always Blue"], ["location", "Pawnee"], ["snippet", "Mortal hideous dank swarthy nameless blasphemous furtive."], ["url", "http://bachmanity.com"], ["email", "cordie@thiel.org"], ["cost", 0], ["cost_description", "Two buttermilk waffles, topped with whipped cream and maple syrup, a side of two eggs served any style, and your choice of smoked bacon or smoked ham."], ["date", "2019-12-06"], ["start_time", "09"], ["created_at", "2019-06-18 14:36:57.510087"], ["updated_at", "2019-06-18 14:36:57.510087"]]
+  ↳ db/seeds.rb:19
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:35
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ db/seeds.rb:36
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:34
+  [1m[36mResponse Create (1.5ms)[0m  [1m[32mINSERT INTO "responses" ("user_id", "event_id", "guests", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 28], ["event_id", 26], ["guests", 1], ["created_at", "2019-06-18 14:36:57.524617"], ["updated_at", "2019-06-18 14:36:57.524617"]]
+  ↳ db/seeds.rb:34
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:34
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:35
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ db/seeds.rb:36
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:34
+  [1m[36mResponse Create (0.5ms)[0m  [1m[32mINSERT INTO "responses" ("user_id", "event_id", "guests", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 30], ["event_id", 23], ["guests", 1], ["created_at", "2019-06-18 14:36:57.530032"], ["updated_at", "2019-06-18 14:36:57.530032"]]
+  ↳ db/seeds.rb:34
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:34
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:35
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ db/seeds.rb:36
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:34
+  [1m[36mResponse Create (0.3ms)[0m  [1m[32mINSERT INTO "responses" ("user_id", "event_id", "guests", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 28], ["event_id", 21], ["guests", 2], ["created_at", "2019-06-18 14:36:57.533905"], ["updated_at", "2019-06-18 14:36:57.533905"]]
+  ↳ db/seeds.rb:34
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:34
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:35
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ db/seeds.rb:36
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:34
+  [1m[36mResponse Create (0.3ms)[0m  [1m[32mINSERT INTO "responses" ("user_id", "event_id", "guests", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 30], ["event_id", 28], ["guests", 5], ["created_at", "2019-06-18 14:36:57.539364"], ["updated_at", "2019-06-18 14:36:57.539364"]]
+  ↳ db/seeds.rb:34
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:34
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:35
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ db/seeds.rb:36
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:34
+  [1m[36mResponse Create (0.4ms)[0m  [1m[32mINSERT INTO "responses" ("user_id", "event_id", "guests", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 24], ["event_id", 27], ["guests", 5], ["created_at", "2019-06-18 14:36:57.543372"], ["updated_at", "2019-06-18 14:36:57.543372"]]
+  ↳ db/seeds.rb:34
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:34
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:35
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ db/seeds.rb:36
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:34
+  [1m[36mResponse Create (0.3ms)[0m  [1m[32mINSERT INTO "responses" ("user_id", "event_id", "guests", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 24], ["event_id", 22], ["guests", 5], ["created_at", "2019-06-18 14:36:57.547498"], ["updated_at", "2019-06-18 14:36:57.547498"]]
+  ↳ db/seeds.rb:34
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:34
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:35
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ db/seeds.rb:36
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:34
+  [1m[36mResponse Create (0.3ms)[0m  [1m[32mINSERT INTO "responses" ("user_id", "event_id", "guests", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 24], ["event_id", 21], ["guests", 5], ["created_at", "2019-06-18 14:36:57.551549"], ["updated_at", "2019-06-18 14:36:57.551549"]]
+  ↳ db/seeds.rb:34
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:34
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:35
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ db/seeds.rb:36
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:34
+  [1m[36mResponse Create (0.2ms)[0m  [1m[32mINSERT INTO "responses" ("user_id", "event_id", "guests", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 25], ["event_id", 29], ["guests", 3], ["created_at", "2019-06-18 14:36:57.554461"], ["updated_at", "2019-06-18 14:36:57.554461"]]
+  ↳ db/seeds.rb:34
+  [1m[35m (5.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:34
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:35
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ db/seeds.rb:36
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:34
+  [1m[36mResponse Create (0.7ms)[0m  [1m[32mINSERT INTO "responses" ("user_id", "event_id", "guests", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 22], ["event_id", 22], ["guests", 1], ["created_at", "2019-06-18 14:36:57.563921"], ["updated_at", "2019-06-18 14:36:57.563921"]]
+  ↳ db/seeds.rb:34
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:34
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:35
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ db/seeds.rb:36
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:34
+  [1m[36mResponse Create (0.3ms)[0m  [1m[32mINSERT INTO "responses" ("user_id", "event_id", "guests", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 26], ["event_id", 23], ["guests", 4], ["created_at", "2019-06-18 14:36:57.570006"], ["updated_at", "2019-06-18 14:36:57.570006"]]
+  ↳ db/seeds.rb:34
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:34
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT  "events".* FROM "events" ORDER BY "events"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "events"[0m
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT  "responses".* FROM "responses" ORDER BY "responses"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "responses"[0m
