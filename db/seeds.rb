@@ -8,7 +8,7 @@ Response.destroy_all
 15.times do
 User.create(
   name: Faker::Movies::HarryPotter.unique.character,
-  password: Faker::Internet.unique.password,
+  password: "car",
   pic_url: Faker::Avatar.unique.image,
   bio: Faker::TvShows::Community.quotes,
   user_name: Faker::Internet.unique.username)

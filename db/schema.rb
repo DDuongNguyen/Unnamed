@@ -10,40 +10,6 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-
-ActiveRecord::Schema.define(version: 2019_06_18_140205) do
-
-  create_table "events", force: :cascade do |t|
-    t.integer "api_id"
-    t.string "title"
-    t.string "location"
-    t.string "snippet"
-    t.string "url"
-    t.string "email"
-    t.boolean "cost"
-    t.string "cost_description"
-    t.string "date"
-    t.string "start_time"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "responses", force: :cascade do |t|
-    t.integer "user_id"
-    t.integer "event_id"
-    t.integer "guests"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "users", force: :cascade do |t|
-    t.string "name"
-    t.string "user_name"
-    t.string "password"
-    t.string "bio"
-    t.string "pic_url"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
+ActiveRecord::Schema.define(version: 0) do
 
 end
