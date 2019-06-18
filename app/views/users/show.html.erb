@@ -1,0 +1,15 @@
+<h1><%= @user.name %></h1>
+<p><%= @user.bio %></p>
+<br>
+<%= button_to "Home" %>
+<%= button_to "Edit Profile", edit_user_path, method: :get %>
+<br>
+<h2>Your dates:</h2>
+<ul>
+  <% @user.events.each do |event| %>
+    <li>Event name: <%= link_to event.title, "/events/#{event.id}" %></li>
+    <li>In <%= event.location %> on <%= event.date %></li>
+    <li>Event description: <%= event.snippet %></li>
+    <br>
+  <% end %>
+</ul>
