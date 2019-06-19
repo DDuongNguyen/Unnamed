@@ -10,6 +10,26 @@
   </head>
 
   <body>
+    <header>
+       <span> <a href="/events"><img src="https://i.imgur.com/EUDSxLK.jpg" width="50" height= "50" ></a> </span> <span><img src="https://s3.amazonaws.com/omc-prod/wp-content/uploads/2016/12/21185149/words-LOGO.jpg" heigh= "50" width= "200" > </span>
+       <span>
+       <% if @logged_in %>
+       <%= button_to "Log out", '/logout', method: :delete %>
+       <%= button_to "Profile", "/users/#{@user_id}", method: :get %>
+       <% else %>
+       <%= button_to "Log In", '/login/new' %>
+       <%= button_to "Sign Up", 'users/new', method: :get %>
+       <% end %>
+     </span>
+
+    </header>
     <%= yield %>
   </body>
+  <footer>
+    <%  if @logged_in %>
+    <p>Logged in as <%= @current_user.name %> </p>
+    <% else %>
+    <p>Pls Log In</p>
+    <% end %>
+  </footer>
 </html>

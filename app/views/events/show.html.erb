@@ -1,8 +1,5 @@
 <h1><%= @event.title %></h1>
 
-<%= button_to "Home", "/events", method: :get%>
-<%= button_to "Profile" %>
-
 <p>Location: <%= @event.location %></p>
 <p>Date: <%= @event.date %></p>
 <p>Description: <%= @event.snippet %></p>
@@ -10,4 +7,4 @@
 <p>Cost Description: <%= @event.cost_description %></p>
 <p><%=link_to @event.url, "#{@event.url}" %></p>
 
-<%= button_to "RSVP" %>
+<%= button_to "RSVP", "/events/#{@event.id}/create" %>

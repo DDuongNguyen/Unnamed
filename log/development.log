@@ -10149,3 +10149,2069 @@ Processing by EventsController#index as HTML
 Completed 200 OK in 105ms (Views: 88.5ms | ActiveRecord: 0.7ms)
 
 
+Started GET "/events/1" for ::1 at 2019-06-19 13:50:51 -0400
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:16
+  Rendering events/show.html.erb within layouts/application
+  Rendered events/show.html.erb within layouts/application (44.3ms)
+Completed 500 Internal Server Error in 61ms (ActiveRecord: 1.1ms)
+
+
+  
+ActionView::Template::Error (undefined method `event_id' for #<Event:0x007ff2e2996308>):
+    13: <%= button_to "RSVP", "/response/create", method: :post %>
+    14: <%= form_for @event do |f| %>
+    15:   <%= f.label :event_id %>
+    16:   <%= f.number_field :event_id %>
+    17:   <%= f.label :user_id %>
+    18:   <%= f.number_field :user_id %>
+    19:   <%= f.submit "RSVP", "/response/create" %>
+  
+app/views/events/show.html.erb:16:in `block in _app_views_events_show_html_erb___4510828435766816258_70340580254640'
+app/views/events/show.html.erb:14:in `_app_views_events_show_html_erb___4510828435766816258_70340580254640'
+Started GET "/events/1" for ::1 at 2019-06-19 13:51:21 -0400
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:16
+  Rendering events/show.html.erb within layouts/application
+  Rendered events/show.html.erb within layouts/application (11.1ms)
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (undefined method `user_id' for #<Event:0x007ff2e2162ec0>
+Did you mean?  user_ids
+               user_ids=):
+    16:   <%= f.label :id %>
+    17:   <%= f.number_field :id %>
+    18:   <%= f.label :user_id %>
+    19:   <%= f.number_field :user_id %>
+    20:   <%= f.submit "RSVP", "/response/create" %>
+    21: <% end %>
+  
+app/views/events/show.html.erb:19:in `block in _app_views_events_show_html_erb___4510828435766816258_70340575956140'
+app/views/events/show.html.erb:15:in `_app_views_events_show_html_erb___4510828435766816258_70340575956140'
+Started PUT "/__web_console/repl_sessions/096217b5e3c0fd45a717d158a9c38a33" for ::1 at 2019-06-19 13:51:42 -0400
+Started PUT "/__web_console/repl_sessions/096217b5e3c0fd45a717d158a9c38a33" for ::1 at 2019-06-19 13:51:43 -0400
+Started PUT "/__web_console/repl_sessions/096217b5e3c0fd45a717d158a9c38a33" for ::1 at 2019-06-19 13:52:02 -0400
+Started PUT "/__web_console/repl_sessions/096217b5e3c0fd45a717d158a9c38a33" for ::1 at 2019-06-19 13:52:06 -0400
+Started GET "/events/1" for ::1 at 2019-06-19 13:55:19 -0400
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:16
+  Rendering events/show.html.erb within layouts/application
+  Rendered events/show.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 81ms (Views: 43.4ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/events" for ::1 at 2019-06-19 13:56:02 -0400
+Processing by EventsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.3ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/views/events/index.html.erb:9
+  Rendered events/index.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 48ms (Views: 43.0ms | ActiveRecord: 0.8ms)
+
+
+Started DELETE "/logout" for ::1 at 2019-06-19 13:56:13 -0400
+Processing by LoginController#destroy as HTML
+  Parameters: {"authenticity_token"=>"yVGZJLeziUc3Otaly8V2UvacoRre9CfXSBcMdzByRvUPAbRjgy/q7YaW9HkTzIAOhO6hwpHMhvS/dom/yiJ5LQ=="}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+Redirected to http://localhost:3000/events
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/events" for ::1 at 2019-06-19 13:56:13 -0400
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/views/events/index.html.erb:9
+  Rendered events/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 39ms (Views: 36.4ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/login/new" for ::1 at 2019-06-19 13:56:14 -0400
+Processing by LoginController#create as HTML
+  Parameters: {"authenticity_token"=>"Fj1GLnJ1ZdSHFJPgBdl44XLQ0jTO1HjJJDsVKniT++LQbWtpRukGfja4sTzd0I69AKLS7IHs2erTWpDigsPEOg=="}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."user_name" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/login_controller.rb:10
+Redirected to http://localhost:3000/login/new
+Completed 302 Found in 3ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/login/new" for ::1 at 2019-06-19 13:56:14 -0400
+Processing by LoginController#new as HTML
+  Rendering login/new.html.erb within layouts/application
+  Rendered login/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 25ms (Views: 22.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login/new" for ::1 at 2019-06-19 13:56:21 -0400
+Processing by LoginController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"p4WT97WBtplAYDleYhuWWGRwoVilBCZOVSMcVt4dq2Nh1b6wgR3VM/HMG4K6EmAEFgKhgOo8h22iQpmeJE2Uuw==", "user_name"=>"emmanuel.satterfield", "password"=>"[FILTERED]", "commit"=>"SIGN ME IN"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."user_name" = ? LIMIT ?[0m  [["user_name", "emmanuel.satterfield"], ["LIMIT", 1]]
+  ↳ app/controllers/login_controller.rb:10
+Redirected to http://localhost:3000/events
+Completed 302 Found in 221ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/events" for ::1 at 2019-06-19 13:56:21 -0400
+Processing by EventsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/views/events/index.html.erb:9
+  Rendered events/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 26ms (Views: 23.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/events/4" for ::1 at 2019-06-19 13:56:29 -0400
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  [1m[36mEvent Load (0.5ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:16
+  Rendering events/show.html.erb within layouts/application
+  Rendered events/show.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 32ms (Views: 26.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/events/15" for ::1 at 2019-06-19 13:56:43 -0400
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:16
+  Rendering events/show.html.erb within layouts/application
+  Rendered events/show.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 45ms (Views: 40.3ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/response/create" for ::1 at 2019-06-19 13:56:46 -0400
+  
+ActionController::RoutingError (No route matches [POST] "/response/create"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/events" for ::1 at 2019-06-19 13:58:44 -0400
+Processing by EventsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/views/events/index.html.erb:9
+  Rendered events/index.html.erb within layouts/application (13.4ms)
+Completed 200 OK in 54ms (Views: 33.8ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/events/1" for ::1 at 2019-06-19 13:58:54 -0400
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:16
+  Rendering events/show.html.erb within layouts/application
+  Rendered events/show.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 28ms (Views: 23.4ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/response/new" for ::1 at 2019-06-19 13:58:56 -0400
+  
+ActionController::RoutingError (No route matches [POST] "/response/new"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/events/15" for ::1 at 2019-06-19 14:01:31 -0400
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:16
+  Rendering events/show.html.erb within layouts/application
+  Rendered events/show.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 64ms (Views: 56.5ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/responses" for ::1 at 2019-06-19 14:01:36 -0400
+Processing by ResponsesController#create as HTML
+  Parameters: {"authenticity_token"=>"Pnw/AcK/c7HDuxJTPZCLIdS4JIApXd5oBiN6L2c/a+tGvC1XPRfyyiw9Vvp58FFEu4dzyLKRrzhy21vLIMqR+A=="}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.1ms)
+
+
+  
+NoMethodError (undefined method `id' for nil:NilClass):
+  
+app/controllers/responses_controller.rb:7:in `create'
+Started PUT "/__web_console/repl_sessions/553349550141fcb212bf88d34d66194f" for ::1 at 2019-06-19 14:01:44 -0400
+Started PUT "/__web_console/repl_sessions/553349550141fcb212bf88d34d66194f" for ::1 at 2019-06-19 14:01:51 -0400
+Started PUT "/__web_console/repl_sessions/553349550141fcb212bf88d34d66194f" for ::1 at 2019-06-19 14:02:05 -0400
+Started PUT "/__web_console/repl_sessions/553349550141fcb212bf88d34d66194f" for ::1 at 2019-06-19 14:02:07 -0400
+Started PUT "/__web_console/repl_sessions/553349550141fcb212bf88d34d66194f" for ::1 at 2019-06-19 14:02:10 -0400
+Started PUT "/__web_console/repl_sessions/553349550141fcb212bf88d34d66194f" for ::1 at 2019-06-19 14:02:11 -0400
+Started PUT "/__web_console/repl_sessions/553349550141fcb212bf88d34d66194f" for ::1 at 2019-06-19 14:02:51 -0400
+Started GET "/events" for ::1 at 2019-06-19 14:03:09 -0400
+Processing by EventsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/views/events/index.html.erb:9
+  Rendered events/index.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 33ms (Views: 27.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/events/15" for ::1 at 2019-06-19 14:03:14 -0400
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:16
+  Rendering events/show.html.erb within layouts/application
+  Rendered events/show.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 45ms (Views: 36.8ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/responses" for ::1 at 2019-06-19 14:04:00 -0400
+Processing by ResponsesController#create as HTML
+  Parameters: {"authenticity_token"=>"vMuOvdIugKz+hx2SRVkxHkZJQPQxnXecnw1+Zj171ePEC5zrLYYB1xEBWTsBOet7KXYXvKpRBszr9V+Ceo4v8A=="}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.1ms)
+
+
+  
+NoMethodError (undefined method `id' for nil:NilClass):
+  
+app/controllers/responses_controller.rb:7:in `create'
+Started PUT "/__web_console/repl_sessions/64e8fce8f25ba1d59021818fdea61c48" for ::1 at 2019-06-19 14:04:03 -0400
+Started PUT "/__web_console/repl_sessions/64e8fce8f25ba1d59021818fdea61c48" for ::1 at 2019-06-19 14:04:05 -0400
+Started PUT "/__web_console/repl_sessions/64e8fce8f25ba1d59021818fdea61c48" for ::1 at 2019-06-19 14:04:08 -0400
+Started PUT "/__web_console/repl_sessions/64e8fce8f25ba1d59021818fdea61c48" for ::1 at 2019-06-19 14:04:13 -0400
+Started GET "/events" for ::1 at 2019-06-19 14:11:56 -0400
+Processing by EventsController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (1.9ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/views/events/index.html.erb:9
+  Rendered events/index.html.erb within layouts/application (10.2ms)
+Completed 200 OK in 68ms (Views: 59.2ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/events/1" for ::1 at 2019-06-19 14:12:06 -0400
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  [1m[36mEvent Load (0.3ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:16
+  Rendering events/show.html.erb within layouts/application
+  Rendered events/show.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 49ms (Views: 39.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/events" for ::1 at 2019-06-19 14:12:09 -0400
+Processing by EventsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/views/events/index.html.erb:9
+  Rendered events/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 42ms (Views: 37.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/events" for ::1 at 2019-06-19 14:12:30 -0400
+Processing by EventsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/views/events/index.html.erb:9
+  Rendered events/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 45ms (Views: 40.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/events/1" for ::1 at 2019-06-19 14:12:34 -0400
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:16
+  Rendering events/show.html.erb within layouts/application
+  Rendered events/show.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 56ms (Views: 50.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/events" for ::1 at 2019-06-19 14:12:50 -0400
+Processing by EventsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/views/events/index.html.erb:9
+  Rendered events/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 35ms (Views: 32.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/events/2" for ::1 at 2019-06-19 14:12:54 -0400
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:16
+  Rendering events/show.html.erb within layouts/application
+  Rendered events/show.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 42ms (Views: 37.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/events/2" for ::1 at 2019-06-19 14:13:08 -0400
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:16
+  Rendering events/show.html.erb within layouts/application
+  Rendered events/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 33ms (Views: 29.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/events" for ::1 at 2019-06-19 14:13:09 -0400
+Processing by EventsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.4ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/views/events/index.html.erb:9
+  Rendered events/index.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 74ms (Views: 68.2ms | ActiveRecord: 0.8ms)
+
+
+Started DELETE "/logout" for ::1 at 2019-06-19 14:13:44 -0400
+Processing by LoginController#destroy as HTML
+  Parameters: {"authenticity_token"=>"xtbfIGSVDNnykboK3axukRWGNS118P2Hu+I+zFWuXoLwBEuJct6bYTfEiFIWLyDlxFJm6d2XelKgmx+0K+ejAg=="}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+Redirected to http://localhost:3000/events
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/events" for ::1 at 2019-06-19 14:13:45 -0400
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.4ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/views/events/index.html.erb:9
+  Rendered events/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 44ms (Views: 40.8ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/login/new" for ::1 at 2019-06-19 14:13:52 -0400
+Processing by LoginController#create as HTML
+  Parameters: {"authenticity_token"=>"l8xLjYzpMjGU0qUgNbS5v5Mzg0RTuU2VC+qAhiZ+xMtRnGbKuHVRmyV+h/ztvU/j4UGDnByB7Lb8iwVO3C77Ew=="}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."user_name" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/login_controller.rb:10
+Redirected to http://localhost:3000/login/new
+Completed 302 Found in 4ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/login/new" for ::1 at 2019-06-19 14:13:52 -0400
+Processing by LoginController#new as HTML
+  Rendering login/new.html.erb within layouts/application
+  Rendered login/new.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 29ms (Views: 27.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login/new" for ::1 at 2019-06-19 14:13:57 -0400
+Processing by LoginController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"YEwixqATlTyNv+qWENWWjgk4OQaOHf8biYQ2rA8YDaCmHA+BlI/2ljwTyErI3GDSe0o53sElXjh+5bNk9UgyeA==", "user_name"=>"emmanuel.satterfield", "password"=>"[FILTERED]", "commit"=>"SIGN ME IN"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."user_name" = ? LIMIT ?[0m  [["user_name", "emmanuel.satterfield"], ["LIMIT", 1]]
+  ↳ app/controllers/login_controller.rb:10
+Redirected to http://localhost:3000/events
+Completed 302 Found in 222ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/events" for ::1 at 2019-06-19 14:13:58 -0400
+Processing by EventsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/views/events/index.html.erb:9
+  Rendered events/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 29ms (Views: 26.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/events/15" for ::1 at 2019-06-19 14:16:35 -0400
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  [1m[36mEvent Load (0.8ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:16
+  Rendering events/show.html.erb within layouts/application
+  Rendered events/show.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 52ms (Views: 20.6ms | ActiveRecord: 2.4ms)
+
+
+Started POST "/responses" for ::1 at 2019-06-19 14:16:36 -0400
+Processing by ResponsesController#create as HTML
+  Parameters: {"authenticity_token"=>"ej6xtC5V1WxdFw4g66a57DmU1o5q8LZB4CM7Pe5tS5gC/qPi0f1UF7KRSomvxmOJVquBxvE8xxGU2xrZqZixiw=="}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.2ms)
+
+
+  
+NoMethodError (undefined method `id' for nil:NilClass):
+  
+app/controllers/responses_controller.rb:7:in `create'
+Started PUT "/__web_console/repl_sessions/073e6bcbf8bdd393c2a791fc58e6d27a" for ::1 at 2019-06-19 14:16:48 -0400
+Started PUT "/__web_console/repl_sessions/073e6bcbf8bdd393c2a791fc58e6d27a" for ::1 at 2019-06-19 14:16:48 -0400
+Started POST "/responses" for ::1 at 2019-06-19 14:26:03 -0400
+Processing by ResponsesController#create as HTML
+  Parameters: {"authenticity_token"=>"ej6xtC5V1WxdFw4g66a57DmU1o5q8LZB4CM7Pe5tS5gC/qPi0f1UF7KRSomvxmOJVquBxvE8xxGU2xrZqZixiw=="}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.8ms)
+
+
+  
+NoMethodError (undefined method `id' for nil:NilClass):
+  
+app/controllers/responses_controller.rb:7:in `create'
+Started GET "/events/15" for ::1 at 2019-06-19 14:31:00 -0400
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  [1m[36mEvent Load (0.8ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:16
+  Rendering events/show.html.erb within layouts/application
+  Rendered events/show.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 73ms (Views: 30.9ms | ActiveRecord: 2.5ms)
+
+
+Started POST "/responses" for ::1 at 2019-06-19 14:31:02 -0400
+Processing by ResponsesController#create as HTML
+  Parameters: {"authenticity_token"=>"PWCNT9YjgWeeg2PSXpOJ3V0QDgdRbVOyngDpepVafdz7MKAI4r/izS8vQQ6Gmn+BL2IO3x5V8pFpYWyybwpCBA=="}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.3ms)
+
+
+  
+NoMethodError (undefined method `id' for nil:NilClass):
+  
+app/controllers/responses_controller.rb:7:in `create'
+Started GET "/events" for ::1 at 2019-06-19 14:40:50 -0400
+Processing by EventsController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (1.4ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/views/events/index.html.erb:9
+  Rendered events/index.html.erb within layouts/application (18.4ms)
+Completed 200 OK in 173ms (Views: 140.6ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/events/15" for ::1 at 2019-06-19 14:40:56 -0400
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:16
+  Rendering events/show.html.erb within layouts/application
+  Rendered events/show.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 39ms (Views: 33.6ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/events/15/create" for ::1 at 2019-06-19 14:40:59 -0400
+Processing by ResponsesController#create as HTML
+  Parameters: {"authenticity_token"=>"xSOlsbhV25N5t2FpKpEfBEaDIh5tExqZXWiKAJmEFZrak+GO2eRsGR31W9VItKs/fR+NJpLv3DRAjYDFgE93LQ==", "id"=>"15"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.1ms)
+
+
+  
+NoMethodError (undefined method `id' for nil:NilClass):
+  
+app/controllers/responses_controller.rb:7:in `create'
+Started PUT "/__web_console/repl_sessions/bf0a68bcf7600fecd46fe1d20e1ac230" for ::1 at 2019-06-19 14:41:04 -0400
+Started PUT "/__web_console/repl_sessions/bf0a68bcf7600fecd46fe1d20e1ac230" for ::1 at 2019-06-19 14:41:09 -0400
+Started PUT "/__web_console/repl_sessions/bf0a68bcf7600fecd46fe1d20e1ac230" for ::1 at 2019-06-19 14:41:27 -0400
+Started PUT "/__web_console/repl_sessions/bf0a68bcf7600fecd46fe1d20e1ac230" for ::1 at 2019-06-19 14:41:38 -0400
+Started GET "/events" for ::1 at 2019-06-19 14:41:56 -0400
+Processing by EventsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/views/events/index.html.erb:9
+  Rendered events/index.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 48ms (Views: 30.1ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/events/15" for ::1 at 2019-06-19 14:41:59 -0400
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:16
+  Rendering events/show.html.erb within layouts/application
+  Rendered events/show.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 44ms (Views: 36.8ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/events/15/create" for ::1 at 2019-06-19 14:42:01 -0400
+Processing by ResponsesController#create as HTML
+  Parameters: {"authenticity_token"=>"1mhaxGS2d3lNj1UqQFOJULQMncTOxb+kuWx2wrBuSSTJ2B77BQfA8ynNb5Yidj1rj5Ay/DE5eQmkiXwHqaUrkw==", "id"=>"15"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/responses_controller.rb:7
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/responses_controller.rb:7
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/responses_controller.rb:7
+  [1m[36mResponse Create (1.5ms)[0m  [1m[32mINSERT INTO "responses" ("user_id", "event_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 1], ["event_id", 15], ["created_at", "2019-06-19 18:42:01.492970"], ["updated_at", "2019-06-19 18:42:01.492970"]]
+  ↳ app/controllers/responses_controller.rb:7
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/responses_controller.rb:7
+Redirected to http://localhost:3000/users/1
+Completed 302 Found in 23ms (ActiveRecord: 3.0ms)
+
+
+Started GET "/users/1" for ::1 at 2019-06-19 14:42:01 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:45
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mEvent Load (0.3ms)[0m  [1m[34mSELECT "events".* FROM "events" INNER JOIN "responses" ON "events"."id" = "responses"."event_id" WHERE "responses"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/users/show.html.erb:9
+  Rendered users/show.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 40ms (Views: 36.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/1" for ::1 at 2019-06-19 14:48:16 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:45
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT "events".* FROM "events" INNER JOIN "responses" ON "events"."id" = "responses"."event_id" WHERE "responses"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/users/show.html.erb:9
+  Rendered users/show.html.erb within layouts/application (25.0ms)
+Completed 200 OK in 67ms (Views: 46.4ms | ActiveRecord: 1.7ms)
+
+
+Started POST "/users/15/delete" for ::1 at 2019-06-19 14:48:22 -0400
+  
+ActionController::RoutingError (No route matches [POST] "/users/15/delete"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/users/1" for ::1 at 2019-06-19 14:48:58 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:45
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT "events".* FROM "events" INNER JOIN "responses" ON "events"."id" = "responses"."event_id" WHERE "responses"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/users/show.html.erb:9
+  Rendered users/show.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 50ms (Views: 45.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/15" for ::1 at 2019-06-19 14:49:07 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:45
+Redirected to http://localhost:3000/events
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/events" for ::1 at 2019-06-19 14:49:07 -0400
+Processing by EventsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/views/events/index.html.erb:9
+  Rendered events/index.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 27ms (Views: 22.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/1" for ::1 at 2019-06-19 14:49:15 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:45
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT "events".* FROM "events" INNER JOIN "responses" ON "events"."id" = "responses"."event_id" WHERE "responses"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/users/show.html.erb:9
+  Rendered users/show.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 29ms (Views: 24.6ms | ActiveRecord: 0.4ms)
+
+
+Started DELETE "/users/15/delete" for ::1 at 2019-06-19 14:50:53 -0400
+  
+ActionController::RoutingError (uninitialized constant ResponseController):
+  
+bootsnap (1.4.4) lib/bootsnap/load_path_cache/core_ext/active_support.rb:79:in `block in load_missing_constant'
+bootsnap (1.4.4) lib/bootsnap/load_path_cache/core_ext/active_support.rb:8:in `without_bootsnap_cache'
+bootsnap (1.4.4) lib/bootsnap/load_path_cache/core_ext/active_support.rb:79:in `rescue in load_missing_constant'
+bootsnap (1.4.4) lib/bootsnap/load_path_cache/core_ext/active_support.rb:59:in `load_missing_constant'
+activesupport (5.2.3) lib/active_support/inflector/methods.rb:283:in `const_get'
+activesupport (5.2.3) lib/active_support/inflector/methods.rb:283:in `block in constantize'
+activesupport (5.2.3) lib/active_support/inflector/methods.rb:281:in `each'
+activesupport (5.2.3) lib/active_support/inflector/methods.rb:281:in `inject'
+activesupport (5.2.3) lib/active_support/inflector/methods.rb:281:in `constantize'
+actionpack (5.2.3) lib/action_dispatch/http/request.rb:88:in `controller_class_for'
+actionpack (5.2.3) lib/action_dispatch/http/request.rb:81:in `controller_class'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:46:in `controller'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.0.7) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:38:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+actionpack (5.2.3) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.7) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.7) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.3) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/users/15" for ::1 at 2019-06-19 14:51:19 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:45
+Redirected to http://localhost:3000/events
+Completed 302 Found in 13ms (ActiveRecord: 0.8ms)
+
+
+Started GET "/events" for ::1 at 2019-06-19 14:51:19 -0400
+Processing by EventsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.3ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/views/events/index.html.erb:9
+  Rendered events/index.html.erb within layouts/application (15.4ms)
+Completed 200 OK in 43ms (Views: 35.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/events/1" for ::1 at 2019-06-19 14:51:27 -0400
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:16
+  Rendering events/show.html.erb within layouts/application
+  Rendered events/show.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 42ms (Views: 33.2ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/events/1/create" for ::1 at 2019-06-19 14:51:35 -0400
+Processing by ResponsesController#create as HTML
+  Parameters: {"authenticity_token"=>"5HD5EXv1EsEUJWyAjxzU9DLKTRUlDxlZ6jx178YeZX/hL93ACMeCbdx8dRZ6EubYhSWPCePbFGQp0qzMXRd8DQ==", "id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/responses_controller.rb:7
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/responses_controller.rb:7
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/responses_controller.rb:7
+  [1m[36mResponse Create (0.3ms)[0m  [1m[32mINSERT INTO "responses" ("user_id", "event_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 1], ["event_id", 1], ["created_at", "2019-06-19 18:51:35.993570"], ["updated_at", "2019-06-19 18:51:35.993570"]]
+  ↳ app/controllers/responses_controller.rb:7
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/responses_controller.rb:7
+Redirected to http://localhost:3000/users/1
+Completed 302 Found in 17ms (ActiveRecord: 2.0ms)
+
+
+Started POST "/events/1/create" for ::1 at 2019-06-19 14:51:46 -0400
+Processing by ResponsesController#create as HTML
+  Parameters: {"authenticity_token"=>"jhPdneISxXHqFDEYpU/XhRnuEd/ISwcwJ+eWOeYscO9IQ/Da1o6m21u4E8R9RiHZa5wRB4dzphPQhhPxHHxPNw==", "id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/responses_controller.rb:7
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/responses_controller.rb:7
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/responses_controller.rb:7
+  [1m[36mResponse Create (0.3ms)[0m  [1m[32mINSERT INTO "responses" ("user_id", "event_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 1], ["event_id", 1], ["created_at", "2019-06-19 18:51:46.699214"], ["updated_at", "2019-06-19 18:51:46.699214"]]
+  ↳ app/controllers/responses_controller.rb:7
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/responses_controller.rb:7
+Redirected to http://localhost:3000/users/1
+Completed 302 Found in 7ms (ActiveRecord: 1.2ms)
+
+
+Started GET "/users/1" for ::1 at 2019-06-19 14:51:46 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:45
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT "events".* FROM "events" INNER JOIN "responses" ON "events"."id" = "responses"."event_id" WHERE "responses"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/users/show.html.erb:9
+  Rendered users/show.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 30ms (Views: 26.2ms | ActiveRecord: 0.5ms)
+
+
+Started DELETE "/users/1/delete" for ::1 at 2019-06-19 14:51:53 -0400
+Processing by ResponsesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"D6iNl3t7Rn8B1dYo/58iKoYU7PGHKH3bKuwRYXqUV+TJ+KDQT+cl1bB59PQnltR29GbsKcgQ3PjdjZSpgMRoPA==", "id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  [1m[36mResponse Load (0.2ms)[0m  [1m[34mSELECT  "responses".* FROM "responses" WHERE "responses"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ (byebug):1
+Started DELETE "/users/1/delete" for ::1 at 2019-06-19 14:55:22 -0400
+Completed 500 Internal Server Error in 208833ms (ActiveRecord: 0.4ms)
+
+
+Processing by ResponsesController#destroy as HTML
+  
+  Parameters: {"authenticity_token"=>"D6iNl3t7Rn8B1dYo/58iKoYU7PGHKH3bKuwRYXqUV+TJ+KDQT+cl1bB59PQnltR29GbsKcgQ3PjdjZSpgMRoPA==", "id"=>"1"}
+SystemExit (exit):
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  
+  ↳ app/controllers/application_controller.rb:9
+Started GET "/users/1" for ::1 at 2019-06-19 14:55:34 -0400
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/duongnguyen/.rvm/gems/ruby-2.3.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:45
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT "events".* FROM "events" INNER JOIN "responses" ON "events"."id" = "responses"."event_id" WHERE "responses"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/users/show.html.erb:9
+  Rendered users/show.html.erb within layouts/application (57.1ms)
+Completed 200 OK in 280ms (Views: 245.7ms | ActiveRecord: 1.8ms)
+
+
+Started DELETE "/users/1/delete" for ::1 at 2019-06-19 14:55:42 -0400
+Processing by ResponsesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"EraqKsLipzl2CSnNtpuA9k9HskB38VWfSo4GifHJoGLU5odt9n7Ek8elCxFuknaqPTWymDjJ9Ly974NBC5mfug==", "id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  [1m[36mResponse Load (0.2ms)[0m  [1m[34mSELECT  "responses".* FROM "responses" WHERE "responses"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/responses_controller.rb:13
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/responses_controller.rb:14
+  [1m[36mResponse Destroy (0.9ms)[0m  [1m[31mDELETE FROM "responses" WHERE "responses"."id" = ?[0m  [["id", 1]]
+  ↳ app/controllers/responses_controller.rb:14
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/responses_controller.rb:14
+Redirected to http://localhost:3000/users/1
+Completed 302 Found in 11ms (ActiveRecord: 2.1ms)
+
+
+Started GET "/users/1" for ::1 at 2019-06-19 14:55:42 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:45
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT "events".* FROM "events" INNER JOIN "responses" ON "events"."id" = "responses"."event_id" WHERE "responses"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/users/show.html.erb:9
+  Rendered users/show.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 46ms (Views: 42.1ms | ActiveRecord: 0.4ms)
+
+
+Started DELETE "/users/1/delete" for ::1 at 2019-06-19 14:55:49 -0400
+Processing by ResponsesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"eLRjqTs3Yh3NJf9U3Qf1jjLJ7vyu3Z4hubhCEb8i2He+5E7uD6sBt3yJ3YgFDgPSQLvuJOHlPwJO2cfZRXLnrw==", "id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT  "responses".* FROM "responses" WHERE "responses"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/responses_controller.rb:13
+Completed 404 Not Found in 2ms (ActiveRecord: 0.2ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Response with 'id'=1):
+  
+app/controllers/responses_controller.rb:13:in `destroy'
+Started POST "/__web_console/repl_sessions/652877bbd9be753820535cc87841c036/trace" for ::1 at 2019-06-19 14:56:06 -0400
+Started GET "/users/1" for ::1 at 2019-06-19 14:56:09 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:45
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT "events".* FROM "events" INNER JOIN "responses" ON "events"."id" = "responses"."event_id" WHERE "responses"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/users/show.html.erb:9
+  Rendered users/show.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 58ms (Views: 52.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/events" for ::1 at 2019-06-19 14:56:11 -0400
+Processing by EventsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.6ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/views/events/index.html.erb:9
+  Rendered events/index.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 44ms (Views: 38.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/users/1" for ::1 at 2019-06-19 14:56:20 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:45
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT "events".* FROM "events" INNER JOIN "responses" ON "events"."id" = "responses"."event_id" WHERE "responses"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/users/show.html.erb:9
+  Rendered users/show.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 34ms (Views: 29.8ms | ActiveRecord: 0.4ms)
+
+
+Started DELETE "/users/1/delete" for ::1 at 2019-06-19 14:56:23 -0400
+Processing by ResponsesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"WE4l3dHscmG2+a5hYUYLKcMun0p19yMIcb74aq8GSVaeHgia5XARywdVjL25T/11sVyfkjrPgiuG332iVVZ2jg==", "id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  [1m[36mResponse Load (0.2ms)[0m  [1m[34mSELECT  "responses".* FROM "responses" WHERE "responses"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/responses_controller.rb:13
+Completed 404 Not Found in 4ms (ActiveRecord: 0.4ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Response with 'id'=1):
+  
+app/controllers/responses_controller.rb:13:in `destroy'
+Started PUT "/__web_console/repl_sessions/222fd6f10f60c4323a38c7a5ca2d5356" for ::1 at 2019-06-19 14:56:32 -0400
+Started PUT "/__web_console/repl_sessions/222fd6f10f60c4323a38c7a5ca2d5356" for ::1 at 2019-06-19 14:56:36 -0400
+Started PUT "/__web_console/repl_sessions/222fd6f10f60c4323a38c7a5ca2d5356" for ::1 at 2019-06-19 14:56:43 -0400
+Started PUT "/__web_console/repl_sessions/222fd6f10f60c4323a38c7a5ca2d5356" for ::1 at 2019-06-19 14:56:59 -0400
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT  "responses".* FROM "responses" WHERE "responses"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/duongnguyen/.rvm/gems/ruby-2.3.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Started PUT "/__web_console/repl_sessions/222fd6f10f60c4323a38c7a5ca2d5356" for ::1 at 2019-06-19 14:57:18 -0400
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT  "responses".* FROM "responses" WHERE "responses"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/duongnguyen/.rvm/gems/ruby-2.3.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Started PUT "/__web_console/repl_sessions/222fd6f10f60c4323a38c7a5ca2d5356" for ::1 at 2019-06-19 14:57:30 -0400
+Started PUT "/__web_console/repl_sessions/222fd6f10f60c4323a38c7a5ca2d5356" for ::1 at 2019-06-19 14:57:31 -0400
+Started PUT "/__web_console/repl_sessions/222fd6f10f60c4323a38c7a5ca2d5356" for ::1 at 2019-06-19 14:57:46 -0400
+Started PUT "/__web_console/repl_sessions/222fd6f10f60c4323a38c7a5ca2d5356" for ::1 at 2019-06-19 14:58:14 -0400
+Started PUT "/__web_console/repl_sessions/222fd6f10f60c4323a38c7a5ca2d5356" for ::1 at 2019-06-19 14:58:16 -0400
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT  "responses".* FROM "responses" WHERE "responses"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/duongnguyen/.rvm/gems/ruby-2.3.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Started PUT "/__web_console/repl_sessions/222fd6f10f60c4323a38c7a5ca2d5356" for ::1 at 2019-06-19 14:58:29 -0400
+  [1m[36mResponse Load (0.2ms)[0m  [1m[34mSELECT  "responses".* FROM "responses" LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ /Users/duongnguyen/.rvm/gems/ruby-2.3.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Started PUT "/__web_console/repl_sessions/222fd6f10f60c4323a38c7a5ca2d5356" for ::1 at 2019-06-19 15:36:49 -0400
+Started PUT "/__web_console/repl_sessions/222fd6f10f60c4323a38c7a5ca2d5356" for ::1 at 2019-06-19 15:36:57 -0400
+Started PUT "/__web_console/repl_sessions/222fd6f10f60c4323a38c7a5ca2d5356" for ::1 at 2019-06-19 15:36:57 -0400
+Started PUT "/__web_console/repl_sessions/222fd6f10f60c4323a38c7a5ca2d5356" for ::1 at 2019-06-19 15:36:58 -0400
+Started PUT "/__web_console/repl_sessions/222fd6f10f60c4323a38c7a5ca2d5356" for ::1 at 2019-06-19 15:36:58 -0400
+Started PUT "/__web_console/repl_sessions/222fd6f10f60c4323a38c7a5ca2d5356" for ::1 at 2019-06-19 15:36:59 -0400
+Started PUT "/__web_console/repl_sessions/222fd6f10f60c4323a38c7a5ca2d5356" for ::1 at 2019-06-19 15:37:00 -0400
+Started PUT "/__web_console/repl_sessions/222fd6f10f60c4323a38c7a5ca2d5356" for ::1 at 2019-06-19 15:37:01 -0400
+Started PUT "/__web_console/repl_sessions/222fd6f10f60c4323a38c7a5ca2d5356" for ::1 at 2019-06-19 15:37:23 -0400
+Started PUT "/__web_console/repl_sessions/222fd6f10f60c4323a38c7a5ca2d5356" for ::1 at 2019-06-19 15:37:40 -0400
+Started PUT "/__web_console/repl_sessions/222fd6f10f60c4323a38c7a5ca2d5356" for ::1 at 2019-06-19 15:37:47 -0400
+  [1m[36mResponse Load (0.4ms)[0m  [1m[34mSELECT  "responses".* FROM "responses" WHERE "responses"."user_id" = ? LIMIT ?[0m  [["user_id", 1], ["LIMIT", 11]]
+  ↳ /Users/duongnguyen/.rvm/gems/ruby-2.3.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Started PUT "/__web_console/repl_sessions/222fd6f10f60c4323a38c7a5ca2d5356" for ::1 at 2019-06-19 15:37:58 -0400
+Started PUT "/__web_console/repl_sessions/222fd6f10f60c4323a38c7a5ca2d5356" for ::1 at 2019-06-19 15:38:02 -0400
+Started PUT "/__web_console/repl_sessions/222fd6f10f60c4323a38c7a5ca2d5356" for ::1 at 2019-06-19 15:38:08 -0400
+Started PUT "/__web_console/repl_sessions/222fd6f10f60c4323a38c7a5ca2d5356" for ::1 at 2019-06-19 15:38:17 -0400
+Started PUT "/__web_console/repl_sessions/222fd6f10f60c4323a38c7a5ca2d5356" for ::1 at 2019-06-19 15:38:20 -0400
+Started PUT "/__web_console/repl_sessions/222fd6f10f60c4323a38c7a5ca2d5356" for ::1 at 2019-06-19 15:38:31 -0400
+Started PUT "/__web_console/repl_sessions/222fd6f10f60c4323a38c7a5ca2d5356" for ::1 at 2019-06-19 15:39:03 -0400
+  [1m[36mResponse Load (0.2ms)[0m  [1m[34mSELECT  "responses".* FROM "responses" WHERE "responses"."id" = ? AND "responses"."user_id" = ? LIMIT ?[0m  [["id", 1], ["user_id", 1], ["LIMIT", 1]]
+  ↳ /Users/duongnguyen/.rvm/gems/ruby-2.3.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Started PUT "/__web_console/repl_sessions/222fd6f10f60c4323a38c7a5ca2d5356" for ::1 at 2019-06-19 15:39:09 -0400
+Started PUT "/__web_console/repl_sessions/222fd6f10f60c4323a38c7a5ca2d5356" for ::1 at 2019-06-19 15:39:13 -0400
+Started PUT "/__web_console/repl_sessions/222fd6f10f60c4323a38c7a5ca2d5356" for ::1 at 2019-06-19 15:39:13 -0400
+Started PUT "/__web_console/repl_sessions/222fd6f10f60c4323a38c7a5ca2d5356" for ::1 at 2019-06-19 15:39:16 -0400
+Started PUT "/__web_console/repl_sessions/222fd6f10f60c4323a38c7a5ca2d5356" for ::1 at 2019-06-19 15:39:20 -0400
+Started PUT "/__web_console/repl_sessions/222fd6f10f60c4323a38c7a5ca2d5356" for ::1 at 2019-06-19 15:39:26 -0400
+Started PUT "/__web_console/repl_sessions/222fd6f10f60c4323a38c7a5ca2d5356" for ::1 at 2019-06-19 15:39:35 -0400
+  [1m[36mResponse Load (0.2ms)[0m  [1m[34mSELECT  "responses".* FROM "responses" WHERE "responses"."event_id" = ? AND "responses"."user_id" = ? LIMIT ?[0m  [["event_id", 1], ["user_id", 1], ["LIMIT", 1]]
+  ↳ /Users/duongnguyen/.rvm/gems/ruby-2.3.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Started GET "/users/1" for ::1 at 2019-06-19 15:40:17 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:45
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT "events".* FROM "events" INNER JOIN "responses" ON "events"."id" = "responses"."event_id" WHERE "responses"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/users/show.html.erb:9
+  Rendered users/show.html.erb within layouts/application (23.5ms)
+Completed 200 OK in 72ms (Views: 51.4ms | ActiveRecord: 1.8ms)
+
+
+Started DELETE "/users/1/delete" for ::1 at 2019-06-19 15:40:22 -0400
+Processing by ResponsesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"OhCqS53mIBlQBzO/YGIGn779zWaLZhrIdai6hep2nUH8QIcMqXpDs+GrEWO4a/DDzI/NvsReu+uCyT9NECaimQ==", "id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  [1m[36mResponse Load (0.1ms)[0m  [1m[34mSELECT  "responses".* FROM "responses" WHERE "responses"."event_id" = ? AND "responses"."user_id" = ? LIMIT ?[0m  [["event_id", 1], ["user_id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/responses_controller.rb:13
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/responses_controller.rb:14
+  [1m[36mResponse Destroy (0.3ms)[0m  [1m[31mDELETE FROM "responses" WHERE "responses"."id" = ?[0m  [["id", 32]]
+  ↳ app/controllers/responses_controller.rb:14
+  [1m[35m (2.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/responses_controller.rb:14
+Redirected to http://localhost:3000/users/1
+Completed 302 Found in 14ms (ActiveRecord: 2.9ms)
+
+
+Started GET "/users/1" for ::1 at 2019-06-19 15:40:22 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:45
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT "events".* FROM "events" INNER JOIN "responses" ON "events"."id" = "responses"."event_id" WHERE "responses"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/users/show.html.erb:9
+  Rendered users/show.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 41ms (Views: 36.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/" for ::1 at 2019-06-19 15:41:23 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:1
+  Rendered users/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 55ms (Views: 46.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/users/1" for ::1 at 2019-06-19 16:06:36 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:45
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT "events".* FROM "events" INNER JOIN "responses" ON "events"."id" = "responses"."event_id" WHERE "responses"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/users/show.html.erb:9
+  Rendered users/show.html.erb within layouts/application (13.9ms)
+Completed 200 OK in 80ms (Views: 60.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/events" for ::1 at 2019-06-19 16:07:23 -0400
+Processing by EventsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.4ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/views/events/index.html.erb:9
+  Rendered events/index.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 43ms (Views: 36.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/events" for ::1 at 2019-06-19 16:10:32 -0400
+Processing by EventsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/views/events/index.html.erb:9
+  Rendered events/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 36ms (Views: 31.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/events" for ::1 at 2019-06-19 16:11:49 -0400
+Processing by EventsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/views/events/index.html.erb:9
+  Rendered events/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 38ms (Views: 34.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/events" for ::1 at 2019-06-19 16:12:01 -0400
+Processing by EventsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/views/events/index.html.erb:9
+  Rendered events/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 37ms (Views: 33.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/events/2" for ::1 at 2019-06-19 16:12:46 -0400
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  [1m[36mEvent Load (0.3ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:16
+  Rendering events/show.html.erb within layouts/application
+  Rendered events/show.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 65ms (Views: 53.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/events" for ::1 at 2019-06-19 16:12:52 -0400
+Processing by EventsController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/views/events/index.html.erb:9
+  Rendered events/index.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 40ms (Views: 34.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/events" for ::1 at 2019-06-19 16:14:05 -0400
+Processing by EventsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.3ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/views/events/index.html.erb:9
+  Rendered events/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 32ms (Views: 28.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/events" for ::1 at 2019-06-19 16:14:07 -0400
+Processing by EventsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.4ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/views/events/index.html.erb:9
+  Rendered events/index.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 94ms (Views: 89.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/events" for ::1 at 2019-06-19 16:14:08 -0400
+Processing by EventsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/views/events/index.html.erb:9
+  Rendered events/index.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 43ms (Views: 38.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/events" for ::1 at 2019-06-19 16:14:08 -0400
+Processing by EventsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/views/events/index.html.erb:9
+  Rendered events/index.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 63ms (Views: 56.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/events/1" for ::1 at 2019-06-19 16:14:09 -0400
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:16
+  Rendering events/show.html.erb within layouts/application
+  Rendered events/show.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 53ms (Views: 48.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/events" for ::1 at 2019-06-19 16:14:09 -0400
+Processing by EventsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (1.0ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/views/events/index.html.erb:9
+  Rendered events/index.html.erb within layouts/application (11.6ms)
+Completed 200 OK in 78ms (Views: 71.7ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/events/2" for ::1 at 2019-06-19 16:14:10 -0400
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:16
+  Rendering events/show.html.erb within layouts/application
+  Rendered events/show.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 52ms (Views: 43.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/events" for ::1 at 2019-06-19 16:14:12 -0400
+Processing by EventsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/views/events/index.html.erb:9
+  Rendered events/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 80ms (Views: 72.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/events" for ::1 at 2019-06-19 16:17:34 -0400
+Processing by EventsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/views/events/index.html.erb:9
+  Rendered events/index.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 58ms (Views: 54.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/events" for ::1 at 2019-06-19 16:17:42 -0400
+Processing by EventsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/views/events/index.html.erb:9
+  Rendered events/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 26ms (Views: 22.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/events" for ::1 at 2019-06-19 16:17:51 -0400
+Processing by EventsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/views/events/index.html.erb:9
+  Rendered events/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 28ms (Views: 23.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/events" for ::1 at 2019-06-19 16:17:52 -0400
+Processing by EventsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/views/events/index.html.erb:9
+  Rendered events/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 28ms (Views: 25.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/events" for ::1 at 2019-06-19 16:18:02 -0400
+Processing by EventsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.5ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/views/events/index.html.erb:9
+  Rendered events/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 36ms (Views: 31.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/events" for ::1 at 2019-06-19 16:18:09 -0400
+Processing by EventsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/views/events/index.html.erb:9
+  Rendered events/index.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 26ms (Views: 22.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/events" for ::1 at 2019-06-19 16:18:26 -0400
+Processing by EventsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.4ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/views/events/index.html.erb:9
+  Rendered events/index.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 31ms (Views: 27.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/events" for ::1 at 2019-06-19 16:18:32 -0400
+Processing by EventsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/views/events/index.html.erb:9
+  Rendered events/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 23ms (Views: 19.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/events" for ::1 at 2019-06-19 16:19:46 -0400
+Processing by EventsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/views/events/index.html.erb:9
+  Rendered events/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 24ms (Views: 21.2ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/logout" for ::1 at 2019-06-19 16:19:55 -0400
+Processing by LoginController#destroy as HTML
+  Parameters: {"authenticity_token"=>"kqyIJoXwgkkHgXCx0F+uvJOcc8EWP0rvwaDP/EOOEfNU/KVhsWzh47YtUm0IVljg4e5zGVkH68w2wUo0ud4uKw=="}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+Redirected to http://localhost:3000/events
+Completed 302 Found in 1ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/events" for ::1 at 2019-06-19 16:19:55 -0400
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.3ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/views/events/index.html.erb:9
+  Rendered events/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 24ms (Views: 21.9ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/login/new" for ::1 at 2019-06-19 16:19:57 -0400
+Processing by LoginController#create as HTML
+  Parameters: {"authenticity_token"=>"5kLmTtDlfnKCt4ExsDSc8WjUvhYSnR+qe2t7bQcxHMcgEssJ5Hkd2DMbo+1oPWqtGqa+zl2lvomMCv6l/WEjHw=="}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."user_name" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/login_controller.rb:10
+Redirected to http://localhost:3000/login/new
+Completed 302 Found in 3ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/login/new" for ::1 at 2019-06-19 16:19:57 -0400
+Processing by LoginController#new as HTML
+  Rendering login/new.html.erb within layouts/application
+  Rendered login/new.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 24ms (Views: 21.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login/new" for ::1 at 2019-06-19 16:20:02 -0400
+Processing by LoginController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/6qZAdpVE3RDswHdkLLUFUCad4GNYYDrCTUIW/HQGac5+rRG7slw3vIfIwFIuyJJMuh3WcJZIcj+VI2TC4Amfw==", "user_name"=>"emmanuel.satterfield", "password"=>"[FILTERED]", "commit"=>"SIGN ME IN"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."user_name" = ? LIMIT ?[0m  [["user_name", "emmanuel.satterfield"], ["LIMIT", 1]]
+  ↳ app/controllers/login_controller.rb:10
+Redirected to http://localhost:3000/events
+Completed 302 Found in 226ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/events" for ::1 at 2019-06-19 16:20:03 -0400
+Processing by EventsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/views/events/index.html.erb:9
+  Rendered events/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 27ms (Views: 23.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/events" for ::1 at 2019-06-19 16:20:09 -0400
+Processing by EventsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/views/events/index.html.erb:3
+  Rendered events/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 22ms (Views: 19.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/events" for ::1 at 2019-06-19 16:20:42 -0400
+Processing by EventsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/views/events/index.html.erb:3
+  Rendered events/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 31ms (Views: 26.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/1" for ::1 at 2019-06-19 16:20:43 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:45
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT "events".* FROM "events" INNER JOIN "responses" ON "events"."id" = "responses"."event_id" WHERE "responses"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/users/show.html.erb:9
+  Rendered users/show.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 26ms (Views: 21.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/1" for ::1 at 2019-06-19 16:20:45 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:45
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT "events".* FROM "events" INNER JOIN "responses" ON "events"."id" = "responses"."event_id" WHERE "responses"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/users/show.html.erb:9
+  Rendered users/show.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 25ms (Views: 21.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/events" for ::1 at 2019-06-19 16:20:48 -0400
+Processing by EventsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.3ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/views/events/index.html.erb:3
+  Rendered events/index.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 50ms (Views: 45.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/events" for ::1 at 2019-06-19 16:21:53 -0400
+Processing by EventsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/views/events/index.html.erb:3
+  Rendered events/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 31ms (Views: 27.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/events" for ::1 at 2019-06-19 16:22:05 -0400
+Processing by EventsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.3ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/views/events/index.html.erb:3
+  Rendered events/index.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 32ms (Views: 28.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/events" for ::1 at 2019-06-19 16:22:05 -0400
+Processing by EventsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/views/events/index.html.erb:3
+  Rendered events/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 34ms (Views: 30.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/events" for ::1 at 2019-06-19 16:23:39 -0400
+Processing by EventsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/views/events/index.html.erb:3
+  Rendered events/index.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 38ms (Views: 33.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/events" for ::1 at 2019-06-19 16:23:40 -0400
+Processing by EventsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/views/events/index.html.erb:3
+  Rendered events/index.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 80ms (Views: 76.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/1" for ::1 at 2019-06-19 16:23:41 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:45
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT "events".* FROM "events" INNER JOIN "responses" ON "events"."id" = "responses"."event_id" WHERE "responses"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/users/show.html.erb:9
+  Rendered users/show.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 38ms (Views: 32.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/events" for ::1 at 2019-06-19 16:23:42 -0400
+Processing by EventsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.3ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/views/events/index.html.erb:3
+  Rendered events/index.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 49ms (Views: 44.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/events" for ::1 at 2019-06-19 16:24:12 -0400
+Processing by EventsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/views/events/index.html.erb:3
+  Rendered events/index.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 56ms (Views: 51.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/events/1" for ::1 at 2019-06-19 16:24:52 -0400
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:16
+  Rendering events/show.html.erb within layouts/application
+  Rendered events/show.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 48ms (Views: 39.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/events" for ::1 at 2019-06-19 16:25:32 -0400
+Processing by EventsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/views/events/index.html.erb:3
+  Rendered events/index.html.erb within layouts/application (12.8ms)
+Completed 200 OK in 55ms (Views: 36.9ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for ::1 at 2019-06-19 16:25:34 -0400
+Processing by EventsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/views/events/index.html.erb:3
+  Rendered events/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 32ms (Views: 27.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/events/1" for ::1 at 2019-06-19 16:25:37 -0400
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:16
+  Rendering events/show.html.erb within layouts/application
+  Rendered events/show.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 47ms (Views: 38.8ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/logout" for ::1 at 2019-06-19 16:26:16 -0400
+Processing by LoginController#destroy as HTML
+  Parameters: {"authenticity_token"=>"gsynyUeVdK9zpdIs1fITIvpS6HwD1A+Ew3EJ6eAoAJlEnIqOcwkXBcIJ8PAN++V+iCDopEzsrqc0EIwhGng/QQ=="}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+Redirected to http://localhost:3000/events
+Completed 302 Found in 13ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/events" for ::1 at 2019-06-19 16:26:16 -0400
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/views/events/index.html.erb:3
+  Rendered events/index.html.erb within layouts/application (12.4ms)
+Completed 200 OK in 38ms (Views: 31.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/events" for ::1 at 2019-06-19 16:26:59 -0400
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/views/events/index.html.erb:3
+  Rendered events/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 26ms (Views: 22.9ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/login/new" for ::1 at 2019-06-19 16:28:08 -0400
+Processing by LoginController#create as HTML
+  Parameters: {"authenticity_token"=>"Dh+cu6AB6WxUksyiRw/ppOP8cyax41WDZrWljIO03pPIT7H8lJ2KxuU+7n6fBh/4kY5z/v7b9KCR1CBEeeThSw=="}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."user_name" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/login_controller.rb:10
+Redirected to http://localhost:3000/login/new
+Completed 302 Found in 3ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/login/new" for ::1 at 2019-06-19 16:28:08 -0400
+Processing by LoginController#new as HTML
+  Rendering login/new.html.erb within layouts/application
+  Rendered login/new.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 26ms (Views: 24.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login/new" for ::1 at 2019-06-19 16:28:14 -0400
+Processing by LoginController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CSV9Etsy38cbtwBo/7dXzKINuuovlkukqXVVaqf3XFzPdVBV7668baobIrQnvqGQ0H+6MmCu6odeFNCiXadjhA==", "user_name"=>"emmanuel.satterfield", "password"=>"[FILTERED]", "commit"=>"SIGN ME IN"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."user_name" = ? LIMIT ?[0m  [["user_name", "emmanuel.satterfield"], ["LIMIT", 1]]
+  ↳ app/controllers/login_controller.rb:10
+Redirected to http://localhost:3000/events
+Completed 302 Found in 219ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/events" for ::1 at 2019-06-19 16:28:14 -0400
+Processing by EventsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/views/events/index.html.erb:3
+  Rendered events/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 23ms (Views: 20.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/events/3" for ::1 at 2019-06-19 16:28:19 -0400
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:16
+  Rendering events/show.html.erb within layouts/application
+  Rendered events/show.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 34ms (Views: 28.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/events/3" for ::1 at 2019-06-19 16:28:37 -0400
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:16
+  Rendering events/show.html.erb within layouts/application
+  Rendered events/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 23ms (Views: 18.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/events" for ::1 at 2019-06-19 16:28:51 -0400
+Processing by EventsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/views/events/index.html.erb:3
+  Rendered events/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 40ms (Views: 35.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/1" for ::1 at 2019-06-19 16:28:52 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:45
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mEvent Load (0.5ms)[0m  [1m[34mSELECT "events".* FROM "events" INNER JOIN "responses" ON "events"."id" = "responses"."event_id" WHERE "responses"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/users/show.html.erb:6
+  Rendered users/show.html.erb within layouts/application (19.8ms)
+Completed 200 OK in 58ms (Views: 52.8ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/events/3" for ::1 at 2019-06-19 16:28:57 -0400
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:16
+  Rendering events/show.html.erb within layouts/application
+  Rendered events/show.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 44ms (Views: 38.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/events/1" for ::1 at 2019-06-19 16:28:59 -0400
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:16
+  Rendering events/show.html.erb within layouts/application
+  Rendered events/show.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 38ms (Views: 32.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/users/1" for ::1 at 2019-06-19 16:29:00 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:45
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT "events".* FROM "events" INNER JOIN "responses" ON "events"."id" = "responses"."event_id" WHERE "responses"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/users/show.html.erb:6
+  Rendered users/show.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 30ms (Views: 25.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/" for ::1 at 2019-06-19 16:32:25 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+Completed 406 Not Acceptable in 80ms (ActiveRecord: 0.1ms)
+
+
+  
+ActionController::UnknownFormat (UsersController#index is missing a template for this request format and variant.
+
+request.formats: ["text/html"]
+request.variant: []
+
+NOTE! For XHR/Ajax or API requests, this action would normally respond with 204 No Content: an empty white screen. Since you're loading it in a web browser, we assume that you expected to actually render a template, not nothing, so we're showing an error to be extra-clear. If you expect 204 No Content, carry on. That's what you'll get from an XHR or API request. Give it a shot.):
+  
+actionpack (5.2.3) lib/action_controller/metal/implicit_render.rb:55:in `default_render'
+actionpack (5.2.3) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
+actionpack (5.2.3) lib/action_controller/metal/basic_implicit_render.rb:6:in `tap'
+actionpack (5.2.3) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (5.2.3) lib/abstract_controller/base.rb:194:in `process_action'
+actionpack (5.2.3) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.2.3) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (5.2.3) lib/active_support/callbacks.rb:132:in `run_callbacks'
+actionpack (5.2.3) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (5.2.3) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (5.2.3) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (5.2.3) lib/active_support/notifications.rb:168:in `block in instrument'
+activesupport (5.2.3) lib/active_support/notifications/instrumenter.rb:23:in `instrument'
+activesupport (5.2.3) lib/active_support/notifications.rb:168:in `instrument'
+actionpack (5.2.3) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (5.2.3) lib/action_controller/metal/params_wrapper.rb:256:in `process_action'
+activerecord (5.2.3) lib/active_record/railties/controller_runtime.rb:24:in `process_action'
+actionpack (5.2.3) lib/abstract_controller/base.rb:134:in `process'
+actionview (5.2.3) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.3) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.3) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.0.7) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+actionpack (5.2.3) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.7) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.7) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.3) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/users/" for ::1 at 2019-06-19 16:32:41 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+Completed 406 Not Acceptable in 78ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionController::UnknownFormat (UsersController#index is missing a template for this request format and variant.
+
+request.formats: ["text/html"]
+request.variant: []
+
+NOTE! For XHR/Ajax or API requests, this action would normally respond with 204 No Content: an empty white screen. Since you're loading it in a web browser, we assume that you expected to actually render a template, not nothing, so we're showing an error to be extra-clear. If you expect 204 No Content, carry on. That's what you'll get from an XHR or API request. Give it a shot.):
+  
+actionpack (5.2.3) lib/action_controller/metal/implicit_render.rb:55:in `default_render'
+actionpack (5.2.3) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
+actionpack (5.2.3) lib/action_controller/metal/basic_implicit_render.rb:6:in `tap'
+actionpack (5.2.3) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (5.2.3) lib/abstract_controller/base.rb:194:in `process_action'
+actionpack (5.2.3) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.2.3) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (5.2.3) lib/active_support/callbacks.rb:132:in `run_callbacks'
+actionpack (5.2.3) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (5.2.3) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (5.2.3) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (5.2.3) lib/active_support/notifications.rb:168:in `block in instrument'
+activesupport (5.2.3) lib/active_support/notifications/instrumenter.rb:23:in `instrument'
+activesupport (5.2.3) lib/active_support/notifications.rb:168:in `instrument'
+actionpack (5.2.3) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (5.2.3) lib/action_controller/metal/params_wrapper.rb:256:in `process_action'
+activerecord (5.2.3) lib/active_record/railties/controller_runtime.rb:24:in `process_action'
+actionpack (5.2.3) lib/abstract_controller/base.rb:134:in `process'
+actionview (5.2.3) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.3) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.3) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.0.7) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+actionpack (5.2.3) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.7) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.7) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.3) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/users/1" for ::1 at 2019-06-19 16:32:53 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:45
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT "events".* FROM "events" INNER JOIN "responses" ON "events"."id" = "responses"."event_id" WHERE "responses"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/users/show.html.erb:7
+  Rendered users/show.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 29ms (Views: 24.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/1" for ::1 at 2019-06-19 16:33:49 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:45
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT "events".* FROM "events" INNER JOIN "responses" ON "events"."id" = "responses"."event_id" WHERE "responses"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/users/show.html.erb:7
+  Rendered users/show.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 29ms (Views: 24.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/1" for ::1 at 2019-06-19 16:33:56 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:45
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT "events".* FROM "events" INNER JOIN "responses" ON "events"."id" = "responses"."event_id" WHERE "responses"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/users/show.html.erb:7
+  Rendered users/show.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 28ms (Views: 23.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/1" for ::1 at 2019-06-19 16:34:17 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:45
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT "events".* FROM "events" INNER JOIN "responses" ON "events"."id" = "responses"."event_id" WHERE "responses"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/users/show.html.erb:9
+  Rendered users/show.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 33ms (Views: 29.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/users/1" for ::1 at 2019-06-19 16:34:32 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:45
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT "events".* FROM "events" INNER JOIN "responses" ON "events"."id" = "responses"."event_id" WHERE "responses"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/users/show.html.erb:9
+  Rendered users/show.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 32ms (Views: 26.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/1" for ::1 at 2019-06-19 16:34:45 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:45
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT "events".* FROM "events" INNER JOIN "responses" ON "events"."id" = "responses"."event_id" WHERE "responses"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/users/show.html.erb:9
+  Rendered users/show.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 23ms (Views: 19.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/1" for ::1 at 2019-06-19 16:34:46 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:45
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT "events".* FROM "events" INNER JOIN "responses" ON "events"."id" = "responses"."event_id" WHERE "responses"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/users/show.html.erb:9
+  Rendered users/show.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 30ms (Views: 26.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/1" for ::1 at 2019-06-19 16:34:59 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:45
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT "events".* FROM "events" INNER JOIN "responses" ON "events"."id" = "responses"."event_id" WHERE "responses"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/users/show.html.erb:9
+  Rendered users/show.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 27ms (Views: 23.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/1" for ::1 at 2019-06-19 16:35:07 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:45
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT "events".* FROM "events" INNER JOIN "responses" ON "events"."id" = "responses"."event_id" WHERE "responses"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/users/show.html.erb:9
+  Rendered users/show.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 28ms (Views: 23.7ms | ActiveRecord: 0.4ms)
+
+
