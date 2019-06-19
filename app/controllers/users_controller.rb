@@ -1,4 +1,5 @@
 class UsersController < ApplicationController
+skip_before_action :authorized?, only: [:new,:create]
 before_action :find_user, except: [:index, :new, :create]
 before_action :all_user, only: [:index]
 
@@ -12,9 +13,6 @@ def show
   end
 end
 
-def edit
-
-end
 
 def new
   @user = User.new
@@ -30,8 +28,12 @@ def create
  end
 end
 
+def edit
+
+end
+
 def update
-  @user.update(user_params)
+  @user.update(edit_user_params)
   if @user.valid?
     redirect_to @user
   else
@@ -50,7 +52,11 @@ def all_user
 end
 
 def user_params
-  params.require(:user).permit(:name, :user_name, :password, :bio)
+  params.require(:user).permit(:name, :user_name, :password, :bio, :pic_url)
+end
+
+def edit_user_params
+  params.require(:user).permit(:name, :user_name, :bio, :pic_url)
 end
 
 

@@ -6,8 +6,6 @@ class User < ApplicationRecord
 
   validates :name, presence: true
   validates :user_name, presence: true, uniqueness: true
-  validates :password, presence: true
-
   # t.string "name"
   # t.string "user_name"
   # t.string "password"

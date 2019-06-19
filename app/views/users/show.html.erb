@@ -1,9 +1,12 @@
 <center>
 
-<img src='<%=@user.pic_url%>', border ="3">
+<img src='<%=@user.pic_url%>',border ="6" ,width= "100" height= "150" >
 <h1><%= @user.name %></h1>
 <p><%= @user.bio %></p>
 <br>
+
+<%= button_to "People Change", "/users/#{@current_user.id}/edit", method: :get %>
+
 <h2>Your dates:</h2>
 <ul>
   <% @user.events.each do |event| %>
