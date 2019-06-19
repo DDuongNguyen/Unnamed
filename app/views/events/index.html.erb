@@ -1,8 +1,10 @@
-
-<%= button_to "Profile" %>
-<%= button_to "Login" %>
-<%= button_to "Sign Up" %>
-
+<% if @logged_in %>
+<%= button_to "Log out", '/logout', method: :delete %>
+<%= button_to "Profile", "/users/#{@user_id}", method: :get %>
+<% else %>
+<%= button_to "Login", '/login/new' %>
+<%= button_to "Sign Up", 'users/new', method: :get %>
+<% end %>
 <ul>
   <% @events.each do |event|  %>
 

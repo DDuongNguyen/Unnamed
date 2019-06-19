@@ -1,7 +1,7 @@
 <h1><%= @user.name %></h1>
 <p><%= @user.bio %></p>
 <br>
-<%= button_to "Home" %>
+<%= button_to "Home", "/events", method: :get %>
 <%= button_to "Edit Profile", edit_user_path, method: :get %>
 <br>
 <h2>Your dates:</h2>

@@ -1,8 +1,8 @@
 class EventsController < ApplicationController
 
+  skip_before_action :authorized?, only: [:index, :show]
   before_action :find_event, except: [:index, :new, :create]
   before_action :all_event, only: [:index]
-
 
   def index
 

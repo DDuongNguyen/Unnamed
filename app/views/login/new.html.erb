@@ -1,0 +1,10 @@
+<h1>
+  LOG IN PAGE!!!!!
+</h1>
+<%= form_tag '/login/new' do %>
+<%= label_tag :user_name %>
+<%= text_field_tag :user_name %>
+<%= label_tag :password %>
+<%= password_field_tag :password %>
+<%= submit_tag "SIGN ME IN" %>
+<% end %>
