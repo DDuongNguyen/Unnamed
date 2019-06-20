@@ -1,35 +1,27 @@
-<center>
-
 <img src='<%=@user.pic_url%>',width= "100" height= "150" >
-<h1><%= @user.name %></h1>
-<p><%= @user.bio %></p>
-<br>
+  <h1><%= @user.name %></h1>
+  <p><%= @user.bio %></p>
+  <br>
 
-<% if @current_user.id == @user.id %>
-  <%= button_to "People Change", "/users/#{@current_user.id}/edit", method: :get %>
+  <% if @current_user.id == @user.id %>
+    <%= button_to "People Change", "/users/#{@current_user.id}/edit", method: :get %>
   <% end %>
 
-<h2>Your dates:</h2>
+  <h2>Your dates:</h2>
 
-<ul>
-  <% @user.events.each do |event| %>
-    Event name: <%= link_to event.title, "/events/#{event.id}" %>
-    <br>
-
-    In <%= event.location %> on <%= event.date %>
-    <br>
-
-    Event description: <%= event.snippet %>
-    <br>
-
-    <% if @current_user.id == @user.id %>
-     <%= button_to "Delete Date", "/users/#{event.id}/delete", method: :delete %>
-     <% end %>
-    <br>
-
-  <% end %>
-</ul>
-
-
-
-</center>
+  <ul>
+    <% @user.events.each do |event| %>
+      <li>Event name: <%= link_to event.title, "/events/#{event.id}" %></li>
+      <br>
+      <li>In <%= event.location %> on <%= event.date %></li>
+      <br>
+      <li>Event description: <%= event.snippet %></li>
+      <br>
+      <li>
+        <% if @current_user.id == @user.id %>
+         <%= button_to "Delete Date", "/users/#{event.id}/delete", method: :delete %>
+        <% end %>
+      </li>
+      <br>
+    <% end %>
+  </ul>
