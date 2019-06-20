@@ -8,9 +8,9 @@ def index
 end
 
 def show
-  if @user.id != @current_user.id
-    redirect_to "/events"
-  end
+  # if @user.id != @current_user.id
+  #   redirect_to "/events"
+  # end
 end
 
 

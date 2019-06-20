@@ -8,3 +8,16 @@
 <p><%=link_to @event.url, "#{@event.url}" %></p>
 
 <%= button_to "RSVP", "/events/#{@event.id}/create" %>
+
+<h1>Attendees</h1>
+
+<ul>
+  <% @event.users.each do |user| %>
+    <li>
+       <a href=<%= "/users/#{user.id}" %>><img src=<%= user.pic_url %> width="50" height="50"></a>
+    </li>
+    <li>
+      <%= link_to user.name, "/users/#{user.id}" %>
+    </li>
+  <% end %>
+</ul>
