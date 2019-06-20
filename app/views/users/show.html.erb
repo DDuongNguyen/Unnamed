@@ -9,9 +9,9 @@
   <%= button_to "People Change", "/users/#{@current_user.id}/edit", method: :get %>
   <% end %>
 
-<h2>Your dates:</h2>
 
 <ul>
+  <h1>Your dates:</h1>
   <% @user.events.each do |event| %>
     Event name: <%= link_to event.title, "/events/#{event.id}" %>
     <br>
