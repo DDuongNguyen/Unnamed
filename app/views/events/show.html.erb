@@ -1,6 +1,10 @@
 
 <h1 class="sub-header"><%= @event.title %></h1>
 <p class="sub-header">Location: <%= @event.location %></p>
+<br>
+<%= button_to "RSVP", "/events/#{@event.id}/create", class: 'btn btn-small-rsvp'%>
+
+<br>
 
 <div class="container-xfluid">
 <p>Date: <%= @event.date %></p>
@@ -11,18 +15,16 @@
 
 </div>
 <br>
-<%= button_to "RSVP", "/events/#{@event.id}/create", class: 'btn btn-small'%>
-
-<br>
-<br>
 <h1 class="sub-header">Attendees</h1>
 
-<ul>
+<div class="atten">
+
   <% @event.users.each do |user| %>
-       <a href=<%= "/users/#{user.id}" %>><img src=<%= user.pic_url %> width="50" height="50"></a>
-    <li>
-      <%= link_to user.name, "/users/#{user.id}" %>
-    </li>
-    <br>
+
+       <a class="box"href=<%= "/users/#{user.id}" %>><img src=<%= user.pic_url %> width="50" height="50" class="icon"><%= user.name %></a>
+
+
+
+
   <% end %>
-</ul>
+</div>

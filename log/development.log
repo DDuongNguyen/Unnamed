@@ -31882,3 +31882,906 @@ Processing by EventsController#show as HTML
 Completed 200 OK in 95ms (Views: 91.7ms | ActiveRecord: 0.7ms)
 
 
+Started GET "/events/1" for ::1 at 2019-06-21 12:51:18 -0400
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  [1m[36mEvent Load (0.3ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:16
+  Rendering events/show.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "responses" ON "users"."id" = "responses"."user_id" WHERE "responses"."event_id" = ?[0m  [["event_id", 1]]
+  ↳ app/views/events/show.html.erb:20
+  Rendered events/show.html.erb within layouts/application (11.7ms)
+Completed 200 OK in 233ms (Views: 214.0ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/events/1" for ::1 at 2019-06-21 12:51:28 -0400
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:16
+  Rendering events/show.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "responses" ON "users"."id" = "responses"."user_id" WHERE "responses"."event_id" = ?[0m  [["event_id", 1]]
+  ↳ app/views/events/show.html.erb:21
+  Rendered events/show.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 129ms (Views: 124.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/events/1" for ::1 at 2019-06-21 12:51:45 -0400
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:16
+  Rendering events/show.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "responses" ON "users"."id" = "responses"."user_id" WHERE "responses"."event_id" = ?[0m  [["event_id", 1]]
+  ↳ app/views/events/show.html.erb:21
+  Rendered events/show.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 1170ms (Views: 1166.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/events/1" for ::1 at 2019-06-21 12:52:24 -0400
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:16
+  Rendering events/show.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "responses" ON "users"."id" = "responses"."user_id" WHERE "responses"."event_id" = ?[0m  [["event_id", 1]]
+  ↳ app/views/events/show.html.erb:22
+  Rendered events/show.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 975ms (Views: 971.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/events/1" for ::1 at 2019-06-21 12:53:02 -0400
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:16
+  Rendering events/show.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "responses" ON "users"."id" = "responses"."user_id" WHERE "responses"."event_id" = ?[0m  [["event_id", 1]]
+  ↳ app/views/events/show.html.erb:22
+  Rendered events/show.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 49ms (Views: 46.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/events/1" for ::1 at 2019-06-21 12:53:13 -0400
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:16
+  Rendering events/show.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "responses" ON "users"."id" = "responses"."user_id" WHERE "responses"."event_id" = ?[0m  [["event_id", 1]]
+  ↳ app/views/events/show.html.erb:22
+  Rendered events/show.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 50ms (Views: 48.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/events/1" for ::1 at 2019-06-21 12:53:28 -0400
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:16
+  Rendering events/show.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "responses" ON "users"."id" = "responses"."user_id" WHERE "responses"."event_id" = ?[0m  [["event_id", 1]]
+  ↳ app/views/events/show.html.erb:22
+  Rendered events/show.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 54ms (Views: 51.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/events/1" for ::1 at 2019-06-21 12:53:35 -0400
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:16
+  Rendering events/show.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "responses" ON "users"."id" = "responses"."user_id" WHERE "responses"."event_id" = ?[0m  [["event_id", 1]]
+  ↳ app/views/events/show.html.erb:22
+  Rendered events/show.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 47ms (Views: 44.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/events/1" for ::1 at 2019-06-21 12:54:07 -0400
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:16
+  Rendering events/show.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "responses" ON "users"."id" = "responses"."user_id" WHERE "responses"."event_id" = ?[0m  [["event_id", 1]]
+  ↳ app/views/events/show.html.erb:22
+  Rendered events/show.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 1230ms (Views: 1226.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/events/1" for ::1 at 2019-06-21 12:54:30 -0400
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:16
+  Rendering events/show.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "responses" ON "users"."id" = "responses"."user_id" WHERE "responses"."event_id" = ?[0m  [["event_id", 1]]
+  ↳ app/views/events/show.html.erb:22
+  Rendered events/show.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 1067ms (Views: 1063.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/events/1" for ::1 at 2019-06-21 12:54:40 -0400
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:16
+  Rendering events/show.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "responses" ON "users"."id" = "responses"."user_id" WHERE "responses"."event_id" = ?[0m  [["event_id", 1]]
+  ↳ app/views/events/show.html.erb:22
+  Rendered events/show.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 975ms (Views: 970.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/events/1" for ::1 at 2019-06-21 12:55:58 -0400
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:16
+  Rendering events/show.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "responses" ON "users"."id" = "responses"."user_id" WHERE "responses"."event_id" = ?[0m  [["event_id", 1]]
+  ↳ app/views/events/show.html.erb:22
+  Rendered events/show.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 1165ms (Views: 1162.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/events/1" for ::1 at 2019-06-21 12:55:59 -0400
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:16
+  Rendering events/show.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "responses" ON "users"."id" = "responses"."user_id" WHERE "responses"."event_id" = ?[0m  [["event_id", 1]]
+  ↳ app/views/events/show.html.erb:22
+  Rendered events/show.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 163ms (Views: 158.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/events/1" for ::1 at 2019-06-21 12:57:00 -0400
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:16
+  Rendering events/show.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "responses" ON "users"."id" = "responses"."user_id" WHERE "responses"."event_id" = ?[0m  [["event_id", 1]]
+  ↳ app/views/events/show.html.erb:22
+  Rendered events/show.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 1276ms (Views: 1269.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/events/1" for ::1 at 2019-06-21 12:57:18 -0400
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:16
+  Rendering events/show.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "responses" ON "users"."id" = "responses"."user_id" WHERE "responses"."event_id" = ?[0m  [["event_id", 1]]
+  ↳ app/views/events/show.html.erb:22
+  Rendered events/show.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 1264ms (Views: 1256.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/events/1" for ::1 at 2019-06-21 12:57:54 -0400
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  [1m[36mEvent Load (0.4ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:16
+  Rendering events/show.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "responses" ON "users"."id" = "responses"."user_id" WHERE "responses"."event_id" = ?[0m  [["event_id", 1]]
+  ↳ app/views/events/show.html.erb:22
+  Rendered events/show.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 1131ms (Views: 1127.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/events/1" for ::1 at 2019-06-21 12:58:05 -0400
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:16
+  Rendering events/show.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "responses" ON "users"."id" = "responses"."user_id" WHERE "responses"."event_id" = ?[0m  [["event_id", 1]]
+  ↳ app/views/events/show.html.erb:22
+  Rendered events/show.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 185ms (Views: 180.4ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/events/1" for ::1 at 2019-06-21 12:58:16 -0400
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:16
+  Rendering events/show.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "responses" ON "users"."id" = "responses"."user_id" WHERE "responses"."event_id" = ?[0m  [["event_id", 1]]
+  ↳ app/views/events/show.html.erb:22
+  Rendered events/show.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 44ms (Views: 41.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/events/1" for ::1 at 2019-06-21 12:58:56 -0400
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:16
+  Rendering events/show.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "responses" ON "users"."id" = "responses"."user_id" WHERE "responses"."event_id" = ?[0m  [["event_id", 1]]
+  ↳ app/views/events/show.html.erb:22
+  Rendered events/show.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 38ms (Views: 35.4ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/events/1/create" for ::1 at 2019-06-21 13:00:15 -0400
+Processing by ResponsesController#create as HTML
+  Parameters: {"authenticity_token"=>"xMAne/+pYaoq+5AXHyO0Y4Mlwzorwb3gONDld4aFBB0CkAo8yzUCAJtXssvHKkI/8VfD4mT5HMPPsWC/fNU7xQ==", "id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/responses_controller.rb:7
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/responses_controller.rb:7
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/responses_controller.rb:7
+  [1m[36mResponse Create (0.5ms)[0m  [1m[32mINSERT INTO "responses" ("user_id", "event_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 22], ["event_id", 1], ["created_at", "2019-06-21 17:00:15.114653"], ["updated_at", "2019-06-21 17:00:15.114653"]]
+  ↳ app/controllers/responses_controller.rb:7
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/responses_controller.rb:7
+Redirected to http://localhost:3000/users/22
+Completed 302 Found in 11ms (ActiveRecord: 2.0ms)
+
+
+Started GET "/users/22" for ::1 at 2019-06-21 13:00:15 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"22"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:47
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT "events".* FROM "events" INNER JOIN "responses" ON "events"."id" = "responses"."event_id" WHERE "responses"."user_id" = ?[0m  [["user_id", 22]]
+  ↳ app/views/users/show.html.erb:20
+  Rendered users/show.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 1276ms (Views: 1271.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/events/1" for ::1 at 2019-06-21 13:00:22 -0400
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:16
+  Rendering events/show.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "responses" ON "users"."id" = "responses"."user_id" WHERE "responses"."event_id" = ?[0m  [["event_id", 1]]
+  ↳ app/views/events/show.html.erb:22
+  Rendered events/show.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 71ms (Views: 68.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/events/1" for ::1 at 2019-06-21 13:02:13 -0400
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:16
+  Rendering events/show.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "responses" ON "users"."id" = "responses"."user_id" WHERE "responses"."event_id" = ?[0m  [["event_id", 1]]
+  ↳ app/views/events/show.html.erb:22
+  Rendered events/show.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 1261ms (Views: 1257.2ms | ActiveRecord: 0.5ms)
+
+
+Started DELETE "/logout" for ::1 at 2019-06-21 13:03:32 -0400
+Processing by LoginController#destroy as HTML
+  Parameters: {"authenticity_token"=>"7DO1/3b0WNnf5gerOnUSwhnbRIficbTdTLLNVwAn92sqY5i4Qmg7c25KJXfifOSea6lEX61JFf6700if+nfIsw=="}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+Redirected to http://localhost:3000/events
+Completed 302 Found in 3ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/events" for ::1 at 2019-06-21 13:03:32 -0400
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.3ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/views/events/index.html.erb:3
+  Rendered events/index.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 45ms (Views: 43.2ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/login/new" for ::1 at 2019-06-21 13:03:33 -0400
+Processing by LoginController#create as HTML
+  Parameters: {"authenticity_token"=>"GVcoV+WUHh2XH4nvHTnv1HTeQF4PtT8/sNdJCn1X0nnfBwUQ0Qh9tyazqzPFMBmIBqxAhkCNnhxHtszChwftoQ=="}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."user_name" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/login_controller.rb:10
+Redirected to http://localhost:3000/login/new
+Completed 302 Found in 3ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/login/new" for ::1 at 2019-06-21 13:03:33 -0400
+Processing by LoginController#new as HTML
+  Rendering login/new.html.erb within layouts/application
+  Rendered login/new.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 36ms (Views: 34.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login/new" for ::1 at 2019-06-21 13:03:52 -0400
+Processing by LoginController#create as HTML
+  Parameters: {"authenticity_token"=>"GVcoV+WUHh2XH4nvHTnv1HTeQF4PtT8/sNdJCn1X0nnfBwUQ0Qh9tyazqzPFMBmIBqxAhkCNnhxHtszChwftoQ=="}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."user_name" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/login_controller.rb:10
+Redirected to http://localhost:3000/login/new
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/login/new" for ::1 at 2019-06-21 13:03:52 -0400
+Processing by LoginController#new as HTML
+  Rendering login/new.html.erb within layouts/application
+  Rendered login/new.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 47ms (Views: 46.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login/new" for ::1 at 2019-06-21 13:04:22 -0400
+Processing by LoginController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xx0+0/aWsvzkfZXY85BODAVOkb5vjZEgcGeS0pbrKbEBTROUwgrRVlXRtwQrmbhQdzyRZiC1MAOHBhcabLsWaQ==", "user_name"=>"kevin", "password"=>"[FILTERED]", "commit"=>"SIGN ME IN"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."user_name" = ? LIMIT ?[0m  [["user_name", "kevin"], ["LIMIT", 1]]
+  ↳ app/controllers/login_controller.rb:10
+Redirected to http://localhost:3000/events
+Completed 302 Found in 223ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/events" for ::1 at 2019-06-21 13:04:22 -0400
+Processing by EventsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 19], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/views/events/index.html.erb:3
+  Rendered events/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 63ms (Views: 61.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/events/1" for ::1 at 2019-06-21 13:04:26 -0400
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 19], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:16
+  Rendering events/show.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "responses" ON "users"."id" = "responses"."user_id" WHERE "responses"."event_id" = ?[0m  [["event_id", 1]]
+  ↳ app/views/events/show.html.erb:22
+  Rendered events/show.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 152ms (Views: 147.9ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/events/1/create" for ::1 at 2019-06-21 13:04:28 -0400
+Processing by ResponsesController#create as HTML
+  Parameters: {"authenticity_token"=>"xgwORrzocL1gGuMzZONeiTE3PVuF26mi+DZMgX2syVTDUyqXz9rgEahD+qWR7Wylhtj/R0MPpJ872JWi5qXQJg==", "id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 19], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/responses_controller.rb:7
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 19], ["LIMIT", 1]]
+  ↳ app/controllers/responses_controller.rb:7
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/responses_controller.rb:7
+  [1m[36mResponse Create (0.4ms)[0m  [1m[32mINSERT INTO "responses" ("user_id", "event_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 19], ["event_id", 1], ["created_at", "2019-06-21 17:04:28.987456"], ["updated_at", "2019-06-21 17:04:28.987456"]]
+  ↳ app/controllers/responses_controller.rb:7
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/responses_controller.rb:7
+Redirected to http://localhost:3000/users/19
+Completed 302 Found in 8ms (ActiveRecord: 1.8ms)
+
+
+Started GET "/users/19" for ::1 at 2019-06-21 13:04:29 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"19"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 19], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 19], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:47
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT "events".* FROM "events" INNER JOIN "responses" ON "events"."id" = "responses"."event_id" WHERE "responses"."user_id" = ?[0m  [["user_id", 19]]
+  ↳ app/views/users/show.html.erb:20
+  Rendered users/show.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 60ms (Views: 56.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/events/1" for ::1 at 2019-06-21 13:04:31 -0400
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 19], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:16
+  Rendering events/show.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "responses" ON "users"."id" = "responses"."user_id" WHERE "responses"."event_id" = ?[0m  [["event_id", 1]]
+  ↳ app/views/events/show.html.erb:22
+  Rendered events/show.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 97ms (Views: 92.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/events/1" for ::1 at 2019-06-21 14:05:00 -0400
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 19], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  [1m[36mEvent Load (0.3ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:16
+  Rendering events/show.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "responses" ON "users"."id" = "responses"."user_id" WHERE "responses"."event_id" = ?[0m  [["event_id", 1]]
+  ↳ app/views/events/show.html.erb:22
+  Rendered events/show.html.erb within layouts/application (13.7ms)
+Completed 200 OK in 252ms (Views: 239.5ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/events/1" for ::1 at 2019-06-21 14:05:55 -0400
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 19], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:16
+  Rendering events/show.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "responses" ON "users"."id" = "responses"."user_id" WHERE "responses"."event_id" = ?[0m  [["event_id", 1]]
+  ↳ app/views/events/show.html.erb:22
+  Rendered events/show.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 1183ms (Views: 1179.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/events/1" for ::1 at 2019-06-21 14:09:12 -0400
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 19], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:16
+  Rendering events/show.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "responses" ON "users"."id" = "responses"."user_id" WHERE "responses"."event_id" = ?[0m  [["event_id", 1]]
+  ↳ app/views/events/show.html.erb:22
+  Rendered events/show.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 1165ms (Views: 1160.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/events/1" for ::1 at 2019-06-21 14:10:13 -0400
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 19], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:16
+  Rendering events/show.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "responses" ON "users"."id" = "responses"."user_id" WHERE "responses"."event_id" = ?[0m  [["event_id", 1]]
+  ↳ app/views/events/show.html.erb:22
+  Rendered events/show.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 1122ms (Views: 1118.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/events/1" for ::1 at 2019-06-21 14:10:29 -0400
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 19], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:16
+  Rendering events/show.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "responses" ON "users"."id" = "responses"."user_id" WHERE "responses"."event_id" = ?[0m  [["event_id", 1]]
+  ↳ app/views/events/show.html.erb:22
+  Rendered events/show.html.erb within layouts/application (34.5ms)
+Completed 200 OK in 967ms (Views: 964.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/events/1" for ::1 at 2019-06-21 14:10:48 -0400
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 19], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:16
+  Rendering events/show.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "responses" ON "users"."id" = "responses"."user_id" WHERE "responses"."event_id" = ?[0m  [["event_id", 1]]
+  ↳ app/views/events/show.html.erb:22
+  Rendered events/show.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 1222ms (Views: 1217.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/events/1" for ::1 at 2019-06-21 14:15:20 -0400
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 19], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  [1m[36mEvent Load (0.4ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:16
+  Rendering events/show.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "responses" ON "users"."id" = "responses"."user_id" WHERE "responses"."event_id" = ?[0m  [["event_id", 1]]
+  ↳ app/views/events/show.html.erb:22
+  Rendered events/show.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 76ms (Views: 71.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/events/1" for ::1 at 2019-06-21 14:15:50 -0400
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 19], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:16
+  Rendering events/show.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "responses" ON "users"."id" = "responses"."user_id" WHERE "responses"."event_id" = ?[0m  [["event_id", 1]]
+  ↳ app/views/events/show.html.erb:22
+  Rendered events/show.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 1141ms (Views: 1137.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/events/1" for ::1 at 2019-06-21 14:16:21 -0400
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 19], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:16
+  Rendering events/show.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "responses" ON "users"."id" = "responses"."user_id" WHERE "responses"."event_id" = ?[0m  [["event_id", 1]]
+  ↳ app/views/events/show.html.erb:22
+  Rendered events/show.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 973ms (Views: 967.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/events/1" for ::1 at 2019-06-21 14:16:45 -0400
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 19], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  [1m[36mEvent Load (0.3ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:16
+  Rendering events/show.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "responses" ON "users"."id" = "responses"."user_id" WHERE "responses"."event_id" = ?[0m  [["event_id", 1]]
+  ↳ app/views/events/show.html.erb:22
+  Rendered events/show.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 981ms (Views: 976.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/events" for ::1 at 2019-06-21 14:16:53 -0400
+Processing by EventsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 19], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.4ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/views/events/index.html.erb:3
+  Rendered events/index.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 63ms (Views: 60.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/events" for ::1 at 2019-06-21 14:17:06 -0400
+Processing by EventsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 19], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/views/events/index.html.erb:3
+  Rendered events/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 1227ms (Views: 1224.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/events" for ::1 at 2019-06-21 14:18:22 -0400
+Processing by EventsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 19], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.3ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/views/events/index.html.erb:3
+  Rendered events/index.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 86ms (Views: 82.8ms | ActiveRecord: 0.5ms)
+
+
+Started DELETE "/logout" for ::1 at 2019-06-21 14:18:26 -0400
+Processing by LoginController#destroy as HTML
+  Parameters: {"authenticity_token"=>"7X37Yh3XRCzxJGI/gZO+fNTwLXcUTEEHnXLcikseQLErLdYlKUsnhkCIQONZmkggpoItr1t04CRqE1lCsU5/aQ=="}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 19], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+Redirected to http://localhost:3000/events
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/events" for ::1 at 2019-06-21 14:18:26 -0400
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.6ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/views/events/index.html.erb:3
+  Rendered events/index.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 52ms (Views: 50.3ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/login/new" for ::1 at 2019-06-21 14:18:29 -0400
+Processing by LoginController#create as HTML
+  Parameters: {"authenticity_token"=>"co/W/7f/3B2CM+L74I2y1rcqFKPSSFBqEZqEvTvoYOG03/u4g2O/tzOfwCc4hESKxVgUe51w8Unm+wF1wbhfOQ=="}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."user_name" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/login_controller.rb:10
+Redirected to http://localhost:3000/login/new
+Completed 302 Found in 3ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/login/new" for ::1 at 2019-06-21 14:18:29 -0400
+Processing by LoginController#new as HTML
+  Rendering login/new.html.erb within layouts/application
+  Rendered login/new.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 44ms (Views: 43.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login/new" for ::1 at 2019-06-21 14:18:34 -0400
+Processing by LoginController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Xe8hPS8M9FfICQo4rFPuEsct68va3hwVRrLw3aDJV3ebvwx6G5CX/XmlKOR0WhhOtV/rE5XmvTax03UVWplorw==", "user_name"=>"eric", "password"=>"[FILTERED]", "commit"=>"SIGN ME IN"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."user_name" = ? LIMIT ?[0m  [["user_name", "eric"], ["LIMIT", 1]]
+  ↳ app/controllers/login_controller.rb:10
+Redirected to http://localhost:3000/events
+Completed 302 Found in 219ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/events" for ::1 at 2019-06-21 14:18:34 -0400
+Processing by EventsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/views/events/index.html.erb:3
+  Rendered events/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 35ms (Views: 33.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/events/1" for ::1 at 2019-06-21 14:21:06 -0400
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:16
+  Rendering events/show.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "responses" ON "users"."id" = "responses"."user_id" WHERE "responses"."event_id" = ?[0m  [["event_id", 1]]
+  ↳ app/views/events/show.html.erb:22
+  Rendered events/show.html.erb within layouts/application (12.5ms)
+Completed 200 OK in 108ms (Views: 103.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/events/1" for ::1 at 2019-06-21 14:21:22 -0400
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:16
+  Rendering events/show.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "responses" ON "users"."id" = "responses"."user_id" WHERE "responses"."event_id" = ?[0m  [["event_id", 1]]
+  ↳ app/views/events/show.html.erb:22
+  Rendered events/show.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 1128ms (Views: 1123.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/events/1" for ::1 at 2019-06-21 14:21:40 -0400
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:16
+  Rendering events/show.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "responses" ON "users"."id" = "responses"."user_id" WHERE "responses"."event_id" = ?[0m  [["event_id", 1]]
+  ↳ app/views/events/show.html.erb:22
+  Rendered events/show.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 937ms (Views: 934.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/events/1" for ::1 at 2019-06-21 14:21:43 -0400
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:16
+  Rendering events/show.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "responses" ON "users"."id" = "responses"."user_id" WHERE "responses"."event_id" = ?[0m  [["event_id", 1]]
+  ↳ app/views/events/show.html.erb:22
+  Rendered events/show.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 42ms (Views: 38.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/events/1" for ::1 at 2019-06-21 14:24:03 -0400
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:16
+  Rendering events/show.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "responses" ON "users"."id" = "responses"."user_id" WHERE "responses"."event_id" = ?[0m  [["event_id", 1]]
+  ↳ app/views/events/show.html.erb:22
+  Rendered events/show.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 1112ms (Views: 1108.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/events/1" for ::1 at 2019-06-21 14:25:48 -0400
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:16
+  Rendering events/show.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "responses" ON "users"."id" = "responses"."user_id" WHERE "responses"."event_id" = ?[0m  [["event_id", 1]]
+  ↳ app/views/events/show.html.erb:22
+  Rendered events/show.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 49ms (Views: 44.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/events/1" for ::1 at 2019-06-21 14:26:43 -0400
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  [1m[36mEvent Load (0.4ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:16
+  Rendering events/show.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "responses" ON "users"."id" = "responses"."user_id" WHERE "responses"."event_id" = ?[0m  [["event_id", 1]]
+  ↳ app/views/events/show.html.erb:22
+  Rendered events/show.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 958ms (Views: 953.1ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/events/1" for ::1 at 2019-06-21 14:26:45 -0400
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:16
+  Rendering events/show.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "responses" ON "users"."id" = "responses"."user_id" WHERE "responses"."event_id" = ?[0m  [["event_id", 1]]
+  ↳ app/views/events/show.html.erb:22
+  Rendered events/show.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 44ms (Views: 41.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/events/1" for ::1 at 2019-06-21 14:27:07 -0400
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:16
+  Rendering events/show.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "responses" ON "users"."id" = "responses"."user_id" WHERE "responses"."event_id" = ?[0m  [["event_id", 1]]
+  ↳ app/views/events/show.html.erb:22
+  Rendered events/show.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 995ms (Views: 991.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/events/1" for ::1 at 2019-06-21 14:28:01 -0400
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:16
+  Rendering events/show.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "responses" ON "users"."id" = "responses"."user_id" WHERE "responses"."event_id" = ?[0m  [["event_id", 1]]
+  ↳ app/views/events/show.html.erb:22
+  Rendered events/show.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 1007ms (Views: 1003.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/events/1" for ::1 at 2019-06-21 14:28:43 -0400
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:16
+  Rendering events/show.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "responses" ON "users"."id" = "responses"."user_id" WHERE "responses"."event_id" = ?[0m  [["event_id", 1]]
+  ↳ app/views/events/show.html.erb:22
+  Rendered events/show.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 996ms (Views: 991.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/events/1" for ::1 at 2019-06-21 14:31:20 -0400
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:16
+  Rendering events/show.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "responses" ON "users"."id" = "responses"."user_id" WHERE "responses"."event_id" = ?[0m  [["event_id", 1]]
+  ↳ app/views/events/show.html.erb:22
+  Rendered events/show.html.erb within layouts/application (14.0ms)
+Completed 200 OK in 1196ms (Views: 1183.2ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/events/1" for ::1 at 2019-06-21 14:32:18 -0400
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:16
+  Rendering events/show.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "responses" ON "users"."id" = "responses"."user_id" WHERE "responses"."event_id" = ?[0m  [["event_id", 1]]
+  ↳ app/views/events/show.html.erb:22
+  Rendered events/show.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 1230ms (Views: 1226.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/events" for ::1 at 2019-06-21 14:32:32 -0400
+Processing by EventsController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.3ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/views/events/index.html.erb:3
+  Rendered events/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 69ms (Views: 64.4ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/events/1" for ::1 at 2019-06-21 14:33:02 -0400
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:16
+  Rendering events/show.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "responses" ON "users"."id" = "responses"."user_id" WHERE "responses"."event_id" = ?[0m  [["event_id", 1]]
+  ↳ app/views/events/show.html.erb:22
+  Rendered events/show.html.erb within layouts/application (11.9ms)
+Completed 200 OK in 89ms (Views: 84.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/events" for ::1 at 2019-06-21 14:33:15 -0400
+Processing by EventsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.3ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/views/events/index.html.erb:3
+  Rendered events/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 62ms (Views: 58.4ms | ActiveRecord: 0.6ms)
+
+

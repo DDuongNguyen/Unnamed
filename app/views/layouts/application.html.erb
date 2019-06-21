@@ -23,10 +23,10 @@
              <%= button_to "Home", "/events", method: :get, class: 'btn btn-small' %>
             </div>
             <div class="col text-center">
-              <%= button_to "Log out", '/logout', method: :delete, class: 'btn btn-small' %>
+              <%= button_to "Profile", "/users/#{@user_id}", method: :get, class: 'btn btn-small'%>
             </div>
             <div class="col text-center">
-             <%= button_to "Profile", "/users/#{@user_id}", method: :get, class: 'btn btn-small'%>
+              <%= button_to "Log out", '/logout', method: :delete, class: 'btn btn-small' %>
             </div>
            <% else %>
            <div class="col text-center">
