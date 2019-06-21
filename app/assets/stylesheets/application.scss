@@ -34,7 +34,7 @@ z-index: -2;
 
  a:hover {
    color: white;
-   z-index: 2;
+   // z-index: 2;
  }
 
 ul {
@@ -50,8 +50,8 @@ ul {
 }
 
 .container-fluid {
-  background-color: white;
-  opacity: .5;
+  background-color: rgba(255,255,255,.3);
+  // background-opacity: .5;
 }
 
 .container {
@@ -69,14 +69,19 @@ ul {
 
 }
 
-.button_to {
-  border: none;
+.btn btn-small {
+  color: white;
 }
+
 
 .sub-header {
   text-align: center;
   color: white;
 }
+
+// .link {
+//   color: white;
+// }
 
 // .momo {
 //   border-radius: 50%;
