@@ -63,17 +63,21 @@ ul {
 
 .container {
   // background-color: white;
-  pad3ding: 45px;
+  padding: 45px;
   // opacity: .5;
   color: white;
 }
 
+.coltext-centermomo{
+margin-left: 0px;
+}
+
 .row {
-  padding: 20px;
+  padding: 0;
 }
 
 .col {
-
+  margin: auto;
 }
 
 .btn  {
@@ -102,4 +106,5 @@ ul {
 
 #logo {
   float: left;
+
 }
