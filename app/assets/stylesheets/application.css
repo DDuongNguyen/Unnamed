@@ -1,27 +1,10 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
- * vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
- */
 
  html, body{
-/* overflow-x: hidden;
-overflow-y: hidden; */
 height: 100%;
 width: 100%;
 position: relative;
 background-image: url(
-https://images.unsplash.com/reserve/yapfjxRqy2d2rGRNc2yQ_zavrsnica-9-indie.jpg?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=932&q=80
+https://images.unsplash.com/photo-1445376804847-ad54874391b5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80
 );
 background-repeat: no-repeat;
 background-size: cover;
@@ -31,10 +14,11 @@ z-index: -2;
  }
 
  .cat{
-   display: inline-flex;
-   margin-left: auto;
-   margin-right: auto;
-   width: 50%;
+   padding: 0px;
+   font-size: 10px;
+   text-align: center;
+   margin: auto;
+
  }
 
  .cat:hover {
@@ -58,10 +42,6 @@ z-index: -2;
    }
  }
 
- .cat span {
-   display: inline;
- }
-
  img {
    border-radius: 50%;
  }
@@ -71,7 +51,7 @@ z-index: -2;
  /* Style the navigation bar */
  .navbar {
    width: 100%;
-   background-color: #555;
+   background-color: RGBA(12,82,12,.5);
    overflow: auto;
    margin-bottom: 0px;
  }
@@ -103,7 +83,7 @@ z-index: -2;
    padding: 0;
    margin: 0;
    border: none;
-   float: left;
+   float: right;
    text-align: center;
    padding: 12px;
    color: white;
@@ -111,22 +91,22 @@ z-index: -2;
    font-size: 17px;
  }
 
-#header {
+/* .header {
   padding-top: 0;
-  background-color: #3d6647;
-  opacity: 0.7;
+  background-color: RGBA(12,82,12,.5);
   position: relative;
-  margin-bottom: 300px;
+  margin-bottom: 30px;
   margin-top: -8px;
   margin-left: -7px;
 
-}
+} */
 
  #content-div {
    /* background-image: url("img_tree.gif"), url("paper.gif"); */
-  position: relative;
-  padding: 25px 50px 75px 50px;
-  margin-top: -290px;
+  /* position: absolute;
+  padding: 25px 75px 75px 75px; */
+  margin-left: 145px;
+  margin-right: 145px;
 
  }
 
@@ -156,17 +136,19 @@ z-index: -2;
 
  p{
    font-family: cursive;
+   margin: auto;
  }
 
  ul{
-   list-style-type: none;
+     overflow-y: scroll;
+     max-height:  50vh;
+   /* list-style-type: none;
    background-color: rgba(255, 255, 255, 0.5);
    overflow-y: scroll;
-   max-height:  85vh;
    border-style: solid ;
    border-color: #DCCCA3;
    border-radius: 0.5px;
-   margin-top: 10px;
+   margin-top: 10px; */
  }
 
 
@@ -174,17 +156,26 @@ z-index: -2;
    /* font-style: italic;
    font-family: "Adobe Caslon Pro", "Hoefler Text", Georgia, Garamond, Times, serif; */
    padding-top: 10px;
-   color: black;
-   font-size: 1.2em;
-   text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+   padding-left: 5px;
+   color: #black;
+   font-weight: bold;
+   font-size: 13px;
+
     font-family: Georgia, "Times New Roman", Times, serif;
-    font-weight: normal;
     letter-spacing: 0.2em;
+    list-style-type: none;
+    background-color: rgba(255, 255, 255, 0.5);
+
+    max-height:  85vh;
+    border-style: solid ;
+    border-color: #DCCCA3;
+    border-radius: 0.5px;
+    margin-top: 10px;
  }
 
  footer {
   width: 100.6%;
-  height: 81px;
+  height: 50px;
   margin-top: auto;
   margin-left: -7px;
   margin-right: auto;
@@ -192,5 +183,7 @@ z-index: -2;
   background-color: white;
   text-align: center;
   opacity: 0.5;
+  position: absolute;
+  bottom: 0;
 
  }
