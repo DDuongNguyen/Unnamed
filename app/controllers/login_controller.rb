@@ -9,11 +9,11 @@ class LoginController < ApplicationController
   def create
     @user = User.find_by(user_name: params[:user_name])
     if @user && @user.authenticate(params[:password])
-      flash[:messages] = ['YOU ARE LOGGED IN']
+      flash[:messages] = "YOU ARE LOGGED IN"
       session[:user_id] = @user.id
       redirect_to '/events'
     else
-      flash[:messages] = ['INCORRECT USERNAME/PASSWORD']
+      flash[:messages] = 'INCORRECT USERNAME/PASSWORD'
       redirect_to '/login/new'
     end
   end

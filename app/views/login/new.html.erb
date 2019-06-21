@@ -2,6 +2,13 @@
   LOG IN PAGE!!!!!
 </h1>
 
+<% if flash[:messages] %>
+  <ul class= "messages">
+    <%= flash[:messages].to_s %>
+  </ul>
+    <% end %>
+
+
 <div class="login">
 <%= form_tag '/login/new' do %>
   <%= label_tag :user_name %>

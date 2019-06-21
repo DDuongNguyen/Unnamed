@@ -3,7 +3,7 @@
   <% @events.each do |event|  %>
 
     <li>
-      <%= link_to event.title, event%>
+      <%= link_to event.title, event, class: "link"%>
       <br>
       <%= event.location %> on <%= event.date %>
       <br>

@@ -18,7 +18,7 @@
 
 <ul>
   <% @user.events.each do |event| %>
-    <li>Event name: <%= link_to event.title, "/events/#{event.id}" %></li>
+    <li>Event name: <%= link_to event.title, "/events/#{event.id}",class: "link" %></li>
     <br>
 
     <li>In <%= event.location %> on <%= event.date %></li>

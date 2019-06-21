@@ -18,7 +18,12 @@ overflow-y: hidden; */
 width: 100%;
 min-height: 100vh;
 position: relative;
-background-image: url(
+background:
+linear-gradient(
+     to bottom,
+     rgba(0, 0, 0, 0),
+     rgba(0, 0, 0, 0.6)
+   ),url(
 https://images.unsplash.com/reserve/yapfjxRqy2d2rGRNc2yQ_zavrsnica-9-indie.jpg?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=932&q=80
 );
 background-repeat: no-repeat;
@@ -42,15 +47,22 @@ ul {
   background-color: rgba(255, 255, 255, 0.5);
    overflow-y: scroll;
    max-height:  50vh;
-   // border-style: solid ;
-   // border-color: green;
-   // border-radius: 0.5px;
-   // border-opacity: green;
+   border-radius: 3%;
+   padding-top: 15px;
    margin-top: 10px;
+}
+
+.container-xfluid{
+  background-color: rgba(255,255,255,.3);
+  padding-left: 25px;
+  border-radius: 3%;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 .container-fluid {
   background-color: rgba(255,255,255,.3);
+  padding-bottom: 1px;
   // background-opacity: .5;
 }
 
@@ -92,6 +104,8 @@ ul {
 .sub-header {
   text-align: center;
   color: white;
+  text-shadow: 0 1px 0 black;
+
 }
 
 
@@ -121,10 +135,14 @@ ul {
 
 .text-center{
   color: white;
+  text-shadow: 0 1px 0 black;
 }
-// .link {
-//   color: white;
-// }
+
+.link {
+  color: white;
+  font-style: italic;
+   text-decoration: underline;
+}
 
 
 // .momo {
@@ -133,6 +151,7 @@ ul {
 
 #bio {
   text-align: center;
+  text-shadow: 0 1px 0 black;
 }
 
 #logo {
@@ -144,4 +163,20 @@ ul {
   border-radius: 25%;
   background-color: white;
 
+}
+.attendee-pic{
+  border-radius: 25%;
+  background-color: white;
+
+}
+
+.messages{
+  padding-top: 0;
+  text-align: center;
+
+}
+
+.atten{
+  border-radius: 25%;
+  background-color: white;
 }
