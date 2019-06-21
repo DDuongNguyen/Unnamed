@@ -2,11 +2,18 @@
   LOG IN PAGE!!!!!
 </h1>
 
+<div class="login">
 <%= form_tag '/login/new' do %>
   <%= label_tag :user_name %>
+  <br>
   <%= text_field_tag :user_name %>
+  <br>
   <%= label_tag :password %>
+  <br>
   <%= password_field_tag :password %>
-  <%= submit_tag "SIGN ME IN" %>
+  <br>
+  <br>
+  <%= submit_tag "SIGN ME IN", class: 'btn btn-small'%>
 <% end %>
+</div>
 <br>

@@ -15,8 +15,8 @@
  html, body{
 /* overflow-x: hidden;
 overflow-y: hidden; */
-height: 100%;
 width: 100%;
+min-height: 100vh;
 position: relative;
 background-image: url(
 https://images.unsplash.com/reserve/yapfjxRqy2d2rGRNc2yQ_zavrsnica-9-indie.jpg?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=932&q=80
@@ -54,8 +54,10 @@ ul {
   // background-opacity: .5;
 }
 
-.footer-fluid {
+.foot {
   background-color: rgba(255,255,255,.3);
+  position: fixed;
+  bottom: 0;
   // background-opacity: .5;
 }
 
@@ -68,9 +70,6 @@ ul {
   color: white;
 }
 
-.coltext-centermomo{
-margin-left: 0px;
-}
 
 .row {
   padding: 0;
@@ -85,12 +84,44 @@ margin-left: 0px;
   color: white;
 }
 
+.btn:hover{
+  color: RGB(216,231,228);
+}
+
 
 .sub-header {
   text-align: center;
   color: white;
 }
 
+
+.login{
+  display: block;
+  margin-left: auto;
+  padding-top: inherit;
+  text-align: center;
+  margin-right: auto;
+}
+
+.signup{
+  display: block;
+  margin-left: auto;
+  padding-top: inherit;
+  text-align: center;
+  margin-right: auto;
+}
+
+.edit-user{
+  display: block;
+  margin-left: auto;
+  padding-top: inherit;
+  text-align: center;
+  margin-right: auto;
+}
+
+.text-center{
+  color: white;
+}
 // .link {
 //   color: white;
 // }
@@ -106,5 +137,11 @@ margin-left: 0px;
 
 #logo {
   float: left;
+
+}
+
+.profile-pic{
+  border-radius: 25%;
+  background-color: white;
 
 }

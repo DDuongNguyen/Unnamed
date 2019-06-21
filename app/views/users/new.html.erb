@@ -11,8 +11,8 @@
 
 <h1 class="sub-header">REGISTER NEW USER HERE!!!!!</h1>
 
+<div class="signup"">
 <%= form_for @user do |f| %>
-
   <%= f.label :name %>
     <br>
   <%= f.text_field :name %>
@@ -30,6 +30,7 @@
   <%= f.password_field :password_confirmation %>
     <br>
       <br>
-  <%= f.submit %>
+  <%= f.submit class: 'btn btn-small' %>
 
 <% end %>
+</div>
