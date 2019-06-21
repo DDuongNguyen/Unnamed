@@ -54,9 +54,16 @@ ul {
   // background-opacity: .5;
 }
 
+.footer-fluid {
+  background-color: rgba(255,255,255,.3);
+  // background-opacity: .5;
+}
+
+
+
 .container {
   // background-color: white;
-  padding: 45px;
+  pad3ding: 45px;
   // opacity: .5;
   color: white;
 }
@@ -69,7 +76,8 @@ ul {
 
 }
 
-.btn btn-small {
+.btn  {
+  background-color: black;
   color: white;
 }
 
@@ -83,10 +91,15 @@ ul {
 //   color: white;
 // }
 
+
 // .momo {
 //   border-radius: 50%;
 // }
 
 #bio {
   text-align: center;
+}
+
+#logo {
+  float: left;
 }
