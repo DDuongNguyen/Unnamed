@@ -32785,3 +32785,46 @@ Processing by EventsController#index as HTML
 Completed 200 OK in 62ms (Views: 58.4ms | ActiveRecord: 0.6ms)
 
 
+Started GET "/" for ::1 at 2019-09-02 23:33:29 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/joes/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/views/events/index.html.erb:3
+  Rendered events/index.html.erb within layouts/application (13.1ms)
+Completed 200 OK in 1256ms (Views: 1247.3ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/login/new" for ::1 at 2019-09-02 23:33:42 -0400
+Processing by LoginController#create as HTML
+  Parameters: {"authenticity_token"=>"TCIxIXMP9iCv7nRb3fpajjdm1HxtfBNu47JUa1G49Bd9zS9A4j3yKPwZtnkn1Ox0Lk6jsedZkYZLVX8R4LaWBg=="}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."user_name" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/login_controller.rb:10
+Redirected to http://localhost:3000/login/new
+Completed 302 Found in 5ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/login/new" for ::1 at 2019-09-02 23:33:42 -0400
+Processing by LoginController#new as HTML
+  Rendering login/new.html.erb within layouts/application
+  Rendered login/new.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 48ms (Views: 47.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login/new" for ::1 at 2019-09-02 23:33:47 -0400
+Processing by LoginController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CswsxHdUtvOycsBbLM1oLnGJEJHfRKvkU2dhDu1XREk7IzKl5may++GFAnnW497UaKFnXFVhKQz7gEp0XFkmWA==", "user_name"=>"", "password"=>"[FILTERED]", "commit"=>"SIGN ME IN"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."user_name" = ? LIMIT ?[0m  [["user_name", ""], ["LIMIT", 1]]
+  ↳ app/controllers/login_controller.rb:10
+Redirected to http://localhost:3000/login/new
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/login/new" for ::1 at 2019-09-02 23:33:47 -0400
+Processing by LoginController#new as HTML
+  Rendering login/new.html.erb within layouts/application
+  Rendered login/new.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 80ms (Views: 78.7ms | ActiveRecord: 0.0ms)
+
+
