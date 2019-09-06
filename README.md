@@ -48,3 +48,5 @@ Users can view which other users are attending a common event, or delete the RSV
 
 The app uses Rails sessions to keep the user logged in, even on refresh.
 ![](./demo-gifs/10-sessions.gif)
+
+#### Developed by Duong (Yoon) Nguyen and Joseph Syverson over the course of about five days, June 2019
